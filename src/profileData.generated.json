@@ -46,7 +46,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "284"
+      "starCount": "288"
     },
     {
       "name": "verceltics",
@@ -454,7 +454,7 @@
       "status": "",
       "marker": "🔶",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=tensorflow/tensorflow&v=3",
-      "starCount": "196k"
+      "starCount": "197k"
     },
     {
       "name": "flutter",
@@ -745,6 +745,15 @@
       "starCount": "4.3k"
     },
     {
+      "name": "sqlparse",
+      "url": "https://github.com/andialbrecht/sqlparse/pull/860",
+      "description": "fix: recognize ROW_FORMAT as a keyword",
+      "status": "",
+      "marker": "🗃️",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=andialbrecht/sqlparse&v=3",
+      "starCount": "4k"
+    },
+    {
       "name": "tox",
       "url": "https://github.com/tox-dev/tox/pull/3976",
       "description": "fix: don't double-close the child pty fd (parallel Bad file descriptor)",
@@ -922,7 +931,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=giselles-ai/giselle&v=3",
-      "starCount": "549"
+      "starCount": "550"
     },
     {
       "name": "BancosBrasileiros",

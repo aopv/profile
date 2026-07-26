@@ -789,6 +789,15 @@
       "starCount": "2.8k"
     },
     {
+      "name": "Pint",
+      "url": "https://github.com/hgrecco/pint/pull/2330",
+      "description": "feat: support superscript decimal point and fraction slash in exponents",
+      "status": "",
+      "marker": "📐",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=hgrecco/pint&v=3",
+      "starCount": "2.8k"
+    },
+    {
       "name": "pygments",
       "url": "https://github.com/pygments/pygments/pulls?q=author%3Aapoorvdarshan",
       "description": "2 merged PRs: add 'yml' alias for YAML lexer + Mathematica \\[Name] named-character escapes",

@@ -129,6 +129,14 @@
       "starBadgeUrl": ""
     },
     {
+      "name": "hash-harbor",
+      "url": "https://github.com/apoorvdarshan/hash-harbor",
+      "description": "Local torrent streamer and downloader with a native engine and browser UI",
+      "status": "",
+      "marker": "⚓",
+      "starBadgeUrl": ""
+    },
+    {
       "name": "multi-account-gmail-mcp",
       "url": "https://github.com/apoorvdarshan/multi-account-gmail-mcp",
       "description": "Local Codex plugin and MCP server for explicit multi-account Gmail access",
@@ -948,7 +956,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=giselles-ai/giselle&v=3",
-      "starCount": "550"
+      "starCount": "551"
     },
     {
       "name": "BancosBrasileiros",

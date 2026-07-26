@@ -46,7 +46,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "288"
+      "starCount": "289"
     },
     {
       "name": "verceltics",
@@ -126,6 +126,14 @@
       "description": "My corner of the internet",
       "status": "",
       "marker": "👤",
+      "starBadgeUrl": ""
+    },
+    {
+      "name": "multi-account-gmail-mcp",
+      "url": "https://github.com/apoorvdarshan/multi-account-gmail-mcp",
+      "description": "Local Codex plugin and MCP server for explicit multi-account Gmail access",
+      "status": "",
+      "marker": "📬",
       "starBadgeUrl": ""
     },
     {
@@ -913,7 +921,7 @@
       "status": "",
       "marker": "📏",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=PyCQA/docformatter&v=3",
-      "starCount": "595"
+      "starCount": "596"
     },
     {
       "name": "resend-mcp",
@@ -994,7 +1002,7 @@
       "status": "",
       "marker": "🌳",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=gristlabs/asttokens&v=3",
-      "starCount": "192"
+      "starCount": "193"
     },
     {
       "name": "markdown-reader",

@@ -129,6 +129,14 @@
       "starBadgeUrl": ""
     },
     {
+      "name": "machina-cordis",
+      "url": "https://github.com/apoorvdarshan/machina-cordis",
+      "description": "Fully editable, animated mechanical heart reactor built procedurally in Blender",
+      "status": "",
+      "marker": "🫀",
+      "starBadgeUrl": ""
+    },
+    {
       "name": "hash-harbor",
       "url": "https://github.com/apoorvdarshan/hash-harbor",
       "description": "Local torrent streamer and downloader with a native engine and browser UI",

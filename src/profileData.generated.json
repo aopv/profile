@@ -46,7 +46,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "289"
+      "starCount": "290"
     },
     {
       "name": "verceltics",
@@ -100,6 +100,14 @@
       "description": "Chrome extension that hides X (Twitter) posts from countries you pick",
       "status": "",
       "marker": "🗺️",
+      "starBadgeUrl": ""
+    },
+    {
+      "name": "newest-youtube-search",
+      "url": "https://github.com/apoorvdarshan/newest-youtube-search",
+      "description": "Chrome extension for true newest-first YouTube video search using the YouTube Data API",
+      "status": "",
+      "marker": "🆕",
       "starBadgeUrl": ""
     },
     {
@@ -901,7 +909,7 @@
       "status": "",
       "marker": "📺",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=CCExtractor/ccextractor&v=3",
-      "starCount": "891"
+      "starCount": "892"
     },
     {
       "name": "pygraphviz",

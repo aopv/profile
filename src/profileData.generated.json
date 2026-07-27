@@ -46,7 +46,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "290"
+      "starCount": "288"
     },
     {
       "name": "verceltics",
@@ -187,6 +187,14 @@
       "starCount": "1"
     },
     {
+      "name": "macbook-24x7-agents",
+      "url": "https://github.com/apoorvdarshan/macbook-24x7-agents",
+      "description": "Run AI agents 24x7 on a MacBook: never sleep, lid closed, display off, fully reversible",
+      "status": "",
+      "marker": "🌙",
+      "starBadgeUrl": ""
+    },
+    {
       "name": "linkedin-connection-sender",
       "url": "https://github.com/apoorvdarshan/linkedin-connection-sender",
       "description": "Send LinkedIn connection requests by country and role at a human-like pace",
@@ -242,14 +250,6 @@
       "marker": "📊",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/github-readme-contribution-merger&v=3",
       "starCount": "12"
-    },
-    {
-      "name": "macbook-24x7-agents",
-      "url": "https://github.com/apoorvdarshan/macbook-24x7-agents",
-      "description": "Run AI agents 24x7 on a MacBook: never sleep, lid closed, display off, fully reversible",
-      "status": "",
-      "marker": "🌙",
-      "starBadgeUrl": ""
     },
     {
       "name": "daxerly",
@@ -972,7 +972,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=giselles-ai/giselle&v=3",
-      "starCount": "551"
+      "starCount": "549"
     },
     {
       "name": "BancosBrasileiros",

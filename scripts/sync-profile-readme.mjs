@@ -3,6 +3,7 @@ import { constants } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 
 const README_URL = 'https://raw.githubusercontent.com/apoorvdarshan/apoorvdarshan/main/README.md'
+const README_API_URL = 'https://api.github.com/repos/apoorvdarshan/apoorvdarshan/contents/README.md?ref=main'
 const OUTPUT_URL = new URL('../src/profileData.generated.json', import.meta.url)
 
 const decode = (value = '') => value
@@ -146,7 +147,12 @@ function parseReadme(readme) {
 async function main() {
   let readme
   try {
-    const response = await fetch(README_URL, { headers: { 'User-Agent': 'apoorv-profile-build' } })
+    const response = await fetch(README_API_URL, {
+      headers: {
+        Accept: 'application/vnd.github.raw+json',
+        'User-Agent': 'apoorv-profile-build',
+      },
+    })
     if (!response.ok) throw new Error(`GitHub returned ${response.status}`)
     readme = await response.text()
   } catch (error) {

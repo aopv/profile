@@ -939,6 +939,15 @@
       "starCount": "677"
     },
     {
+      "name": "python-barcode",
+      "url": "https://github.com/WhyNotHugo/python-barcode/commit/73316bf7e485b8aefcf89f3aaab8f76b8f261375",
+      "description": "fix: make Code128 build() deterministic across repeated calls",
+      "status": "",
+      "marker": "🏷️",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=WhyNotHugo/python-barcode&v=3",
+      "starCount": "655"
+    },
+    {
       "name": "styled-components-website",
       "url": "https://github.com/styled-components/styled-components-website/pull/993",
       "description": "fix: improve accessibility across site to meet WCAG 2.1 guidelines",

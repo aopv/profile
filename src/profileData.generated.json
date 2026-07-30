@@ -46,7 +46,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "288"
+      "starCount": "294"
     },
     {
       "name": "verceltics",
@@ -249,7 +249,7 @@
       "status": "",
       "marker": "📊",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/github-readme-contribution-merger&v=3",
-      "starCount": "12"
+      "starCount": "13"
     },
     {
       "name": "daxerly",
@@ -504,7 +504,7 @@
       "status": "",
       "marker": "🧠",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=langgenius/dify&v=3",
-      "starCount": "150k"
+      "starCount": "151k"
     },
     {
       "name": "kubernetes",
@@ -639,7 +639,7 @@
       "status": "",
       "marker": "🛡️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=prowler-cloud/prowler&v=3",
-      "starCount": "14k"
+      "starCount": "15k"
     },
     {
       "name": "omi",
@@ -711,7 +711,7 @@
       "status": "",
       "marker": "🔤",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=PyCQA/isort&v=3",
-      "starCount": "7k"
+      "starCount": "6.9k"
     },
     {
       "name": "up-for-grabs.net",
@@ -777,6 +777,15 @@
       "starCount": "4.3k"
     },
     {
+      "name": "dynaconf",
+      "url": "https://github.com/dynaconf/dynaconf/pull/1421",
+      "description": "feat: support list values for environment configuration",
+      "status": "",
+      "marker": "🧰",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dynaconf/dynaconf&v=3",
+      "starCount": "4.3k"
+    },
+    {
       "name": "sqlparse",
       "url": "https://github.com/andialbrecht/sqlparse/pull/860",
       "description": "fix: recognize ROW_FORMAT as a keyword",
@@ -837,7 +846,7 @@
       "status": "",
       "marker": "✅",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=alecthomas/voluptuous&v=3",
-      "starCount": "1.9k"
+      "starCount": "1.8k"
     },
     {
       "name": "TEAMMATES",
@@ -891,7 +900,7 @@
       "status": "",
       "marker": "🧹",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=djlint/djLint&v=3",
-      "starCount": "939"
+      "starCount": "941"
     },
     {
       "name": "decorator",
@@ -900,7 +909,7 @@
       "status": "",
       "marker": "🎀",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=micheles/decorator&v=3",
-      "starCount": "906"
+      "starCount": "905"
     },
     {
       "name": "ccextractor",
@@ -909,7 +918,16 @@
       "status": "",
       "marker": "📺",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=CCExtractor/ccextractor&v=3",
-      "starCount": "892"
+      "starCount": "894"
+    },
+    {
+      "name": "pyserde",
+      "url": "https://github.com/yukinarit/pyserde/pull/775",
+      "description": "fix: nested generic dataclass deserialization",
+      "status": "",
+      "marker": "🧬",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=yukinarit/pyserde&v=3",
+      "starCount": "853"
     },
     {
       "name": "pygraphviz",
@@ -918,7 +936,7 @@
       "status": "",
       "marker": "🕸️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=pygraphviz/pygraphviz&v=3",
-      "starCount": "844"
+      "starCount": "845"
     },
     {
       "name": "flynt",
@@ -945,7 +963,7 @@
       "status": "",
       "marker": "🏷️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=WhyNotHugo/python-barcode&v=3",
-      "starCount": "655"
+      "starCount": "656"
     },
     {
       "name": "styled-components-website",
@@ -963,7 +981,7 @@
       "status": "",
       "marker": "📏",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=PyCQA/docformatter&v=3",
-      "starCount": "596"
+      "starCount": "595"
     },
     {
       "name": "resend-mcp",
@@ -972,7 +990,7 @@
       "status": "",
       "marker": "📧",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=resend/resend-mcp&v=3",
-      "starCount": "557"
+      "starCount": "559"
     },
     {
       "name": "giselle",
@@ -990,7 +1008,7 @@
       "status": "",
       "marker": "🏦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=guibranco/BancosBrasileiros&v=3",
-      "starCount": "529"
+      "starCount": "530"
     },
     {
       "name": "fork-commit-merge",
@@ -1002,13 +1020,22 @@
       "starCount": "507"
     },
     {
+      "name": "mail-parser",
+      "url": "https://github.com/SpamScope/mail-parser/pull/161",
+      "description": "fix: address parsing on Python versions before 3.13",
+      "status": "",
+      "marker": "✉️",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=SpamScope/mail-parser&v=3",
+      "starCount": "448"
+    },
+    {
       "name": "xsdata",
       "url": "https://github.com/tefra/xsdata/pull/1224",
       "description": "fix: wrapper binding when collection item element name is reused",
       "status": "",
       "marker": "🧬",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=tefra/xsdata&v=3",
-      "starCount": "447"
+      "starCount": "446"
     },
     {
       "name": "moin",
@@ -1017,7 +1044,7 @@
       "status": "",
       "marker": "📝",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=moinwiki/moin&v=3",
-      "starCount": "373"
+      "starCount": "372"
     },
     {
       "name": "radis",
@@ -1026,7 +1053,7 @@
       "status": "",
       "marker": "🔬",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=radis/radis&v=3",
-      "starCount": "277"
+      "starCount": "278"
     },
     {
       "name": "docs-desktop",
@@ -1047,6 +1074,15 @@
       "starCount": "193"
     },
     {
+      "name": "htmldate",
+      "url": "https://github.com/adbar/htmldate/pull/194",
+      "description": "fix: preserve time and timezone for regex-extracted dates",
+      "status": "",
+      "marker": "🕰️",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=adbar/htmldate&v=3",
+      "starCount": "154"
+    },
+    {
       "name": "markdown-reader",
       "url": "https://github.com/petertzy/markdown-reader/pull/84",
       "description": "fix: NameError in choose_bg_color when color picker is cancelled",
@@ -1054,6 +1090,15 @@
       "marker": "📖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=petertzy/markdown-reader&v=3",
       "starCount": "25"
+    },
+    {
+      "name": "awesome-mac",
+      "url": "https://github.com/abordage/awesome-mac/pull/12",
+      "description": "docs: add Hash Harbor to the curated macOS app list",
+      "status": "",
+      "marker": "🍎",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=abordage/awesome-mac&v=3",
+      "starCount": "21"
     }
   ],
   "activityImage": "https://github-contribution-merger.apoorvdarshan.com/api/merge?users=apoorvdarshan%2Capoorvxircls&mode=overlay&colors=39d353%2C58a6ff",

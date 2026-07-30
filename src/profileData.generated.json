@@ -723,6 +723,15 @@
       "starCount": "6k"
     },
     {
+      "name": "lark",
+      "url": "https://github.com/lark-parser/lark/pull/1619",
+      "description": "fix: preserve lexer callbacks for keyword terminals",
+      "status": "",
+      "marker": "🐦",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=lark-parser/lark&v=3",
+      "starCount": "5.9k"
+    },
+    {
       "name": "websockets",
       "url": "https://github.com/python-websockets/websockets/pull/1726",
       "description": "fix: handle rejected handshakes cleanly in the threading server",

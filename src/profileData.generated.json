@@ -46,7 +46,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "298"
+      "starCount": "300"
     },
     {
       "name": "verceltics",
@@ -612,7 +612,7 @@
       "status": "",
       "marker": "🛠️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=steipete/CodexBar&v=3",
-      "starCount": "19k"
+      "starCount": "20k"
     },
     {
       "name": "react-spectrum",
@@ -711,7 +711,7 @@
       "status": "",
       "marker": "🔤",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=PyCQA/isort&v=3",
-      "starCount": "6.9k"
+      "starCount": "7k"
     },
     {
       "name": "up-for-grabs.net",
@@ -864,7 +864,7 @@
       "status": "",
       "marker": "✅",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=alecthomas/voluptuous&v=3",
-      "starCount": "1.8k"
+      "starCount": "1.9k"
     },
     {
       "name": "TEAMMATES",
@@ -882,6 +882,15 @@
       "status": "",
       "marker": "⌨️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=kislyuk/argcomplete&v=3",
+      "starCount": "1.6k"
+    },
+    {
+      "name": "pyfiglet",
+      "url": "https://github.com/pwaller/pyfiglet/pull/161",
+      "description": "fix: return False from isValidFont for missing fonts",
+      "status": "",
+      "marker": "🔤",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=pwaller/pyfiglet&v=3",
       "starCount": "1.6k"
     },
     {
@@ -918,7 +927,7 @@
       "status": "",
       "marker": "🧹",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=djlint/djLint&v=3",
-      "starCount": "942"
+      "starCount": "943"
     },
     {
       "name": "decorator",
@@ -936,7 +945,7 @@
       "status": "",
       "marker": "📺",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=CCExtractor/ccextractor&v=3",
-      "starCount": "895"
+      "starCount": "896"
     },
     {
       "name": "pyserde",
@@ -945,7 +954,7 @@
       "status": "",
       "marker": "🧬",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=yukinarit/pyserde&v=3",
-      "starCount": "853"
+      "starCount": "852"
     },
     {
       "name": "pygraphviz",

@@ -46,7 +46,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "294"
+      "starCount": "298"
     },
     {
       "name": "verceltics",
@@ -175,7 +175,7 @@
       "status": "",
       "marker": "📣",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/crossposter&v=3",
-      "starCount": "8"
+      "starCount": "25"
     },
     {
       "name": "TetherShot",
@@ -666,7 +666,7 @@
       "status": "",
       "marker": "📄",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=Kozea/WeasyPrint&v=3",
-      "starCount": "9.4k"
+      "starCount": "9.5k"
     },
     {
       "name": "clawhub",
@@ -675,7 +675,7 @@
       "status": "",
       "marker": "🦞",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=openclaw/clawhub&v=3",
-      "starCount": "9.2k"
+      "starCount": "9.3k"
     },
     {
       "name": "tenacity",
@@ -775,6 +775,15 @@
       "marker": "📍",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=geopy/geopy&v=3",
       "starCount": "4.8k"
+    },
+    {
+      "name": "returns",
+      "url": "https://github.com/dry-python/returns/pull/2446",
+      "description": "fix: make partial plugin positionals keyword-only after keyword binding",
+      "status": "",
+      "marker": "↩️",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dry-python/returns&v=3",
+      "starCount": "4.3k"
     },
     {
       "name": "fsharp",
@@ -909,7 +918,7 @@
       "status": "",
       "marker": "🧹",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=djlint/djLint&v=3",
-      "starCount": "941"
+      "starCount": "942"
     },
     {
       "name": "decorator",
@@ -927,7 +936,7 @@
       "status": "",
       "marker": "📺",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=CCExtractor/ccextractor&v=3",
-      "starCount": "894"
+      "starCount": "895"
     },
     {
       "name": "pyserde",
@@ -999,7 +1008,7 @@
       "status": "",
       "marker": "📧",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=resend/resend-mcp&v=3",
-      "starCount": "559"
+      "starCount": "560"
     },
     {
       "name": "giselle",
@@ -1008,7 +1017,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=giselles-ai/giselle&v=3",
-      "starCount": "549"
+      "starCount": "550"
     },
     {
       "name": "BancosBrasileiros",
@@ -1035,7 +1044,7 @@
       "status": "",
       "marker": "✉️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=SpamScope/mail-parser&v=3",
-      "starCount": "448"
+      "starCount": "449"
     },
     {
       "name": "xsdata",
@@ -1107,7 +1116,7 @@
       "status": "",
       "marker": "🍎",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=abordage/awesome-mac&v=3",
-      "starCount": "21"
+      "starCount": "22"
     }
   ],
   "activityImage": "https://github-contribution-merger.apoorvdarshan.com/api/merge?users=apoorvdarshan%2Capoorvxircls&mode=overlay&colors=39d353%2C58a6ff",

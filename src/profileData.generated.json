@@ -46,7 +46,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "300"
+      "starCount": "304"
     },
     {
       "name": "verceltics",
@@ -981,7 +981,7 @@
       "status": "",
       "marker": "🗺️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=koordinates/kart&v=3",
-      "starCount": "677"
+      "starCount": "678"
     },
     {
       "name": "python-barcode",
@@ -1065,6 +1065,15 @@
       "starCount": "446"
     },
     {
+      "name": "WebOb",
+      "url": "https://github.com/Pylons/webob/pull/496",
+      "description": "fix: make timedelta date headers UTC-based (authored commit)",
+      "status": "",
+      "marker": "🌐",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=Pylons/webob&v=3",
+      "starCount": "443"
+    },
+    {
       "name": "moin",
       "url": "https://github.com/moinwiki/moin/pull/2166",
       "description": "fix: markdown parser crash on emphasized text inside HTML tags",
@@ -1098,7 +1107,7 @@
       "status": "",
       "marker": "🌳",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=gristlabs/asttokens&v=3",
-      "starCount": "193"
+      "starCount": "194"
     },
     {
       "name": "htmldate",

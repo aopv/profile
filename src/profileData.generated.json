@@ -1092,6 +1092,15 @@
       "starCount": "278"
     },
     {
+      "name": "click-repl",
+      "url": "https://github.com/click-contrib/click-repl/pull/136",
+      "description": "fix: stop boolean flags from offering value completions",
+      "status": "",
+      "marker": "🖱️",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=click-contrib/click-repl&v=3",
+      "starCount": "240"
+    },
+    {
       "name": "docs-desktop",
       "url": "https://github.com/dotnet/docs-desktop/pull/2197",
       "description": "fix: MD001 heading violations in WinForms docs (by .NET)",

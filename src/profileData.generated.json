@@ -46,7 +46,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "304"
+      "starCount": "311"
     },
     {
       "name": "verceltics",
@@ -64,7 +64,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/scowld&v=3",
-      "starCount": "7"
+      "starCount": "11"
     },
     {
       "name": "quit-all",
@@ -175,7 +175,7 @@
       "status": "",
       "marker": "📣",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/crossposter&v=3",
-      "starCount": "25"
+      "starCount": "27"
     },
     {
       "name": "TetherShot",
@@ -184,7 +184,7 @@
       "status": "",
       "marker": "📸",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/TetherShot&v=3",
-      "starCount": "1"
+      "starCount": "2"
     },
     {
       "name": "macbook-24x7-agents",
@@ -477,7 +477,7 @@
       "status": "",
       "marker": "🏕️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=freeCodeCamp/freeCodeCamp&v=3",
-      "starCount": "453k"
+      "starCount": "454k"
     },
     {
       "name": "tensorflow",
@@ -504,7 +504,7 @@
       "status": "",
       "marker": "🧠",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=langgenius/dify&v=3",
-      "starCount": "151k"
+      "starCount": "152k"
     },
     {
       "name": "kubernetes",
@@ -876,6 +876,15 @@
       "starCount": "1.8k"
     },
     {
+      "name": "simplejson",
+      "url": "https://github.com/simplejson/simplejson/pull/381",
+      "description": "fix: handle non-finite Decimal values like floats in the encoder",
+      "status": "",
+      "marker": "🔢",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=simplejson/simplejson&v=3",
+      "starCount": "1.7k"
+    },
+    {
       "name": "pyfiglet",
       "url": "https://github.com/pwaller/pyfiglet/pull/161",
       "description": "fix: return False from isValidFont for missing fonts",
@@ -927,7 +936,7 @@
       "status": "",
       "marker": "🧹",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=djlint/djLint&v=3",
-      "starCount": "943"
+      "starCount": "944"
     },
     {
       "name": "decorator",
@@ -963,7 +972,7 @@
       "status": "",
       "marker": "🕸️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=pygraphviz/pygraphviz&v=3",
-      "starCount": "845"
+      "starCount": "844"
     },
     {
       "name": "flynt",
@@ -1017,7 +1026,7 @@
       "status": "",
       "marker": "📧",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=resend/resend-mcp&v=3",
-      "starCount": "560"
+      "starCount": "558"
     },
     {
       "name": "giselle",
@@ -1026,7 +1035,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=giselles-ai/giselle&v=3",
-      "starCount": "550"
+      "starCount": "551"
     },
     {
       "name": "BancosBrasileiros",
@@ -1035,7 +1044,7 @@
       "status": "",
       "marker": "🏦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=guibranco/BancosBrasileiros&v=3",
-      "starCount": "530"
+      "starCount": "529"
     },
     {
       "name": "fork-commit-merge",
@@ -1053,7 +1062,7 @@
       "status": "",
       "marker": "✉️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=SpamScope/mail-parser&v=3",
-      "starCount": "449"
+      "starCount": "451"
     },
     {
       "name": "xsdata",
@@ -1128,6 +1137,15 @@
       "starCount": "154"
     },
     {
+      "name": "elemo",
+      "url": "https://github.com/opcotech/elemo/pull/394",
+      "description": "feat: add project endpoints to the OpenAPI spec",
+      "status": "",
+      "marker": "📋",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=opcotech/elemo&v=3",
+      "starCount": "34"
+    },
+    {
       "name": "markdown-reader",
       "url": "https://github.com/petertzy/markdown-reader/pull/84",
       "description": "fix: NameError in choose_bg_color when color picker is cancelled",
@@ -1143,7 +1161,7 @@
       "status": "",
       "marker": "🍎",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=abordage/awesome-mac&v=3",
-      "starCount": "22"
+      "starCount": "20"
     }
   ],
   "activityImage": "https://github-contribution-merger.apoorvdarshan.com/api/merge?users=apoorvdarshan%2Capoorvxircls&mode=overlay&colors=39d353%2C58a6ff",

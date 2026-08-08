@@ -57,7 +57,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "311"
+      "starCount": "314"
     },
     {
       "name": "verceltics",
@@ -66,7 +66,7 @@
       "status": "",
       "marker": "📈",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/verceltics&v=3",
-      "starCount": "24"
+      "starCount": "25"
     },
     {
       "name": "scowld",
@@ -186,7 +186,7 @@
       "status": "",
       "marker": "📣",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/crossposter&v=3",
-      "starCount": "27"
+      "starCount": "28"
     },
     {
       "name": "TetherShot",
@@ -668,7 +668,7 @@
       "status": "",
       "marker": "❄️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=sqlfluff/sqlfluff&v=3",
-      "starCount": "9.8k"
+      "starCount": "9.9k"
     },
     {
       "name": "WeasyPrint",
@@ -713,7 +713,7 @@
       "status": "",
       "marker": "🐍",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=boa-dev/boa&v=3",
-      "starCount": "7.4k"
+      "starCount": "7.5k"
     },
     {
       "name": "isort",
@@ -722,7 +722,7 @@
       "status": "",
       "marker": "🔤",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=PyCQA/isort&v=3",
-      "starCount": "7k"
+      "starCount": "6.9k"
     },
     {
       "name": "up-for-grabs.net",
@@ -788,6 +788,15 @@
       "starCount": "4.8k"
     },
     {
+      "name": "awesome-opensource-ai",
+      "url": "https://github.com/alvinreal/awesome-opensource-ai/pull/664",
+      "description": "docs: add Scowld mobile AI companion",
+      "status": "",
+      "marker": "🤖",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=alvinreal/awesome-opensource-ai&v=3",
+      "starCount": "4.4k"
+    },
+    {
       "name": "returns",
       "url": "https://github.com/dry-python/returns/pull/2446",
       "description": "fix: make partial plugin positionals keyword-only after keyword binding",
@@ -813,6 +822,15 @@
       "marker": "🧰",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dynaconf/dynaconf&v=3",
       "starCount": "4.3k"
+    },
+    {
+      "name": "ripme",
+      "url": "https://github.com/RipMeApp/ripme/pull/2172",
+      "description": "feat: add configurable API key support for Rule34Ripper",
+      "status": "",
+      "marker": "📥",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=RipMeApp/ripme&v=3",
+      "starCount": "4.1k"
     },
     {
       "name": "sqlparse",
@@ -1037,7 +1055,7 @@
       "status": "",
       "marker": "📧",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=resend/resend-mcp&v=3",
-      "starCount": "558"
+      "starCount": "559"
     },
     {
       "name": "giselle",
@@ -1046,7 +1064,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=giselles-ai/giselle&v=3",
-      "starCount": "551"
+      "starCount": "552"
     },
     {
       "name": "BancosBrasileiros",
@@ -1073,7 +1091,7 @@
       "status": "",
       "marker": "✉️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=SpamScope/mail-parser&v=3",
-      "starCount": "451"
+      "starCount": "452"
     },
     {
       "name": "xsdata",

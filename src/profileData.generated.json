@@ -57,7 +57,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "314"
+      "starCount": "321"
     },
     {
       "name": "verceltics",
@@ -66,7 +66,7 @@
       "status": "",
       "marker": "📈",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/verceltics&v=3",
-      "starCount": "25"
+      "starCount": "26"
     },
     {
       "name": "scowld",
@@ -148,6 +148,14 @@
       "starBadgeUrl": ""
     },
     {
+      "name": "browser-cookie-bridge",
+      "url": "https://github.com/apoorvdarshan/browser-cookie-bridge",
+      "description": "Private, local cookie and session transfer between Chromium browsers and ChatGPT Codex on macOS",
+      "status": "",
+      "marker": "🍪",
+      "starBadgeUrl": ""
+    },
+    {
       "name": "machina-cordis",
       "url": "https://github.com/apoorvdarshan/machina-cordis",
       "description": "Fully editable, animated mechanical heart reactor built procedurally in Blender",
@@ -195,7 +203,7 @@
       "status": "",
       "marker": "📸",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/TetherShot&v=3",
-      "starCount": "2"
+      "starCount": "3"
     },
     {
       "name": "macbook-24x7-agents",
@@ -668,7 +676,7 @@
       "status": "",
       "marker": "❄️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=sqlfluff/sqlfluff&v=3",
-      "starCount": "9.9k"
+      "starCount": "9.8k"
     },
     {
       "name": "WeasyPrint",
@@ -740,7 +748,7 @@
       "status": "",
       "marker": "🐦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=lark-parser/lark&v=3",
-      "starCount": "5.9k"
+      "starCount": "6k"
     },
     {
       "name": "websockets",
@@ -758,7 +766,7 @@
       "status": "",
       "marker": "🔮",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=zenml-io/zenml&v=3",
-      "starCount": "5.5k"
+      "starCount": "5.6k"
     },
     {
       "name": "typeshed",
@@ -794,7 +802,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=alvinreal/awesome-opensource-ai&v=3",
-      "starCount": "4.4k"
+      "starCount": "4.5k"
     },
     {
       "name": "returns",
@@ -893,7 +901,7 @@
       "status": "",
       "marker": "✅",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=alecthomas/voluptuous&v=3",
-      "starCount": "1.9k"
+      "starCount": "1.8k"
     },
     {
       "name": "TEAMMATES",
@@ -965,7 +973,7 @@
       "status": "",
       "marker": "🧹",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=djlint/djLint&v=3",
-      "starCount": "944"
+      "starCount": "943"
     },
     {
       "name": "decorator",
@@ -992,7 +1000,7 @@
       "status": "",
       "marker": "🧬",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=yukinarit/pyserde&v=3",
-      "starCount": "852"
+      "starCount": "851"
     },
     {
       "name": "pygraphviz",
@@ -1073,7 +1081,7 @@
       "status": "",
       "marker": "🏦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=guibranco/BancosBrasileiros&v=3",
-      "starCount": "529"
+      "starCount": "531"
     },
     {
       "name": "fork-commit-merge",
@@ -1136,7 +1144,7 @@
       "status": "",
       "marker": "🖱️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=click-contrib/click-repl&v=3",
-      "starCount": "240"
+      "starCount": "242"
     },
     {
       "name": "docs-desktop",
@@ -1172,7 +1180,7 @@
       "status": "",
       "marker": "📋",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=opcotech/elemo&v=3",
-      "starCount": "34"
+      "starCount": "35"
     },
     {
       "name": "markdown-reader",

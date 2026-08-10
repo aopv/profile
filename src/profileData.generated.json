@@ -150,7 +150,7 @@
     {
       "name": "browser-cookie-bridge",
       "url": "https://github.com/apoorvdarshan/browser-cookie-bridge",
-      "description": "Private, local cookie and session transfer between Chromium browsers and ChatGPT Codex on macOS",
+      "description": "Local cookie and session transfer between Chromium browsers and Codex on macOS",
       "status": "",
       "marker": "🍪",
       "starBadgeUrl": ""

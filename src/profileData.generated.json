@@ -57,7 +57,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "321"
+      "starCount": "322"
     },
     {
       "name": "verceltics",
@@ -75,7 +75,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/scowld&v=3",
-      "starCount": "11"
+      "starCount": "12"
     },
     {
       "name": "quit-all",
@@ -580,6 +580,15 @@
       "starCount": "60k"
     },
     {
+      "name": "open-source-ios-apps",
+      "url": "https://github.com/dkhamsing/open-source-ios-apps/pull/2313",
+      "description": "add Scowld to the open-source iOS app catalog",
+      "status": "",
+      "marker": "📱",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dkhamsing/open-source-ios-apps&v=3",
+      "starCount": "52k"
+    },
+    {
       "name": "julia",
       "url": "https://github.com/JuliaLang/julia/pull/61054",
       "description": "fix: quote Symbol values in @test failure output (by Julia)",
@@ -616,15 +625,6 @@
       "starCount": "19k"
     },
     {
-      "name": "runtime",
-      "url": "https://github.com/dotnet/runtime/pull/124498",
-      "description": "fix: fractional-token AttemptAcquire(0) behavior (by .NET)",
-      "status": "",
-      "marker": "🔷",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dotnet/runtime&v=3",
-      "starCount": "18k"
-    },
-    {
       "name": "CodexBar",
       "url": "https://github.com/steipete/CodexBar/pull/344/commits",
       "description": "fix: region-specific API endpoint for MiniMax (by @steipete, 🦞 OpenClaw)",
@@ -632,6 +632,15 @@
       "marker": "🛠️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=steipete/CodexBar&v=3",
       "starCount": "20k"
+    },
+    {
+      "name": "runtime",
+      "url": "https://github.com/dotnet/runtime/pull/124498",
+      "description": "fix: fractional-token AttemptAcquire(0) behavior (by .NET)",
+      "status": "",
+      "marker": "🔷",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dotnet/runtime&v=3",
+      "starCount": "18k"
     },
     {
       "name": "react-spectrum",
@@ -1054,7 +1063,7 @@
       "status": "",
       "marker": "📏",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=PyCQA/docformatter&v=3",
-      "starCount": "595"
+      "starCount": "594"
     },
     {
       "name": "resend-mcp",
@@ -1081,7 +1090,7 @@
       "status": "",
       "marker": "🏦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=guibranco/BancosBrasileiros&v=3",
-      "starCount": "531"
+      "starCount": "532"
     },
     {
       "name": "fork-commit-merge",
@@ -1093,13 +1102,22 @@
       "starCount": "507"
     },
     {
+      "name": "poetry-core",
+      "url": "https://github.com/python-poetry/poetry-core/pull/953",
+      "description": "fix: Version.difference with local variants of the same version",
+      "status": "",
+      "marker": "📝",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=python-poetry/poetry-core&v=3",
+      "starCount": "478"
+    },
+    {
       "name": "mail-parser",
       "url": "https://github.com/SpamScope/mail-parser/pull/161",
       "description": "fix: address parsing on Python versions before 3.13",
       "status": "",
       "marker": "✉️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=SpamScope/mail-parser&v=3",
-      "starCount": "452"
+      "starCount": "453"
     },
     {
       "name": "xsdata",

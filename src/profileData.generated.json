@@ -53,11 +53,11 @@
     {
       "name": "fud-ai",
       "url": "https://github.com/apoorvdarshan/fud-ai",
-      "description": "AI-powered calorie and nutrition tracker app (5K+ downloads)",
+      "description": "AI-powered calorie and nutrition tracker app (6K+ downloads)",
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "322"
+      "starCount": "327"
     },
     {
       "name": "verceltics",
@@ -194,7 +194,7 @@
       "status": "",
       "marker": "📣",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/crossposter&v=3",
-      "starCount": "28"
+      "starCount": "29"
     },
     {
       "name": "TetherShot",
@@ -1090,7 +1090,7 @@
       "status": "",
       "marker": "🏦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=guibranco/BancosBrasileiros&v=3",
-      "starCount": "532"
+      "starCount": "534"
     },
     {
       "name": "fork-commit-merge",

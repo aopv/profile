@@ -155,19 +155,23 @@ function HomePage({ navigate, work }) {
   ]
   return (
     <>
-      <section className="intro">
-        <p className="intro-kicker"><span /> Building from Delhi</p>
-        <h1>Apps, tools, games<br />and odd little ideas.</h1>
-        <p>I’m Apoorv. I build native apps, browser tools, open-source software, and experiments—often with Codex, or Claude, open beside me.</p>
-        <div className="intro-links">
-          <ExternalLink href="https://github.com/apoorvdarshan">GitHub ↗</ExternalLink>
-          <ExternalLink href="https://www.linkedin.com/in/apoorvdarshan">LinkedIn ↗</ExternalLink>
-          <ExternalLink href="https://x.com/apoorvdarshan">X ↗</ExternalLink>
+      <section className="home-lead">
+        <div>
+          <p className="intro-kicker"><span /> Building from Delhi</p>
+          <h1>Things I’ve made.</h1>
+        </div>
+        <div className="home-lead-copy">
+          <p>Apps, tools, games, open source, and odd little ideas—built by Apoorv, often with Codex or Claude nearby.</p>
+          <div className="intro-links">
+            <ExternalLink href="https://github.com/apoorvdarshan">GitHub ↗</ExternalLink>
+            <ExternalLink href="https://www.linkedin.com/in/apoorvdarshan">LinkedIn ↗</ExternalLink>
+            <ExternalLink href="https://x.com/apoorvdarshan">X ↗</ExternalLink>
+          </div>
         </div>
       </section>
 
-      <section className="home-section">
-        <SectionTitle count={featured.length} action={<InternalLink className="section-action" to="/projects" onNavigate={navigate}>See all {work.length} →</InternalLink>}>A few favourites</SectionTitle>
+      <section className="home-section first-projects">
+        <SectionTitle count={featured.length} action={<InternalLink className="section-action" to="/projects" onNavigate={navigate}>See all {work.length} →</InternalLink>}>Start here</SectionTitle>
         <div className="featured-grid">{featured.map((item) => <FeaturedCard key={item.name} item={item} />)}</div>
       </section>
 

@@ -24,6 +24,7 @@ function pageHtml(path) {
       `<meta property="og:description" content="${escapeAttribute(page.description)}" />`,
       `<meta property="og:url" content="${canonical}" />`,
       `<meta property="og:image" content="${SOCIAL_IMAGE}" />`,
+      '<meta property="og:image:type" content="image/png" />',
       '<meta property="og:image:width" content="1200" />',
       '<meta property="og:image:height" content="630" />',
       '<meta property="og:image:alt" content="Apoorv Darshan — developer and open-source builder" />',

@@ -116,14 +116,10 @@ function ProjectMark({ item, large = false }) {
 function FeaturedCard({ item }) {
   return (
     <ExternalLink className="featured-card" href={item.url} style={{ '--accent': item.accent }}>
-      <span className="featured-picture">
-        <img src={item.visual} alt={`${displayName(item.name)} project preview`} loading="lazy" />
-      </span>
-      <span className="featured-copy">
-        <span className="featured-title"><ProjectMark item={item} /><strong>{displayName(item.name)}</strong></span>
-        <span className="featured-description">{item.description}</span>
-        <span className="featured-meta"><span>{item.source}</span><StarBadge item={item} /><span aria-hidden="true">↗</span></span>
-      </span>
+      <span className="featured-icon-wrap"><ProjectMark item={item} large /></span>
+      <span className="featured-title"><strong>{displayName(item.name)}</strong><StarBadge item={item} /></span>
+      <span className="featured-description">{item.description}</span>
+      <span className="featured-meta"><span>{item.source}</span><span aria-hidden="true">↗</span></span>
     </ExternalLink>
   )
 }
@@ -148,55 +144,23 @@ function SectionTitle({ children, count, action }) {
 
 function HomePage({ navigate, work }) {
   const featured = FEATURED_WORK.map((name) => work.find((item) => item.name === name)).filter(Boolean)
-  const groups = [
-    ['Apps', work.filter((item) => item.source === 'Apps')],
-    ['Game', work.filter((item) => item.source === 'Games')],
-    ['Extensions', work.filter((item) => item.source === 'Extensions')],
-  ]
   return (
     <>
       <section className="home-lead">
-        <div>
-          <p className="intro-kicker"><span /> Building from Delhi</p>
-          <h1>Things I’ve made.</h1>
-        </div>
-        <div className="home-lead-copy">
-          <p>Apps, tools, games, open source, and odd little ideas—built by Apoorv, often with Codex or Claude nearby.</p>
-          <div className="intro-links">
-            <ExternalLink href="https://github.com/apoorvdarshan">GitHub ↗</ExternalLink>
-            <ExternalLink href="https://www.linkedin.com/in/apoorvdarshan">LinkedIn ↗</ExternalLink>
-            <ExternalLink href="https://x.com/apoorvdarshan">X ↗</ExternalLink>
-          </div>
-        </div>
+        <span className="home-avatar" aria-hidden="true">AD</span>
+        <div><h1>Apoorv makes things.</h1><p>Apps, games, tiny tools, and weird internet experiments from Delhi.</p></div>
+        <div className="intro-links"><ExternalLink href="https://github.com/apoorvdarshan">GitHub ↗</ExternalLink><ExternalLink href="https://www.linkedin.com/in/apoorvdarshan">LinkedIn ↗</ExternalLink><ExternalLink href="https://x.com/apoorvdarshan">X ↗</ExternalLink></div>
       </section>
 
       <section className="home-section first-projects">
-        <SectionTitle count={featured.length} action={<InternalLink className="section-action" to="/projects" onNavigate={navigate}>See all {work.length} →</InternalLink>}>Start here</SectionTitle>
+        <SectionTitle count={featured.length} action={<InternalLink className="section-action" to="/projects" onNavigate={navigate}>All {work.length} things →</InternalLink>}>Pick something</SectionTitle>
         <div className="featured-grid">{featured.map((item) => <FeaturedCard key={item.name} item={item} />)}</div>
       </section>
 
-      {groups.map(([label, items]) => (
-        <section className="home-section compact-section" key={label}>
-          <SectionTitle count={items.length}>{label}</SectionTitle>
-          <div className="project-grid">{items.map((item) => <ProjectCard key={item.name} item={item} />)}</div>
-        </section>
-      ))}
-
-      <section className="home-section open-source-home">
-        <div>
-          <SectionTitle count={profile.openSource.length}>Open-source contributions</SectionTitle>
-          <p>Fixes and improvements across TensorFlow, Kubernetes, Flutter, freeCodeCamp, .NET, Svelte, and more.</p>
-          <InternalLink className="plain-button" to="/open-source" onNavigate={navigate}>Browse every contribution →</InternalLink>
-        </div>
-        <div className="logo-row" aria-label="Selected open-source projects">
-          {profile.openSource.slice(0, 12).map((item) => <ContributionLogo item={item} key={`${item.name}-${item.url}`} />)}
-        </div>
-      </section>
-
-      <section className="home-section about-home">
-        <p className="about-number">53</p>
-        <div><h2>things shipped so far.</h2><p>Plus {profile.openSource.length} open-source entries, 6,376 Fud AI downloads, and a lot of unfinished folders.</p></div>
-        <InternalLink className="plain-button" to="/experience" onNavigate={navigate}>More about me →</InternalLink>
+      <section className="home-shortcuts">
+        <InternalLink to="/projects" onNavigate={navigate}><strong>{work.length}</strong><span>all projects</span><b>→</b></InternalLink>
+        <InternalLink to="/open-source" onNavigate={navigate}><strong>{profile.openSource.length}</strong><span>open-source contributions</span><b>→</b></InternalLink>
+        <InternalLink to="/experience" onNavigate={navigate}><strong>6,376</strong><span>Fud AI downloads</span><b>→</b></InternalLink>
       </section>
     </>
   )

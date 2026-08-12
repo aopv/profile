@@ -8,6 +8,12 @@ const IMAGE_COVERS = {
   'machina-cordis': '/portfolio/machina-cordis.webp',
   'helios-01': '/portfolio/helios-01.webp',
   TetherShot: '/portfolio/tethershot.webp',
+  'hash-harbor': '/portfolio/hash-harbor-art.webp',
+  'multi-account-gmail-mcp': '/portfolio/multi-account-gmail-mcp-art.webp',
+  'macbook-24x7-agents': '/portfolio/macbook-24x7-agents-art.webp',
+  'github-readme-contribution-merger': '/portfolio/github-readme-contribution-merger-art.webp',
+  'dob-selector': '/portfolio/dob-selector-art.webp',
+  'opengraph-studio': '/portfolio/opengraph-studio-art.webp',
 }
 
 export const FEATURED_WORK = [

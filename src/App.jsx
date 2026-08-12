@@ -231,9 +231,8 @@ function HomePage({ navigate, work }) {
     <>
       <section className="hero">
         <div className="hero-copy">
-          <span className="eyebrow">Independent developer · Delhi</span>
-          <h1>Apps, agents &amp; odd little internet machines.</h1>
-          <p>I’m Apoorv. I build useful software across mobile, web, AI, browsers, and open source—usually from an idea all the way to shipping it.</p>
+          <h1>I make useful software and <em>strange</em> internet things.</h1>
+          <p>Mobile apps, AI agents, browser tools, open source, 3D machines, and experiments—built from an idea all the way to shipping.</p>
           <div className="hero-actions">
             <InternalLink className="button button-primary" to="/projects" onNavigate={navigate}>Explore all work <ArrowIcon /></InternalLink>
             <ExternalLink className="button button-secondary" href="mailto:ad13dtu@gmail.com">Say hello</ExternalLink>
@@ -245,11 +244,13 @@ function HomePage({ navigate, work }) {
         </figure>
       </section>
 
-      <section className="proof-strip" aria-label="Selected profile statistics">
-        <div><strong>Fud AI</strong><span>6,376 downloads</span></div>
-        <div><strong>Built</strong><span>{work.length} shipped things</span></div>
-        <div><strong>Contributed</strong><span>{profile.openSource.length} open-source entries</span></div>
-        <div><strong>Connected</strong><span>13K+ on LinkedIn</span></div>
+      <section className="maker-index" aria-label="Areas of work">
+        <span>Mobile apps</span><i />
+        <span>AI agents</span><i />
+        <span>Browser tools</span><i />
+        <span>Open source</span><i />
+        <span>3D machines</span><i />
+        <span>Experiments</span>
       </section>
 
       <section className="section-block featured-work">
@@ -259,7 +260,7 @@ function HomePage({ navigate, work }) {
           action={<InternalLink className="text-action" to="/projects" onNavigate={navigate}>See all {work.length} <ArrowIcon /></InternalLink>}
         />
         <div className="featured-grid">
-          {featured.map((item, index) => <WorkCard key={item.name} item={item} featured={index < 3} />)}
+          {featured.slice(0, 6).map((item, index) => <WorkCard key={item.name} item={item} featured={index < 3} />)}
         </div>
       </section>
 
@@ -295,6 +296,13 @@ function HomePage({ navigate, work }) {
       <section className="section-block activity-section">
         <SectionHeading eyebrow="Across GitHub" title="Activity" />
         <GitHubActivity />
+      </section>
+
+      <section className="section-block field-notes" aria-label="Profile figures">
+        <p><strong>6,376</strong><span>Fud AI downloads</span></p>
+        <p><strong>{work.length}</strong><span>shipped things</span></p>
+        <p><strong>{profile.openSource.length}</strong><span>open-source entries</span></p>
+        <p><strong>13K+</strong><span>LinkedIn community</span></p>
       </section>
 
       <section className="section-block profile-notes">
@@ -401,7 +409,7 @@ function Sidebar({ path, navigate, dark, setDark }) {
         <div><InternalLink className="identity-name" to="/" onNavigate={navigate}>Apoorv Darshan</InternalLink><p>Developer, founder &amp;<br />open-source builder.</p></div>
       </div>
       <nav className="side-nav" aria-label="Main navigation">
-        {nav.map(([to, label]) => <InternalLink className={path === to ? 'active' : ''} key={to} to={to} onNavigate={navigate}><span>{label}</span><ArrowIcon /></InternalLink>)}
+        {nav.map(([to, label], index) => <InternalLink className={path === to ? 'active' : ''} key={to} to={to} onNavigate={navigate}><span><b>0{index + 1}</b>{label}</span><ArrowIcon /></InternalLink>)}
       </nav>
       <div className="sidebar-footer">
         <p className="availability"><span /> Building from Delhi</p>

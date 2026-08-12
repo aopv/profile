@@ -75,6 +75,28 @@ function badgeLinks(value) {
   })
 }
 
+function githubRepository(value = '') {
+  try {
+    const url = new URL(value)
+    if (url.hostname !== 'github.com' && url.hostname !== 'www.github.com') return ''
+    const [owner, repository] = url.pathname.split('/').filter(Boolean)
+    return owner && repository ? `${owner}/${repository}` : ''
+  } catch {
+    return ''
+  }
+}
+
+function attachMissingProjectStarBadges(data) {
+  for (const key of ['apps', 'games', 'extensions', 'projects']) {
+    for (const item of data[key]) {
+      const repository = githubRepository(item.url)
+      if (repository && !item.starBadgeUrl) {
+        item.starBadgeUrl = `https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=${repository}&v=3`
+      }
+    }
+  }
+}
+
 async function attachStarCounts(data, previousStarCounts = new Map()) {
   const queue = ['apps', 'games', 'extensions', 'projects', 'openSource']
     .flatMap((key) => data[key])
@@ -166,6 +188,7 @@ async function main() {
   }
 
   const data = parseReadme(readme)
+  attachMissingProjectStarBadges(data)
   let previousStarCounts = new Map()
   try {
     const previous = JSON.parse(await readFile(OUTPUT_URL, 'utf8'))

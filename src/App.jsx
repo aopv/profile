@@ -145,7 +145,7 @@ function ArrowIcon() {
 }
 
 function StarBadge({ item }) {
-  if (!item.starCount) return null
+  if (!item.starCount || Number.parseFloat(item.starCount.replaceAll(',', '')) <= 0) return null
   return <span className="star-count" aria-label={`${displayName(item.name)} has ${item.starCount} GitHub stars`}>★ {item.starCount}</span>
 }
 

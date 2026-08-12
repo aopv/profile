@@ -57,7 +57,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "330"
+      "starCount": "332"
     },
     {
       "name": "verceltics",
@@ -111,7 +111,8 @@
       "description": "Chrome extension that hides X (Twitter) posts from countries you pick",
       "status": "",
       "marker": "🗺️",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/x-country-filter&v=3",
+      "starCount": "0"
     },
     {
       "name": "newest-youtube-search",
@@ -119,7 +120,8 @@
       "description": "Chrome extension for true newest-first YouTube video search using the YouTube Data API",
       "status": "",
       "marker": "🆕",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/newest-youtube-search&v=3",
+      "starCount": "3"
     },
     {
       "name": "streaming-autopause",
@@ -127,7 +129,8 @@
       "description": "Chrome extension that auto-pauses Netflix & Prime Video when you switch away",
       "status": "",
       "marker": "⏸️",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/streaming-autopause&v=3",
+      "starCount": "0"
     },
     {
       "name": "streaming-indian-filter",
@@ -135,7 +138,8 @@
       "description": "Hides Indian shows from Netflix & Prime Video (personal preference, not a judgment)",
       "status": "",
       "marker": "🎬",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/streaming-indian-filter&v=3",
+      "starCount": "0"
     }
   ],
   "projects": [
@@ -145,7 +149,8 @@
       "description": "My corner of the internet",
       "status": "",
       "marker": "👤",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/profile&v=3",
+      "starCount": "0"
     },
     {
       "name": "browser-cookie-bridge",
@@ -153,7 +158,8 @@
       "description": "Local cookie and session transfer between Chromium browsers and Codex on macOS",
       "status": "",
       "marker": "🍪",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/browser-cookie-bridge&v=3",
+      "starCount": "1"
     },
     {
       "name": "machina-cordis",
@@ -161,7 +167,8 @@
       "description": "Fully editable, animated mechanical heart reactor built procedurally in Blender",
       "status": "",
       "marker": "🫀",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/machina-cordis&v=3",
+      "starCount": "0"
     },
     {
       "name": "hash-harbor",
@@ -169,7 +176,8 @@
       "description": "Local torrent streamer and downloader with a native engine and browser UI",
       "status": "",
       "marker": "⚓",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/hash-harbor&v=3",
+      "starCount": "0"
     },
     {
       "name": "multi-account-gmail-mcp",
@@ -177,7 +185,8 @@
       "description": "Local Codex plugin and MCP server for explicit multi-account Gmail access",
       "status": "",
       "marker": "📬",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/multi-account-gmail-mcp&v=3",
+      "starCount": "0"
     },
     {
       "name": "helios-01",
@@ -185,7 +194,8 @@
       "description": "Editable Blender pocket orrery with an animated mechanical solar system",
       "status": "",
       "marker": "🪐",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/helios-01&v=3",
+      "starCount": "1"
     },
     {
       "name": "crossposter",
@@ -211,7 +221,8 @@
       "description": "Run AI agents 24x7 on a MacBook: never sleep, lid closed, display off, fully reversible",
       "status": "",
       "marker": "🌙",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/macbook-24x7-agents&v=3",
+      "starCount": "0"
     },
     {
       "name": "linkedin-connection-sender",
@@ -219,7 +230,8 @@
       "description": "Send LinkedIn connection requests by country and role at a human-like pace",
       "status": "",
       "marker": "🤝",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/linkedin-connection-sender&v=3",
+      "starCount": "0"
     },
     {
       "name": "rekisei",
@@ -227,7 +239,8 @@
       "description": "Edit a clean, concise LaTeX resume by chatting with Claude or Codex",
       "status": "",
       "marker": "📝",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/rekisei&v=3",
+      "starCount": "0"
     },
     {
       "name": "opengraph-studio",
@@ -235,7 +248,8 @@
       "description": "Live OpenGraph metadata editor and previewer for social platforms",
       "status": "",
       "marker": "🌐",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/opengraph-studio&v=3",
+      "starCount": "0"
     },
     {
       "name": "nornlore",
@@ -243,7 +257,8 @@
       "description": "Discover what the universe was doing the day you were born",
       "status": "",
       "marker": "🌌",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/nornlore&v=3",
+      "starCount": "0"
     },
     {
       "name": "how-rich-are-you",
@@ -251,7 +266,8 @@
       "description": "90s-style income rank calculator with broke/rich meme GIF reactions",
       "status": "",
       "marker": "💸",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/how-rich-are-you&v=3",
+      "starCount": "0"
     },
     {
       "name": "billionaire-smash",
@@ -259,7 +275,8 @@
       "description": "Facemash for Forbes billionaires, vote on who wins head-to-head",
       "status": "",
       "marker": "💰",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/billionaire-smash&v=3",
+      "starCount": "0"
     },
     {
       "name": "github-readme-contribution-merger",
@@ -276,7 +293,8 @@
       "description": "Proof of work, formatted as a receipt with a price tag on it",
       "status": "",
       "marker": "🧾",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/daxerly&v=3",
+      "starCount": "0"
     },
     {
       "name": "doodle-beats",
@@ -284,7 +302,8 @@
       "description": "Doodle-style web music player",
       "status": "",
       "marker": "🎵",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/doodle-beats&v=3",
+      "starCount": "1"
     },
     {
       "name": "dob-selector",
@@ -301,7 +320,8 @@
       "description": "Slot machine date picker; intentionally bad UI",
       "status": "",
       "marker": "🎰",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/slot-machine-date-picker&v=3",
+      "starCount": "2"
     },
     {
       "name": "wellfound-bot",
@@ -309,7 +329,8 @@
       "description": "Automate your Wellfound (AngelList) job hunt with human-like Playwright browser automation",
       "status": "",
       "marker": "🎯",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/wellfound-bot&v=3",
+      "starCount": "0"
     },
     {
       "name": "karasufumi",
@@ -317,7 +338,8 @@
       "description": "Automated job hunt via Claude Code/Codex with Gmail MCP outreach",
       "status": "",
       "marker": "🐦‍⬛",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/karasufumi&v=3",
+      "starCount": "1"
     },
     {
       "name": "Xscore",
@@ -325,7 +347,8 @@
       "description": "X account engagement scorer using the open-source algorithm",
       "status": "",
       "marker": "📊",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/Xscore&v=3",
+      "starCount": "0"
     },
     {
       "name": "zyro",
@@ -333,7 +356,8 @@
       "description": "AI news website (GNews.io API, 100 req/day limit)",
       "status": "",
       "marker": "📰",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/zyro&v=3",
+      "starCount": "1"
     },
     {
       "name": "axentra-os-affiliate",
@@ -349,7 +373,8 @@
       "description": "Claude Code reimplemented in pure C, the lowest level it's ever been done",
       "status": "",
       "marker": "🦀",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/claw-c&v=3",
+      "starCount": "5"
     },
     {
       "name": "resume-codes",
@@ -357,7 +382,8 @@
       "description": "Resume builder with live preview",
       "status": "",
       "marker": "📄",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/resume-codes&v=3",
+      "starCount": "0"
     },
     {
       "name": "zombie-game",
@@ -365,7 +391,8 @@
       "description": "3D zombie survival FPS with Three.js",
       "status": "",
       "marker": "🎮",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/zombie-game&v=3",
+      "starCount": "3"
     },
     {
       "name": "gesture-keyboard",
@@ -373,7 +400,8 @@
       "description": "MediaPipe-powered hands-free virtual keyboard",
       "status": "",
       "marker": "🖐️",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/gesture-keyboard&v=3",
+      "starCount": "1"
     },
     {
       "name": "drawtica",
@@ -381,7 +409,8 @@
       "description": "Hand-gesture drawing app",
       "status": "",
       "marker": "🎨",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/drawtica&v=3",
+      "starCount": "1"
     },
     {
       "name": "peek-a-pupil",
@@ -389,7 +418,8 @@
       "description": "Horror-themed interactive eye with gesture control",
       "status": "",
       "marker": "👁️",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/peek-a-pupil&v=3",
+      "starCount": "1"
     },
     {
       "name": "headshot-tracker",
@@ -397,7 +427,8 @@
       "description": "Real-time face tracking with sci-fi HUD",
       "status": "",
       "marker": "🎯",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/headshot-tracker&v=3",
+      "starCount": "4"
     },
     {
       "name": "compress-image",
@@ -405,7 +436,8 @@
       "description": "Client-side image compression (browser-only, nothing uploaded)",
       "status": "",
       "marker": "🖼️",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/compress-image&v=3",
+      "starCount": "1"
     },
     {
       "name": "dtu-clone",
@@ -413,7 +445,8 @@
       "description": "DTU website with cyberpunk UI",
       "status": "",
       "marker": "🏫",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/dtu-clone&v=3",
+      "starCount": "2"
     },
     {
       "name": "redbull",
@@ -421,7 +454,8 @@
       "description": "Red Bull landing page reimagined",
       "status": "",
       "marker": "🐂",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/redbull&v=3",
+      "starCount": "1"
     },
     {
       "name": "simon-says",
@@ -429,7 +463,8 @@
       "description": "Fantasy-themed Simon Says memory game",
       "status": "",
       "marker": "🐉",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/simon-says&v=3",
+      "starCount": "2"
     },
     {
       "name": "toggle-button",
@@ -437,7 +472,8 @@
       "description": "Star Wars themed dark/light mode toggle",
       "status": "",
       "marker": "🌓",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/toggle-button&v=3",
+      "starCount": "1"
     },
     {
       "name": "bmw",
@@ -445,7 +481,8 @@
       "description": "BMW landing page clone",
       "status": "",
       "marker": "🚗",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/bmw&v=3",
+      "starCount": "1"
     },
     {
       "name": "monster-energy",
@@ -453,7 +490,8 @@
       "description": "Monster Energy landing page",
       "status": "",
       "marker": "🐉",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/monster-energy&v=3",
+      "starCount": "1"
     },
     {
       "name": "random-dog-images",
@@ -461,7 +499,8 @@
       "description": "Random dog images powered by Dog CEO API",
       "status": "",
       "marker": "🐕",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/random-dog-images&v=3",
+      "starCount": "1"
     },
     {
       "name": "random-cat-facts",
@@ -469,7 +508,8 @@
       "description": "Cat facts powered by catfact.ninja API",
       "status": "",
       "marker": "🐱",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/random-cat-facts&v=3",
+      "starCount": "1"
     },
     {
       "name": "todo-app",
@@ -477,7 +517,8 @@
       "description": "Harry Potter-themed To-Do app",
       "status": "",
       "marker": "🧙",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/todo-app&v=3",
+      "starCount": "1"
     },
     {
       "name": "spotify-clone",
@@ -485,7 +526,8 @@
       "description": "Spotify UI clone",
       "status": "",
       "marker": "🎧",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/spotify-clone&v=3",
+      "starCount": "3"
     }
   ],
   "openSource": [

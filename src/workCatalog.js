@@ -14,6 +14,44 @@ const IMAGE_COVERS = {
   'github-readme-contribution-merger': '/portfolio/github-readme-contribution-merger-art.webp',
   'dob-selector': '/portfolio/dob-selector-art.webp',
   'opengraph-studio': '/portfolio/opengraph-studio-art.webp',
+  'quit-all': '/portfolio/projects/quit-all.webp',
+  iitjee: '/portfolio/projects/iitjee.webp',
+  'x-country-filter': '/portfolio/projects/x-country-filter.webp',
+  'newest-youtube-search': '/portfolio/projects/newest-youtube-search.webp',
+  'streaming-autopause': '/portfolio/projects/streaming-autopause.webp',
+  'streaming-indian-filter': '/portfolio/projects/streaming-indian-filter.webp',
+  profile: '/portfolio/projects/profile.webp',
+  'linkedin-connection-sender': '/portfolio/projects/linkedin-connection-sender.webp',
+  rekisei: '/portfolio/projects/rekisei.webp',
+  nornlore: '/portfolio/projects/nornlore.webp',
+  'how-rich-are-you': '/portfolio/projects/how-rich-are-you.webp',
+  'billionaire-smash': '/portfolio/projects/billionaire-smash.webp',
+  daxerly: '/portfolio/projects/daxerly.webp',
+  'doodle-beats': '/portfolio/projects/doodle-beats.webp',
+  'slot-machine-date-picker': '/portfolio/projects/slot-machine-date-picker.webp',
+  'wellfound-bot': '/portfolio/projects/wellfound-bot.webp',
+  karasufumi: '/portfolio/projects/karasufumi.webp',
+  Xscore: '/portfolio/projects/Xscore.webp',
+  zyro: '/portfolio/projects/zyro.webp',
+  'axentra-os-affiliate': '/portfolio/projects/axentra-os-affiliate.webp',
+  'claw-c': '/portfolio/projects/claw-c.webp',
+  'resume-codes': '/portfolio/projects/resume-codes.webp',
+  'zombie-game': '/portfolio/projects/zombie-game.webp',
+  'gesture-keyboard': '/portfolio/projects/gesture-keyboard.webp',
+  drawtica: '/portfolio/projects/drawtica.webp',
+  'peek-a-pupil': '/portfolio/projects/peek-a-pupil.webp',
+  'headshot-tracker': '/portfolio/projects/headshot-tracker.webp',
+  'compress-image': '/portfolio/projects/compress-image.webp',
+  'dtu-clone': '/portfolio/projects/dtu-clone.webp',
+  redbull: '/portfolio/projects/redbull.webp',
+  'simon-says': '/portfolio/projects/simon-says.webp',
+  'toggle-button': '/portfolio/projects/toggle-button.webp',
+  bmw: '/portfolio/projects/bmw.webp',
+  'monster-energy': '/portfolio/projects/monster-energy.webp',
+  'random-dog-images': '/portfolio/projects/random-dog-images.webp',
+  'random-cat-facts': '/portfolio/projects/random-cat-facts.webp',
+  'todo-app': '/portfolio/projects/todo-app.webp',
+  'spotify-clone': '/portfolio/projects/spotify-clone.webp',
 }
 
 export const FEATURED_WORK = [
@@ -57,15 +95,6 @@ const PALETTES = [
   ['#36a6c8', '#d5f2f7'],
 ]
 
-const CATEGORY_COVERS = {
-  Apps: '/portfolio/fallback-apps.webp',
-  Browser: '/portfolio/fallback-browser.webp',
-  'Developer tools': '/portfolio/fallback-developer-tools.webp',
-  AI: '/portfolio/fallback-ai.webp',
-  Experiments: '/portfolio/fallback-experiments.webp',
-  '3D & art': '/portfolio/fallback-3d-art.webp',
-}
-
 export const WORK_FILTERS = ['All', 'Apps', 'Browser', 'Developer tools', 'AI', 'Experiments', '3D & art']
 
 function stableNumber(value) {
@@ -100,7 +129,7 @@ export function buildWorkCatalog(profile) {
       source,
       category,
       filters: [...filters],
-      cover: IMAGE_COVERS[item.name] || CATEGORY_COVERS[category],
+      cover: IMAGE_COVERS[item.name],
       customCover: Boolean(IMAGE_COVERS[item.name]),
       accent: palette[0],
       accentSoft: palette[1],

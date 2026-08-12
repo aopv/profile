@@ -45,7 +45,7 @@ function activityUrl(background) {
 
 function prepareActivitySvg(svg, theme) {
   const colors = theme === 'dark'
-    ? { text: '#f8f4ea', empty: '#202b46', originalText: '#c9d1d9', originalEmpty: '#161b22' }
+    ? { text: '#f8f4ea', empty: '#242426', originalText: '#c9d1d9', originalEmpty: '#161b22' }
     : { text: '#10192d', empty: '#dfe5f1', originalText: '#24292f', originalEmpty: '#ebedf0' }
 
   const camouflaged = svg
@@ -99,13 +99,45 @@ function ExternalLink({ href, children, className = '', ariaLabel, style }) {
   )
 }
 
-function InternalLink({ to, onNavigate, children, className = '' }) {
+function InternalLink({ to, onNavigate, children, className = '', ariaLabel }) {
   const handleClick = (event) => {
     if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return
     event.preventDefault()
     onNavigate(to)
   }
-  return <a className={className} href={to} onClick={handleClick}>{children}</a>
+  return <a className={className} href={to} onClick={handleClick} aria-label={ariaLabel}>{children}</a>
+}
+
+const EXPERIENCE_MARKS = {
+  'Extensions for Chrome': '/portfolio/marks/extensions-chrome.webp',
+  'Google Play': '/portfolio/marks/google-play.webp',
+  'App Store': '/portfolio/marks/app-store.webp',
+  XIRCLS: '/portfolio/marks/xircls.webp',
+  'Soul AI': '/portfolio/marks/soul-ai.webp',
+  Outlier: '/portfolio/marks/outlier.webp',
+  YouTube: '/portfolio/marks/youtube.webp',
+}
+
+const EDUCATION_MARKS = {
+  'University of the People': '/portfolio/marks/uopeople.webp',
+  'Delhi Technological University (Formerly DCE)': '/portfolio/marks/dtu.webp',
+  'ALLEN Career Institute': '/portfolio/marks/allen.webp',
+  FIITJEE: '/portfolio/marks/fiitjee.webp',
+  'SSG Coaching, Shaktinagar': '/portfolio/marks/ssg.webp',
+  'Dhruva Public School Jai Vihar - New Delhi': '/portfolio/marks/school.webp',
+  'Jyoti School Jayant - MP': '/portfolio/marks/school.webp',
+}
+
+const NETWORK_MARKS = {
+  Profile: '◎', Email: '@', Twitter: 'X', LinkedIn: 'in', GitHub: 'GH', YouTube: '▶',
+  Twitch: '◈', Instagram: 'IG', 'Product Hunt': 'P', TrustMRR: '$', Bluesky: 'BS',
+  Mastodon: 'M', Peerlist: 'PL', 'Dev.to': 'DEV', Credly: 'C', Grokipedia: 'G',
+  'Support me on Ko-Fi': '☕', Schedule: 'CAL', Dribbble: 'D', Pinterest: 'P',
+  'Hacker News': 'Y', Nostr: 'N',
+}
+
+function IdentityMark({ src, alt }) {
+  return <img className="identity-mark" src={src} alt={alt} loading="lazy" />
 }
 
 function ArrowIcon() {
@@ -203,7 +235,10 @@ function ExperienceCards({ limit }) {
       {items.map((item) => (
         <article className="timeline-card" key={`${item.role}-${item.company}-${item.dates}`}>
           <span className="timeline-date">{item.dates}</span>
-          <div><h3>{item.role}</h3><p className="timeline-company">{item.company}</p><p>{item.summary}</p></div>
+          <div className="timeline-main">
+            <IdentityMark src={EXPERIENCE_MARKS[item.company]} alt={`${item.company} themed mark`} />
+            <div><h3>{item.role}</h3><p className="timeline-company">{item.company}</p><p>{item.summary}</p></div>
+          </div>
         </article>
       ))}
     </div>
@@ -217,10 +252,13 @@ function EducationCards({ limit }) {
       {items.map((item) => (
         <article className="timeline-card" key={`${item.institution}-${item.program}-${item.dates}`}>
           <span className="timeline-date">{item.dates}</span>
-          <div>
-            <h3>{item.institution}</h3>
-            <p className="timeline-company">{item.program}</p>
-            {(item.grade || item.note) && <p>{[item.grade, item.note].filter(Boolean).join(' · ')}</p>}
+          <div className="timeline-main">
+            <IdentityMark src={EDUCATION_MARKS[item.institution]} alt={`${item.institution} themed mark`} />
+            <div>
+              <h3>{item.institution}</h3>
+              <p className="timeline-company">{item.program}</p>
+              {(item.grade || item.note) && <p>{[item.grade, item.note].filter(Boolean).join(' · ')}</p>}
+            </div>
           </div>
         </article>
       ))}
@@ -333,15 +371,18 @@ function HomePage({ navigate, work }) {
           <p>{profile.intro.statement}</p>
         </div>
         <div className="connect-links">
-          {profile.connect.map((item) => <ExternalLink key={`${item.name}-${item.url}`} href={item.url}>{item.name}<ArrowIcon /></ExternalLink>)}
+          {profile.connect.map((item) => <ExternalLink key={`${item.name}-${item.url}`} href={item.url}><span className="connect-label"><span className="network-mark" aria-hidden="true">{NETWORK_MARKS[item.name] || item.name.charAt(0)}</span>{item.name}</span><ArrowIcon /></ExternalLink>)}
         </div>
       </section>
 
       <section className="section-block last-notes">
-        <div>
-          <span className="eyebrow">Writing</span>
-          <h2><ExternalLink href={profile.writing.url}>{profile.writing.name} <ArrowIcon /></ExternalLink></h2>
-          <p>{profile.writing.description}</p>
+        <div className="writing-note">
+          <IdentityMark src="/portfolio/marks/medium.webp" alt="Themed writing medallion" />
+          <div>
+            <span className="eyebrow">Writing</span>
+            <h2><ExternalLink href={profile.writing.url}>{profile.writing.name} <ArrowIcon /></ExternalLink></h2>
+            <p>{profile.writing.description}</p>
+          </div>
         </div>
         <blockquote>{profile.philosophy}</blockquote>
         <details className="random-facts">
@@ -415,7 +456,7 @@ function Sidebar({ path, navigate, dark, setDark }) {
   return (
     <aside className="sidebar">
       <div className="identity">
-        <InternalLink className="monogram" to="/" onNavigate={navigate} aria-label="Apoorv Darshan home"><span>A</span><span>D</span></InternalLink>
+        <InternalLink className="monogram" to="/" onNavigate={navigate} ariaLabel="Apoorv Darshan home">AD</InternalLink>
         <div><InternalLink className="identity-name" to="/" onNavigate={navigate}>Apoorv Darshan</InternalLink><p>Developer, founder &amp;<br />open-source builder.</p></div>
       </div>
       <nav className="side-nav" aria-label="Main navigation">
@@ -447,16 +488,16 @@ function MobileHeader({ path, navigate, dark, setDark }) {
 
 function App() {
   const [dark, setDark] = useState(() => {
-    const saved = localStorage.getItem('apoorv-theme-v2')
-    return saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches
+    const saved = localStorage.getItem('apoorv-theme-v3')
+    return saved ? saved === 'dark' : true
   })
   const [path, setPath] = useState(currentPath)
   const work = useMemo(() => buildWorkCatalog(profile), [])
 
   useEffect(() => {
     document.documentElement.dataset.theme = dark ? 'dark' : 'light'
-    localStorage.setItem('apoorv-theme-v2', dark ? 'dark' : 'light')
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#10192d' : '#f6f4ed')
+    localStorage.setItem('apoorv-theme-v3', dark ? 'dark' : 'light')
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#0b0b0c' : '#f6f4ed')
   }, [dark])
 
   useEffect(() => {

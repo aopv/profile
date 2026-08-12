@@ -136,6 +136,51 @@ const NETWORK_MARKS = {
   'Hacker News': 'Y', Nostr: 'N',
 }
 
+const TECHNOLOGY_GROUPS = [
+  {
+    name: 'App craft',
+    note: 'Native products and platform work',
+    accent: '#ff6b57',
+    items: ['Swift', 'SwiftUI', 'Kotlin', 'Jetpack Compose', 'Xcode', 'HealthKit', 'AVFoundation', 'Android Studio', 'macOS'],
+  },
+  {
+    name: 'Web & browser',
+    note: 'Interfaces, sites, and browser tooling',
+    accent: '#52d6a2',
+    items: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Astro', 'TailwindCSS', 'Three.js', 'Playwright', 'Chrome Extensions'],
+  },
+  {
+    name: 'Backend & systems',
+    note: 'Services, data, protocols, and low-level work',
+    accent: '#f4c84a',
+    items: ['Node.js', 'Python', 'Go', 'C', 'MongoDB', 'PostgreSQL', 'OAuth 2.0', 'OpenAPI', 'Shell/Bash', 'CLI'],
+  },
+  {
+    name: 'Infra & creative',
+    note: 'Shipping, automation, source, and 3D',
+    accent: '#66d9c1',
+    items: ['Docker', 'Cloudflare', 'Git', 'Blender'],
+  },
+  {
+    name: 'AI workbench',
+    note: 'Agents, coding partners, and protocols',
+    accent: '#9d73ea',
+    items: ['Claude', 'Codex', 'MCP'],
+  },
+]
+
+const TECH_GLYPHS = {
+  JavaScript: 'JS', TypeScript: 'TS', 'Next.js': 'N', 'Node.js': 'N', 'Three.js': '3',
+  'OAuth 2.0': 'O', 'Jetpack Compose': 'JC', 'Chrome Extensions': 'CE',
+  'Android Studio': 'AS', 'Shell/Bash': '$_', PostgreSQL: 'PG', MongoDB: 'M',
+}
+
+function technologyGlyph(name) {
+  if (TECH_GLYPHS[name]) return TECH_GLYPHS[name]
+  const words = name.split(/[\s/.]+/).filter(Boolean)
+  return words.length > 1 ? words.map((word) => word[0]).join('').slice(0, 2).toUpperCase() : name.slice(0, 2).toUpperCase()
+}
+
 function IdentityMark({ src, alt }) {
   return <img className="identity-mark" src={src} alt={alt} loading="lazy" />
 }
@@ -266,6 +311,43 @@ function EducationCards({ limit }) {
   )
 }
 
+function ToolBench() {
+  const known = new Set(TECHNOLOGY_GROUPS.flatMap((group) => group.items))
+  const additional = profile.technologies.filter((technology) => !known.has(technology))
+  const groups = additional.length
+    ? [...TECHNOLOGY_GROUPS, { name: 'Also exploring', note: 'New additions to the bench', accent: '#4666ff', items: additional }]
+    : TECHNOLOGY_GROUPS
+
+  return (
+    <section className="section-block tool-bench" aria-labelledby="tool-bench-title">
+      <header className="tool-bench-header">
+        <div>
+          <span className="eyebrow">The tool bench</span>
+          <h2 id="tool-bench-title">The instruments behind the work.</h2>
+        </div>
+        <p><strong>{profile.technologies.length}</strong> technologies across native apps, the web, infrastructure, creative tooling, and AI.</p>
+      </header>
+      <div className="tool-drawers">
+        {groups.map((group, groupIndex) => (
+          <section className="tool-drawer" key={group.name} style={{ '--tool-accent': group.accent }}>
+            <header>
+              <span className="drawer-index" aria-hidden="true">0{groupIndex + 1}</span>
+              <div><h3>{group.name}</h3><p>{group.note}</p></div>
+              <span className="drawer-count">{group.items.length}</span>
+            </header>
+            <ul>
+              {group.items.map((technology) => (
+                <li key={technology}><span aria-hidden="true">{technologyGlyph(technology)}</span><strong>{technology}</strong></li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+      <p className="tool-bench-note"><span aria-hidden="true">✦</span> I pick tools for the problem, not the other way around.</p>
+    </section>
+  )
+}
+
 function HomePage({ navigate, work }) {
   const featured = FEATURED_WORK.map((name) => work.find((item) => item.name === name)).filter(Boolean)
   return (
@@ -293,6 +375,8 @@ function HomePage({ navigate, work }) {
         <span>3D machines</span><i />
         <span>Experiments</span>
       </section>
+
+      <ToolBench />
 
       <section className="section-block featured-work">
         <div className="featured-board">

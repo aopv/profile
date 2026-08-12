@@ -1,5 +1,5 @@
 export const SITE_URL = 'https://apoorvdarshan.com'
-export const SOCIAL_IMAGE = `${SITE_URL}/apoorv-darshan-social-v2.png`
+export const SOCIAL_IMAGE = `${SITE_URL}/apoorv-darshan-social-v3.png`
 
 export const SEO_BY_PATH = {
   '/': {

@@ -8,23 +8,14 @@ import { SEO_BY_PATH, SOCIAL_IMAGE, canonicalUrl, structuredData } from './seo'
 const ROUTES = new Set(['/', '/experience', '/education', '/projects', '/open-source'])
 
 const NAME_OVERRIDES = {
-  'fud-ai': 'Fud AI',
-  freeCodeCamp: 'freeCodeCamp',
-  tensorflow: 'TensorFlow',
-  jquery: 'jQuery',
-  jupyterlab: 'JupyterLab',
-  springboot: 'Spring Boot',
-  'spring-boot': 'Spring Boot',
-  'opengraph-studio': 'OpenGraph Studio',
-  'github-readme-contribution-merger': 'GitHub README Contribution Merger',
+  'fud-ai': 'Fud AI', freeCodeCamp: 'freeCodeCamp', tensorflow: 'TensorFlow',
+  jquery: 'jQuery', jupyterlab: 'JupyterLab', springboot: 'Spring Boot',
+  'spring-boot': 'Spring Boot', 'opengraph-studio': 'OpenGraph Studio',
+  'github-readme-contribution-merger': 'GitHub Contribution Merger',
   'macbook-24x7-agents': 'MacBook 24×7 Agents',
   'linkedin-connection-sender': 'LinkedIn Connection Sender',
-  'axentra-os-affiliate': 'Axentra OS Affiliate',
-  iitjee: 'IIT JEE',
-  Xscore: 'XScore',
-  WeasyPrint: 'WeasyPrint',
-  TEAMMATES: 'TEAMMATES',
-  CodexBar: 'CodexBar',
+  'axentra-os-affiliate': 'Axentra OS Affiliate', iitjee: 'IIT JEE',
+  Xscore: 'XScore', WeasyPrint: 'WeasyPrint', TEAMMATES: 'TEAMMATES', CodexBar: 'CodexBar',
 }
 
 const WORD_FORMS = {
@@ -33,54 +24,32 @@ const WORD_FORMS = {
   os: 'OS', pr: 'PR', readme: 'README', sql: 'SQL', ui: 'UI', url: 'URL',
 }
 
-const ACTIVITY_COLORS = 'ff6b57,f4c84a'
-let activitySvgPromise
-
-function activityUrl(background) {
-  const url = new URL(profile.activityImage)
-  url.searchParams.set('colors', ACTIVITY_COLORS)
-  url.searchParams.set('bg', background)
-  return url.toString()
+const EXPERIENCE_MARKS = {
+  'Extensions for Chrome': '/identity-marks-real/chrome.png',
+  'Google Play': '/identity-marks-real/google-play.png',
+  'App Store': '/identity-marks-real/apple.png',
+  XIRCLS: '/identity-marks-real/xircls.png',
+  Outlier: '/identity-marks-real/outlier.png',
+  YouTube: '/identity-marks-real/youtube.png',
 }
 
-function prepareActivitySvg(svg, theme) {
-  const colors = theme === 'dark'
-    ? { text: '#f8f4ea', empty: '#242426', originalText: '#c9d1d9', originalEmpty: '#161b22' }
-    : { text: '#10192d', empty: '#dfe5f1', originalText: '#24292f', originalEmpty: '#ebedf0' }
-
-  const camouflaged = svg
-    .replace(/<rect width="[^"]+" height="[^"]+" fill="#[0-9a-fA-F]{6}" rx="6" ry="6"\s*\/>/, '')
-    .replaceAll(colors.originalText, colors.text)
-    .replaceAll(colors.originalEmpty, colors.empty)
-
-  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(camouflaged)}`
+const EDUCATION_MARKS = {
+  'University of the People': '/identity-marks-real/uopeople.png',
+  'Delhi Technological University (Formerly DCE)': '/identity-marks-real/dtu.png',
+  'ALLEN Career Institute': '/identity-marks-real/allen.png',
+  FIITJEE: '/identity-marks-real/fiitjee.png',
 }
 
-function loadActivitySvgs() {
-  if (!activitySvgPromise) {
-    activitySvgPromise = Promise.all([
-      fetch(activityUrl('light')).then((response) => {
-        if (!response.ok) throw new Error(`Activity graph returned ${response.status}`)
-        return response.text()
-      }),
-      fetch(activityUrl('dark')).then((response) => {
-        if (!response.ok) throw new Error(`Activity graph returned ${response.status}`)
-        return response.text()
-      }),
-    ]).then(([light, dark]) => ({
-      light: prepareActivitySvg(light, 'light'),
-      dark: prepareActivitySvg(dark, 'dark'),
-    }))
-  }
-  return activitySvgPromise
+const CONTRIBUTION_LOGOS = {
+  freeCodeCamp: 'freeCodeCamp', tensorflow: 'tensorflow', flutter: 'flutter', dify: 'langgenius',
+  kubernetes: 'kubernetes', svelte: 'sveltejs', laravel: 'laravel', 'spring-boot': 'spring-projects',
+  springboot: 'spring-projects', ansible: 'ansible', jquery: 'jquery', julia: 'JuliaLang',
+  zx: 'google', core: 'dotnet', runtime: 'dotnet', luigi: 'spotify',
 }
 
 function displayName(name) {
   if (NAME_OVERRIDES[name]) return NAME_OVERRIDES[name]
-  return name
-    .split(/[-_]/)
-    .map((word) => WORD_FORMS[word.toLowerCase()] || `${word.charAt(0).toUpperCase()}${word.slice(1)}`)
-    .join(' ')
+  return name.split(/[-_]/).map((word) => WORD_FORMS[word.toLowerCase()] || `${word.charAt(0).toUpperCase()}${word.slice(1)}`).join(' ')
 }
 
 function currentPath() {
@@ -92,11 +61,7 @@ function currentPath() {
 
 function ExternalLink({ href, children, className = '', ariaLabel, style }) {
   const isWeb = href.startsWith('http')
-  return (
-    <a className={className} href={href} target={isWeb ? '_blank' : undefined} rel={isWeb ? 'noreferrer' : undefined} aria-label={ariaLabel} style={style}>
-      {children}
-    </a>
-  )
+  return <a className={className} href={href} target={isWeb ? '_blank' : undefined} rel={isWeb ? 'noreferrer' : undefined} aria-label={ariaLabel} style={style}>{children}</a>
 }
 
 function InternalLink({ to, onNavigate, children, className = '', ariaLabel }) {
@@ -108,38 +73,6 @@ function InternalLink({ to, onNavigate, children, className = '', ariaLabel }) {
   return <a className={className} href={to} onClick={handleClick} aria-label={ariaLabel}>{children}</a>
 }
 
-const EXPERIENCE_MARKS = {
-  'Extensions for Chrome': '/portfolio/marks/extensions-chrome.webp',
-  'Google Play': '/portfolio/marks/google-play.webp',
-  'App Store': '/portfolio/marks/app-store.webp',
-  XIRCLS: '/portfolio/marks/xircls.webp',
-  'Soul AI': '/portfolio/marks/soul-ai.webp',
-  Outlier: '/portfolio/marks/outlier.webp',
-  YouTube: '/portfolio/marks/youtube.webp',
-}
-
-const EDUCATION_MARKS = {
-  'University of the People': '/portfolio/marks/uopeople.webp',
-  'Delhi Technological University (Formerly DCE)': '/portfolio/marks/dtu.webp',
-  'ALLEN Career Institute': '/portfolio/marks/allen.webp',
-  FIITJEE: '/portfolio/marks/fiitjee.webp',
-  'SSG Coaching, Shaktinagar': '/portfolio/marks/ssg.webp',
-  'Dhruva Public School Jai Vihar - New Delhi': '/portfolio/marks/school.webp',
-  'Jyoti School Jayant - MP': '/portfolio/marks/school.webp',
-}
-
-const NETWORK_MARKS = {
-  Profile: '◎', Email: '@', Twitter: 'X', LinkedIn: 'in', GitHub: 'GH', YouTube: '▶',
-  Twitch: '◈', Instagram: 'IG', 'Product Hunt': 'P', TrustMRR: '$', Bluesky: 'BS',
-  Mastodon: 'M', Peerlist: 'PL', 'Dev.to': 'DEV', Credly: 'C', Grokipedia: 'G',
-  'Support me on Ko-Fi': '☕', Schedule: 'CAL', Dribbble: 'D', Pinterest: 'P',
-  'Hacker News': 'Y', Nostr: 'N',
-}
-
-function IdentityMark({ src, alt }) {
-  return <img className="identity-mark" src={src} alt={alt} loading="lazy" />
-}
-
 function ArrowIcon() {
   return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" /></svg>
 }
@@ -149,246 +82,117 @@ function StarBadge({ item }) {
   return <span className="star-count" aria-label={`${displayName(item.name)} has ${item.starCount} GitHub stars`}>★ {item.starCount}</span>
 }
 
-function GitHubActivity() {
-  const [graphs, setGraphs] = useState(null)
-
-  useEffect(() => {
-    let active = true
-    loadActivitySvgs()
-      .then((result) => { if (active) setGraphs(result) })
-      .catch(() => { if (active) setGraphs({ light: activityUrl('light'), dark: activityUrl('dark') }) })
-    return () => { active = false }
-  }, [])
-
+function Brand({ navigate }) {
   return (
-    <ExternalLink className="activity-link" href={activityUrl('light')}>
-      {graphs ? (
-        <>
-          <img className="activity-graph activity-graph-light" src={graphs.light} alt="Apoorv Darshan's merged GitHub contribution graph" />
-          <img className="activity-graph activity-graph-dark" src={graphs.dark} alt="Apoorv Darshan's merged GitHub contribution graph" />
-        </>
-      ) : <span className="activity-placeholder" aria-label="Loading Apoorv Darshan's GitHub contribution graph" role="img" />}
-    </ExternalLink>
+    <InternalLink className="brand" to="/" onNavigate={navigate} ariaLabel="Apoorv Darshan home">
+      <span className="brand-mark" aria-hidden="true">AD</span>
+      <span><strong>Apoorv Darshan</strong><small>makes things on the internet</small></span>
+    </InternalLink>
   )
 }
 
-function WorkCard({ item, featured = false }) {
-  const style = { '--card-accent': item.accent, '--card-soft': item.accentSoft }
+function SiteHeader({ path, navigate }) {
+  const nav = [['/projects', 'All work'], ['/open-source', 'Open source'], ['/experience', 'About']]
   return (
-    <ExternalLink className={`work-card${featured ? ' work-card-featured' : ''}`} href={item.url} style={style}>
-      <span className={`work-cover${item.cover ? ' has-image' : ''}${item.customCover ? '' : ' category-cover'}`}>
-        {item.cover ? (
-          <>
-            <img src={item.cover} alt="" loading="lazy" />
-            {!item.customCover && <span className="category-cover-name" aria-hidden="true">{displayName(item.name)}</span>}
-          </>
-        ) : (
-          <>
-            <span className="cover-orbit" aria-hidden="true" />
-            <span className="cover-marker" aria-hidden="true">{item.marker || '✦'}</span>
-            <span className="cover-name" aria-hidden="true">{displayName(item.name)}</span>
-          </>
-        )}
-      </span>
-      <span className="work-card-body">
-        <span className="work-meta">
-          <span>{item.category}</span>
-          <StarBadge item={item} />
-        </span>
-        <strong>{displayName(item.name)}</strong>
-        <span className="work-description">{item.description}</span>
-        <span className="work-card-footer">
-          <span>{item.status || item.source}</span>
-          <ArrowIcon />
-        </span>
-      </span>
-    </ExternalLink>
-  )
-}
-
-function SectionHeading({ eyebrow, title, action }) {
-  return (
-    <div className="section-heading">
-      <div>
-        <span className="eyebrow">{eyebrow}</span>
-        <h2>{title}</h2>
+    <header className="site-header">
+      <div className="header-inner">
+        <Brand navigate={navigate} />
+        <nav className="top-nav" aria-label="Main navigation">
+          {nav.map(([to, label]) => (
+            <InternalLink className={path === to || (to === '/experience' && path === '/education') ? 'active' : ''} key={to} to={to} onNavigate={navigate}>{label}</InternalLink>
+          ))}
+        </nav>
+        <ExternalLink className="header-contact" href="mailto:ad13dtu@gmail.com">Say hello ↗</ExternalLink>
       </div>
-      {action}
-    </div>
+    </header>
   )
 }
 
-function PageHeading({ eyebrow, title, children }) {
+function ProjectMark({ item, large = false }) {
+  if (item.icon) return <img className={`project-icon${large ? ' large' : ''}`} src={item.icon} alt="" loading={large ? 'eager' : 'lazy'} />
+  return <span className={`project-symbol text-mark${large ? ' large' : ''}`} aria-hidden="true" style={{ background: item.wash, color: item.accent }}>{displayName(item.name).replaceAll(' ', '').slice(0, 2).toUpperCase()}</span>
+}
+
+function FeaturedCard({ item }) {
   return (
-    <section className="page-heading">
-      <span className="eyebrow">{eyebrow}</span>
-      <h1>{title}</h1>
-      <p>{children}</p>
-    </section>
+    <ExternalLink className="featured-card" href={item.url} style={{ '--accent': item.accent }}>
+      <span className="featured-picture">
+        <img src={item.visual} alt={`${displayName(item.name)} project preview`} loading="lazy" />
+      </span>
+      <span className="featured-copy">
+        <span className="featured-title"><ProjectMark item={item} /><strong>{displayName(item.name)}</strong></span>
+        <span className="featured-description">{item.description}</span>
+        <span className="featured-meta"><span>{item.source}</span><StarBadge item={item} /><span aria-hidden="true">↗</span></span>
+      </span>
+    </ExternalLink>
   )
 }
 
-function ExperienceCards({ limit }) {
-  const items = typeof limit === 'number' ? linkedinExperience.slice(0, limit) : linkedinExperience
+function ProjectCard({ item }) {
   return (
-    <div className="timeline-list">
-      {items.map((item) => (
-        <article className="timeline-card" key={`${item.role}-${item.company}-${item.dates}`}>
-          <span className="timeline-date">{item.dates}</span>
-          <div className="timeline-main">
-            <IdentityMark src={EXPERIENCE_MARKS[item.company]} alt={`${item.company} themed mark`} />
-            <div><h3>{item.role}</h3><p className="timeline-company">{item.company}</p><p>{item.summary}</p></div>
-          </div>
-        </article>
-      ))}
-    </div>
+    <ExternalLink className="project-card" href={item.url} style={{ '--accent': item.accent, '--wash': item.wash }}>
+      <ProjectMark item={item} />
+      <span className="project-card-copy">
+        <span className="project-card-title"><strong>{displayName(item.name)}</strong><StarBadge item={item} /></span>
+        <span className="project-description">{item.description}</span>
+        <span className="project-kind">{item.source === 'Projects' ? item.category : item.source}</span>
+      </span>
+      <span className="card-arrow" aria-hidden="true">↗</span>
+    </ExternalLink>
   )
 }
 
-function EducationCards({ limit }) {
-  const items = typeof limit === 'number' ? linkedinEducation.slice(0, limit) : linkedinEducation
-  return (
-    <div className="timeline-list">
-      {items.map((item) => (
-        <article className="timeline-card" key={`${item.institution}-${item.program}-${item.dates}`}>
-          <span className="timeline-date">{item.dates}</span>
-          <div className="timeline-main">
-            <IdentityMark src={EDUCATION_MARKS[item.institution]} alt={`${item.institution} themed mark`} />
-            <div>
-              <h3>{item.institution}</h3>
-              <p className="timeline-company">{item.program}</p>
-              {(item.grade || item.note) && <p>{[item.grade, item.note].filter(Boolean).join(' · ')}</p>}
-            </div>
-          </div>
-        </article>
-      ))}
-    </div>
-  )
+function SectionTitle({ children, count, action }) {
+  return <div className="section-title"><h2>{children}</h2>{count != null && <span>{count}</span>}{action}</div>
 }
 
 function HomePage({ navigate, work }) {
   const featured = FEATURED_WORK.map((name) => work.find((item) => item.name === name)).filter(Boolean)
+  const groups = [
+    ['Apps', work.filter((item) => item.source === 'Apps')],
+    ['Game', work.filter((item) => item.source === 'Games')],
+    ['Extensions', work.filter((item) => item.source === 'Extensions')],
+  ]
   return (
     <>
-      <section className="hero">
-        <div className="hero-copy">
-          <h1>I make useful software and <em>strange</em> internet things.</h1>
-          <p>Mobile apps, AI agents, browser tools, open source, 3D machines, and experiments—built from an idea all the way to shipping.</p>
-          <div className="hero-actions">
-            <InternalLink className="button button-primary" to="/projects" onNavigate={navigate}>Explore all work <ArrowIcon /></InternalLink>
-            <ExternalLink className="button button-secondary" href="mailto:ad13dtu@gmail.com">Say hello</ExternalLink>
-          </div>
-        </div>
-        <figure className="hero-art">
-          <img src="/portfolio/maker-workbench.webp" alt="An illustrated maker workbench connecting apps, AI, a mechanical heart, an orrery, a diver, and a camera" />
-          <figcaption>One workbench, many rabbit holes.</figcaption>
-        </figure>
-      </section>
-
-      <section className="maker-index" aria-label="Areas of work">
-        <span>Mobile apps</span><i />
-        <span>AI agents</span><i />
-        <span>Browser tools</span><i />
-        <span>Open source</span><i />
-        <span>3D machines</span><i />
-        <span>Experiments</span>
-      </section>
-
-      <section className="section-block featured-work">
-        <div className="featured-board">
-          <header className="featured-intro">
-            <span className="brass-label">Maker portfolio</span>
-            <span className="eyebrow">The project shelf</span>
-            <h2>Selected<br />work.</h2>
-            <p>A curated wall of internet artifacts—built, shipped, and carefully iterated.</p>
-            <span className="pointing-hand" aria-hidden="true">☞</span>
-            <InternalLink className="featured-all-link" to="/projects" onNavigate={navigate}>
-              View all {work.length} projects <ArrowIcon />
-            </InternalLink>
-          </header>
-          <div className="featured-grid">
-            {featured.slice(0, 6).map((item) => <WorkCard key={item.name} item={item} featured />)}
-          </div>
+      <section className="intro">
+        <p className="intro-kicker"><span /> Building from Delhi</p>
+        <h1>Apps, tools, games<br />and odd little ideas.</h1>
+        <p>I’m Apoorv. I build native apps, browser tools, open-source software, and experiments—often with Codex, or Claude, open beside me.</p>
+        <div className="intro-links">
+          <ExternalLink href="https://github.com/apoorvdarshan">GitHub ↗</ExternalLink>
+          <ExternalLink href="https://www.linkedin.com/in/apoorvdarshan">LinkedIn ↗</ExternalLink>
+          <ExternalLink href="https://x.com/apoorvdarshan">X ↗</ExternalLink>
         </div>
       </section>
 
-      <section className="section-block split-section">
+      <section className="home-section">
+        <SectionTitle count={featured.length} action={<InternalLink className="section-action" to="/projects" onNavigate={navigate}>See all {work.length} →</InternalLink>}>A few favourites</SectionTitle>
+        <div className="featured-grid">{featured.map((item) => <FeaturedCard key={item.name} item={item} />)}</div>
+      </section>
+
+      {groups.map(([label, items]) => (
+        <section className="home-section compact-section" key={label}>
+          <SectionTitle count={items.length}>{label}</SectionTitle>
+          <div className="project-grid">{items.map((item) => <ProjectCard key={item.name} item={item} />)}</div>
+        </section>
+      ))}
+
+      <section className="home-section open-source-home">
         <div>
-          <SectionHeading eyebrow="Now & before" title="Experience" />
-          <ExperienceCards limit={3} />
-          <InternalLink className="text-action below-action" to="/experience" onNavigate={navigate}>All {linkedinExperience.length} roles <ArrowIcon /></InternalLink>
+          <SectionTitle count={profile.openSource.length}>Open-source contributions</SectionTitle>
+          <p>Fixes and improvements across TensorFlow, Kubernetes, Flutter, freeCodeCamp, .NET, Svelte, and more.</p>
+          <InternalLink className="plain-button" to="/open-source" onNavigate={navigate}>Browse every contribution →</InternalLink>
         </div>
-        <div>
-          <SectionHeading eyebrow="The long route" title="Education" />
-          <EducationCards limit={3} />
-          <InternalLink className="text-action below-action" to="/education" onNavigate={navigate}>All {linkedinEducation.length} entries <ArrowIcon /></InternalLink>
+        <div className="logo-row" aria-label="Selected open-source projects">
+          {profile.openSource.slice(0, 12).map((item) => <ContributionLogo item={item} key={`${item.name}-${item.url}`} />)}
         </div>
       </section>
 
-      <section className="section-block open-source-teaser">
-        <div className="open-source-copy">
-          <span className="eyebrow">Borrowed codebases, real fixes</span>
-          <h2>Open source is where I learn in public.</h2>
-          <p>Contributions across TensorFlow, Kubernetes, Flutter, freeCodeCamp, .NET, Svelte, jQuery, and dozens more.</p>
-          <InternalLink className="button button-primary" to="/open-source" onNavigate={navigate}>Browse contributions <ArrowIcon /></InternalLink>
-        </div>
-        <div className="logo-cloud" aria-label="Selected open-source projects">
-          {profile.openSource.slice(0, 15).map((item) => (
-            <ExternalLink key={`${item.name}-${item.url}`} href={item.url} ariaLabel={`${displayName(item.name)} contribution`}>
-              <span aria-hidden="true">{item.marker || '◆'}</span>{displayName(item.name)}
-            </ExternalLink>
-          ))}
-        </div>
-      </section>
-
-      <section className="section-block activity-section">
-        <SectionHeading eyebrow="Across GitHub" title="Activity" />
-        <GitHubActivity />
-      </section>
-
-      <section className="section-block field-notes" aria-label="Profile figures">
-        <p><strong>6,376</strong><span>Fud AI downloads</span></p>
-        <p><strong>{work.length}</strong><span>shipped things</span></p>
-        <p><strong>{profile.openSource.length}</strong><span>open-source entries</span></p>
-        <p><strong>13K+</strong><span>LinkedIn community</span></p>
-      </section>
-
-      <section className="section-block profile-notes">
-        <div className="note-panel">
-          <SectionHeading eyebrow="Current threads" title="What I’m doing" />
-          <ul>{profile.currentWork.map((item) => <li key={item.name}><strong>{item.name}</strong><span>{item.description}</span></li>)}</ul>
-        </div>
-        <div className="note-panel recognition-panel">
-          <SectionHeading eyebrow="Milestones" title="Recognition" />
-          <ul>{profile.recognition.map((item) => <li key={item}>{item}</li>)}</ul>
-        </div>
-      </section>
-
-      <section className="section-block connect-board">
-        <div>
-          <span className="eyebrow">Elsewhere</span>
-          <h2>Find me around the internet.</h2>
-          <p>{profile.intro.statement}</p>
-        </div>
-        <div className="connect-links">
-          {profile.connect.map((item) => <ExternalLink key={`${item.name}-${item.url}`} href={item.url}><span className="connect-label"><span className="network-mark" aria-hidden="true">{NETWORK_MARKS[item.name] || item.name.charAt(0)}</span>{item.name}</span><ArrowIcon /></ExternalLink>)}
-        </div>
-      </section>
-
-      <section className="section-block last-notes">
-        <div className="writing-note">
-          <IdentityMark src="/portfolio/marks/medium.webp" alt="Themed writing medallion" />
-          <div>
-            <span className="eyebrow">Writing</span>
-            <h2><ExternalLink href={profile.writing.url}>{profile.writing.name} <ArrowIcon /></ExternalLink></h2>
-            <p>{profile.writing.description}</p>
-          </div>
-        </div>
-        <blockquote>{profile.philosophy}</blockquote>
-        <details className="random-facts">
-          <summary>Five random facts</summary>
-          <ul>{profile.randomFacts.map((item) => <li key={item}>{item}</li>)}</ul>
-        </details>
+      <section className="home-section about-home">
+        <p className="about-number">53</p>
+        <div><h2>things shipped so far.</h2><p>Plus {profile.openSource.length} open-source entries, 6,376 Fud AI downloads, and a lot of unfinished folders.</p></div>
+        <InternalLink className="plain-button" to="/experience" onNavigate={navigate}>More about me →</InternalLink>
       </section>
     </>
   )
@@ -396,37 +200,30 @@ function HomePage({ navigate, work }) {
 
 function ProjectsPage({ work }) {
   const [filter, setFilter] = useState('All')
-  const [query, setQuery] = useState('')
-  const visible = work.filter((item) => {
-    const matchesFilter = filter === 'All' || item.filters.includes(filter)
-    const haystack = `${item.name} ${item.description} ${item.category}`.toLowerCase()
-    return matchesFilter && haystack.includes(query.toLowerCase())
-  })
-
+  const visible = filter === 'All' ? work : work.filter((item) => item.filters.includes(filter))
   return (
     <>
-      <PageHeading eyebrow="The complete index" title="Everything I’ve built.">Apps, games, browser extensions, developer tools, AI experiments, 3D work, and the stranger ideas in between.</PageHeading>
-      <div className="catalog-controls">
-        <label className="search-field"><span>Search</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try AI, macOS, browser…" /></label>
-        <div className="filter-row" aria-label="Filter projects">
-          {WORK_FILTERS.map((item) => <button className={filter === item ? 'active' : ''} type="button" key={item} onClick={() => setFilter(item)}>{item}</button>)}
-        </div>
+      <section className="page-intro"><h1>Everything I’ve built.</h1><p>{work.length} apps, games, extensions, tools, experiments, and strange ideas.</p></section>
+      <div className="filter-row" aria-label="Filter projects">
+        {WORK_FILTERS.map((item) => <button className={filter === item ? 'active' : ''} type="button" key={item} onClick={() => setFilter(item)}>{item}</button>)}
       </div>
-      <p className="result-count">Showing {visible.length} of {work.length}</p>
-      <section className="work-grid" aria-live="polite">
-        {visible.map((item) => <WorkCard key={`${item.source}-${item.name}`} item={item} />)}
-      </section>
-      {!visible.length && <p className="empty-state">Nothing matches that search yet. Try another word or category.</p>}
+      <section className="project-grid all-projects" aria-live="polite">{visible.map((item) => <ProjectCard key={`${item.source}-${item.name}`} item={item} />)}</section>
     </>
   )
 }
 
-function ExperiencePage() {
-  return <><PageHeading eyebrow="Work" title="Experience">All {linkedinExperience.length} roles, from building products and software to AI training and content.</PageHeading><ExperienceCards /></>
+function contributionOwner(item) {
+  const owner = CONTRIBUTION_LOGOS[item.name]
+  if (owner) return owner
+  try {
+    const parts = new URL(item.url).pathname.split('/').filter(Boolean)
+    return parts[0] || 'github'
+  } catch { return 'github' }
 }
 
-function EducationPage() {
-  return <><PageHeading eyebrow="Learning" title="Education">Computer science, engineering, mathematics, and the long habit of figuring things out.</PageHeading><EducationCards /></>
+function ContributionLogo({ item }) {
+  const owner = contributionOwner(item)
+  return <ExternalLink className="contribution-logo" href={item.url} ariaLabel={`${displayName(item.name)} contribution`}><img src={`https://github.com/${owner}.png?size=96`} alt="" loading="lazy" /><span>{displayName(item.name)}</span></ExternalLink>
 }
 
 function OpenSourcePage() {
@@ -434,71 +231,80 @@ function OpenSourcePage() {
   const visible = profile.openSource.filter((item) => `${item.name} ${item.description}`.toLowerCase().includes(query.toLowerCase()))
   return (
     <>
-      <PageHeading eyebrow="Contributions" title="Open source, project by project.">Merged fixes and contributions across {profile.openSource.length} entries. Every row links to the original pull request or contribution history.</PageHeading>
-      <label className="search-field open-source-search"><span>Find a project</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="TensorFlow, Python, docs…" /></label>
+      <section className="page-intro"><h1>Open source.</h1><p>{profile.openSource.length} contributions, each linked to the original pull request or contribution history.</p></section>
+      <label className="search-field"><span>Search contributions</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="TensorFlow, docs, Python…" /></label>
       <section className="contribution-list" aria-live="polite">
-        {visible.map((item) => (
-          <ExternalLink className="contribution-row" href={item.url} key={`${item.name}-${item.url}`}>
-            <span className="contribution-marker" aria-hidden="true">{item.marker || '◆'}</span>
-            <span><strong>{displayName(item.name)}</strong><span>{item.description}</span></span>
-            <StarBadge item={item} />
-            <ArrowIcon />
-          </ExternalLink>
-        ))}
+        {visible.map((item) => {
+          const owner = contributionOwner(item)
+          return <ExternalLink className="contribution-row" href={item.url} key={`${item.name}-${item.url}`}><img src={`https://github.com/${owner}.png?size=96`} alt="" loading="lazy" /><span><strong>{displayName(item.name)}</strong><small>{item.description}</small></span><StarBadge item={item} /><span aria-hidden="true">↗</span></ExternalLink>
+        })}
       </section>
-      {!visible.length && <p className="empty-state">No contribution matches that search.</p>}
     </>
   )
 }
 
-function Sidebar({ path, navigate, dark, setDark }) {
-  const nav = [['/', 'Home'], ['/projects', 'All work'], ['/open-source', 'Open source'], ['/experience', 'Experience'], ['/education', 'Education']]
+function Timeline({ items, marks, education = false }) {
+  return <div className="timeline">{items.map((item) => {
+    const title = education ? item.institution : item.role
+    const subtitle = education ? item.program : item.company
+    const mark = education ? marks[item.institution] : marks[item.company]
+    return <article className="timeline-card" key={`${title}-${subtitle}-${item.dates}`}>{mark ? <img src={mark} alt="" loading="lazy" /> : <span className="timeline-initial" aria-hidden="true">{title.split(/\s+/).map((word) => word[0]).slice(0, 2).join('')}</span>}<div><p className="timeline-date">{item.dates}</p><h2>{title}</h2><p className="timeline-subtitle">{subtitle}</p>{education ? <p>{[item.grade, item.note].filter(Boolean).join(' · ')}</p> : <p>{item.summary}</p>}</div></article>
+  })}</div>
+}
+
+function AboutPage({ navigate }) {
   return (
-    <aside className="sidebar">
-      <div className="identity">
-        <InternalLink className="monogram" to="/" onNavigate={navigate} ariaLabel="Apoorv Darshan home">AD</InternalLink>
-        <div><InternalLink className="identity-name" to="/" onNavigate={navigate}>Apoorv Darshan</InternalLink><p>Developer, founder &amp;<br />open-source builder.</p></div>
-      </div>
-      <nav className="side-nav" aria-label="Main navigation">
-        {nav.map(([to, label], index) => <InternalLink className={path === to ? 'active' : ''} key={to} to={to} onNavigate={navigate}><span><b>0{index + 1}</b>{label}</span><ArrowIcon /></InternalLink>)}
-      </nav>
-      <div className="sidebar-footer">
-        <p className="availability"><span /> Building from Delhi</p>
-        <div className="social-links">
-          <ExternalLink href="https://github.com/apoorvdarshan">GitHub</ExternalLink>
-          <ExternalLink href="https://www.linkedin.com/in/apoorvdarshan">LinkedIn</ExternalLink>
-          <ExternalLink href="https://x.com/apoorvdarshan">X</ExternalLink>
-          <ExternalLink href="mailto:ad13dtu@gmail.com">Email</ExternalLink>
-        </div>
-        <button className="theme-button" type="button" onClick={() => setDark(!dark)} aria-pressed={dark}><span>{dark ? 'Light' : 'Dark'} mode</span><span aria-hidden="true">{dark ? '☀' : '☾'}</span></button>
-      </div>
-    </aside>
+    <>
+      <section className="page-intro about-intro"><h1>A builder who follows curiosity.</h1><p>I make software across iOS, Android, the web, browsers, AI, and 3D—then share the useful parts in public.</p></section>
+      <section className="number-strip" aria-label="Profile figures">
+        <span><strong>6,376</strong><small>Fud AI downloads</small></span>
+        <span><strong>53</strong><small>things shipped</small></span>
+        <span><strong>{profile.openSource.length}</strong><small>open-source entries</small></span>
+        <span><strong>13K+</strong><small>LinkedIn community</small></span>
+      </section>
+      <div className="about-nav"><span>Experience</span><InternalLink to="/education" onNavigate={navigate}>Education →</InternalLink></div>
+      <Timeline items={linkedinExperience} marks={EXPERIENCE_MARKS} />
+      <section className="simple-split">
+        <div><p className="eyebrow">Right now</p><h2>Still making.</h2></div>
+        <ul>{profile.currentWork.map((item) => <li key={item.name}><strong>{item.name}</strong><span>{item.description}</span></li>)}</ul>
+      </section>
+      <section className="recognition"><h2>Recognition</h2><ul>{profile.recognition.map((item) => <li key={item}>{item}</li>)}</ul></section>
+      <section className="around">
+        <div><p className="eyebrow">Elsewhere</p><h2>Find me around the internet.</h2><p>Writing, building, learning, and occasionally posting the strange parts.</p></div>
+        <div className="around-links">{profile.connect.map((item) => <ExternalLink href={item.url} key={item.name}>{item.name} ↗</ExternalLink>)}</div>
+      </section>
+      <section className="small-notes">
+        <ExternalLink href={profile.writing.url}><span>Writing</span><strong>{profile.writing.name} ↗</strong><small>{profile.writing.description}</small></ExternalLink>
+        <blockquote>{profile.philosophy}</blockquote>
+        <details><summary>Five random facts</summary><ul>{profile.randomFacts.map((item) => <li key={item}>{item}</li>)}</ul></details>
+      </section>
+    </>
   )
 }
 
-function MobileHeader({ path, navigate, dark, setDark }) {
+function EducationPage({ navigate }) {
   return (
-    <header className="mobile-header">
-      <InternalLink className="mobile-brand" to="/" onNavigate={navigate}>AD</InternalLink>
-      <span>{path === '/' ? 'Apoorv Darshan' : SEO_BY_PATH[path]?.title.split(' — ')[0]}</span>
-      <button type="button" onClick={() => setDark(!dark)} aria-label={`Use ${dark ? 'light' : 'dark'} mode`}>{dark ? '☀' : '☾'}</button>
-    </header>
+    <>
+      <section className="page-intro"><h1>Education.</h1><p>Computer science, engineering, mathematics, and years of figuring things out.</p></section>
+      <div className="about-nav"><InternalLink to="/experience" onNavigate={navigate}>← Experience</InternalLink><span>Education</span></div>
+      <Timeline items={linkedinEducation} marks={EDUCATION_MARKS} education />
+    </>
+  )
+}
+
+function SiteFooter({ navigate }) {
+  return (
+    <footer className="site-footer">
+      <Brand navigate={navigate} />
+      <p>Useful software and strange internet things.</p>
+      <div><ExternalLink href="mailto:ad13dtu@gmail.com">Email</ExternalLink><ExternalLink href="https://github.com/apoorvdarshan">GitHub</ExternalLink><ExternalLink href="https://www.linkedin.com/in/apoorvdarshan">LinkedIn</ExternalLink><ExternalLink href="https://x.com/apoorvdarshan">X</ExternalLink></div>
+    </footer>
   )
 }
 
 function App() {
-  const [dark, setDark] = useState(() => {
-    const saved = localStorage.getItem('apoorv-theme-v3')
-    return saved ? saved === 'dark' : true
-  })
   const [path, setPath] = useState(currentPath)
   const work = useMemo(() => buildWorkCatalog(profile), [])
-
-  useEffect(() => {
-    document.documentElement.dataset.theme = dark ? 'dark' : 'light'
-    localStorage.setItem('apoorv-theme-v3', dark ? 'dark' : 'light')
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#0b0b0c' : '#f6f4ed')
-  }, [dark])
 
   useEffect(() => {
     const handlePopState = () => setPath(currentPath())
@@ -532,26 +338,13 @@ function App() {
   }
 
   let page
-  if (path === '/experience') page = <ExperiencePage />
-  else if (path === '/education') page = <EducationPage />
-  else if (path === '/projects') page = <ProjectsPage work={work} />
+  if (path === '/projects') page = <ProjectsPage work={work} />
   else if (path === '/open-source') page = <OpenSourcePage />
+  else if (path === '/education') page = <EducationPage navigate={navigate} />
+  else if (path === '/experience') page = <AboutPage navigate={navigate} />
   else page = <HomePage navigate={navigate} work={work} />
 
-  return (
-    <div className="site-shell">
-      <a className="skip-link" href="#content">Skip to content</a>
-      <Sidebar path={path} navigate={navigate} dark={dark} setDark={setDark} />
-      <MobileHeader path={path} navigate={navigate} dark={dark} setDark={setDark} />
-      <main className="main-canvas" id="content"><div className="page-enter" key={path}>{page}</div></main>
-      <footer className="mobile-nav" aria-label="Mobile navigation">
-        <InternalLink className={path === '/' ? 'active' : ''} to="/" onNavigate={navigate}>Home</InternalLink>
-        <InternalLink className={path === '/projects' ? 'active' : ''} to="/projects" onNavigate={navigate}>Work</InternalLink>
-        <InternalLink className={path === '/open-source' ? 'active' : ''} to="/open-source" onNavigate={navigate}>OSS</InternalLink>
-        <InternalLink className={path === '/experience' || path === '/education' ? 'active' : ''} to="/experience" onNavigate={navigate}>About</InternalLink>
-      </footer>
-    </div>
-  )
+  return <><a className="skip-link" href="#content">Skip to content</a><SiteHeader path={path} navigate={navigate} /><main id="content" className="page-shell"><div className="page-enter" key={path}>{page}</div></main><SiteFooter navigate={navigate} /></>
 }
 
 export default App

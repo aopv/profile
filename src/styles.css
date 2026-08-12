@@ -224,7 +224,8 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 .logo-cloud a:hover { background: rgba(255,255,255,.11); transform: translateY(-2px); }
 .logo-cloud a > span { flex: 0 0 auto; font-size: 18px; }
 
-.activity-link { display: block; padding: 20px; overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: var(--paper-raised); }
+.activity-link { position: relative; display: block; padding: 20px; overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: var(--paper-raised); box-shadow: inset 0 1px 0 rgba(255,255,255,.025); }
+:root[data-theme='dark'] .activity-link { border-color: #493b32; background-color: #151515; background-image: radial-gradient(circle at 16% 12%, rgba(255,107,87,.055), transparent 30%), radial-gradient(circle at 88% 82%, rgba(244,200,74,.04), transparent 28%); }
 .activity-graph { display: block; width: 100%; height: auto; }
 .activity-graph-dark { display: none; }
 .activity-placeholder { display: block; aspect-ratio: 751 / 173; border-radius: 8px; background: var(--line); }

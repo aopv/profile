@@ -33,7 +33,7 @@ const WORD_FORMS = {
   os: 'OS', pr: 'PR', readme: 'README', sql: 'SQL', ui: 'UI', url: 'URL',
 }
 
-const ACTIVITY_COLORS = '4666ff,52d6a2'
+const ACTIVITY_COLORS = 'ff6b57,f4c84a'
 let activitySvgPromise
 
 function activityUrl(background) {

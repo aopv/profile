@@ -115,11 +115,15 @@ function ProjectMark({ item, large = false }) {
 
 function FeaturedCard({ item }) {
   return (
-    <ExternalLink className="featured-card" href={item.url} style={{ '--accent': item.accent }}>
-      <span className="featured-icon-wrap"><ProjectMark item={item} large /></span>
-      <span className="featured-title"><strong>{displayName(item.name)}</strong><StarBadge item={item} /></span>
-      <span className="featured-description">{item.description}</span>
-      <span className="featured-meta"><span>{item.source}</span><span aria-hidden="true">↗</span></span>
+    <ExternalLink className="featured-card" href={item.url} style={{ '--accent': item.accent, '--wash': item.wash }}>
+      <span className="featured-scene" aria-hidden="true">
+        <ProjectMark item={item} large />
+      </span>
+      <span className="featured-copy">
+        <span className="featured-title"><strong>{displayName(item.name)}</strong><StarBadge item={item} /></span>
+        <span className="featured-description">{item.description}</span>
+        <span className="featured-meta"><span>{item.source}</span><span aria-hidden="true">Open ↗</span></span>
+      </span>
     </ExternalLink>
   )
 }
@@ -148,12 +152,12 @@ function HomePage({ navigate, work }) {
     <>
       <section className="home-lead">
         <span className="home-avatar" aria-hidden="true">AD</span>
-        <div><h1>Apoorv makes things.</h1><p>Apps, games, tiny tools, and weird internet experiments from Delhi.</p></div>
+        <div><h1>Things I’ve made.</h1><p>Apps, games, tiny tools, and weird internet experiments.</p></div>
         <div className="intro-links"><ExternalLink href="https://github.com/apoorvdarshan">GitHub ↗</ExternalLink><ExternalLink href="https://www.linkedin.com/in/apoorvdarshan">LinkedIn ↗</ExternalLink><ExternalLink href="https://x.com/apoorvdarshan">X ↗</ExternalLink></div>
       </section>
 
       <section className="home-section first-projects">
-        <SectionTitle count={featured.length} action={<InternalLink className="section-action" to="/projects" onNavigate={navigate}>All {work.length} things →</InternalLink>}>Pick something</SectionTitle>
+        <SectionTitle count={featured.length} action={<InternalLink className="section-action" to="/projects" onNavigate={navigate}>See all {work.length} →</InternalLink>}>Start here</SectionTitle>
         <div className="featured-grid">{featured.map((item) => <FeaturedCard key={item.name} item={item} />)}</div>
       </section>
 

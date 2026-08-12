@@ -1,11 +1,11 @@
 const IMAGE_COVERS = {
-  'fud-ai': '/portfolio/fud-ai.webp',
+  'fud-ai': '/portfolio/fud-ai-art-v2.webp',
   verceltics: '/portfolio/verceltics.webp',
-  scowld: '/portfolio/scowld.webp',
-  'browser-cookie-bridge': '/portfolio/browser-cookie-bridge.webp',
-  crossposter: '/portfolio/crossposter.webp',
-  abysm: '/portfolio/abysm.webp',
-  'machina-cordis': '/portfolio/machina-cordis.webp',
+  scowld: '/portfolio/scowld-art-v2.webp',
+  'browser-cookie-bridge': '/portfolio/browser-cookie-bridge-art-v2.webp',
+  crossposter: '/portfolio/crossposter-art-v2.webp',
+  abysm: '/portfolio/abysm-art-v2.webp',
+  'machina-cordis': '/portfolio/machina-cordis-art-v2.webp',
   'helios-01': '/portfolio/helios-01.webp',
   TetherShot: '/portfolio/tethershot.webp',
   'hash-harbor': '/portfolio/hash-harbor-art.webp',
@@ -57,6 +57,15 @@ const PALETTES = [
   ['#36a6c8', '#d5f2f7'],
 ]
 
+const CATEGORY_COVERS = {
+  Apps: '/portfolio/fallback-apps.webp',
+  Browser: '/portfolio/fallback-browser.webp',
+  'Developer tools': '/portfolio/fallback-developer-tools.webp',
+  AI: '/portfolio/fallback-ai.webp',
+  Experiments: '/portfolio/fallback-experiments.webp',
+  '3D & art': '/portfolio/fallback-3d-art.webp',
+}
+
 export const WORK_FILTERS = ['All', 'Apps', 'Browser', 'Developer tools', 'AI', 'Experiments', '3D & art']
 
 function stableNumber(value) {
@@ -91,7 +100,8 @@ export function buildWorkCatalog(profile) {
       source,
       category,
       filters: [...filters],
-      cover: IMAGE_COVERS[item.name] || '',
+      cover: IMAGE_COVERS[item.name] || CATEGORY_COVERS[category],
+      customCover: Boolean(IMAGE_COVERS[item.name]),
       accent: palette[0],
       accentSoft: palette[1],
     }

@@ -144,9 +144,12 @@ function WorkCard({ item, featured = false }) {
   const style = { '--card-accent': item.accent, '--card-soft': item.accentSoft }
   return (
     <ExternalLink className={`work-card${featured ? ' work-card-featured' : ''}`} href={item.url} style={style}>
-      <span className={`work-cover${item.cover ? ' has-image' : ''}`}>
+      <span className={`work-cover${item.cover ? ' has-image' : ''}${item.customCover ? '' : ' category-cover'}`}>
         {item.cover ? (
-          <img src={item.cover} alt="" loading="lazy" />
+          <>
+            <img src={item.cover} alt="" loading="lazy" />
+            {!item.customCover && <span className="category-cover-name" aria-hidden="true">{displayName(item.name)}</span>}
+          </>
         ) : (
           <>
             <span className="cover-orbit" aria-hidden="true" />
@@ -254,13 +257,20 @@ function HomePage({ navigate, work }) {
       </section>
 
       <section className="section-block featured-work">
-        <SectionHeading
-          eyebrow="The project shelf"
-          title="Selected work"
-          action={<InternalLink className="text-action" to="/projects" onNavigate={navigate}>See all {work.length} <ArrowIcon /></InternalLink>}
-        />
-        <div className="featured-grid">
-          {featured.slice(0, 6).map((item, index) => <WorkCard key={item.name} item={item} featured={index < 3} />)}
+        <div className="featured-board">
+          <header className="featured-intro">
+            <span className="brass-label">Maker portfolio</span>
+            <span className="eyebrow">The project shelf</span>
+            <h2>Selected<br />work.</h2>
+            <p>A curated wall of internet artifacts—built, shipped, and carefully iterated.</p>
+            <span className="pointing-hand" aria-hidden="true">☞</span>
+            <InternalLink className="featured-all-link" to="/projects" onNavigate={navigate}>
+              View all {work.length} projects <ArrowIcon />
+            </InternalLink>
+          </header>
+          <div className="featured-grid">
+            {featured.slice(0, 6).map((item) => <WorkCard key={item.name} item={item} featured />)}
+          </div>
         </div>
       </section>
 

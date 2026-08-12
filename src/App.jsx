@@ -116,8 +116,10 @@ function ProjectMark({ item, large = false }) {
 function FeaturedCard({ item }) {
   return (
     <ExternalLink className="featured-card" href={item.url} style={{ '--accent': item.accent, '--wash': item.wash }}>
-      <span className="featured-scene" aria-hidden="true">
-        <ProjectMark item={item} large />
+      <span className="featured-scene">
+        {item.visual
+          ? <img className="featured-art" src={item.visual} alt="" loading="eager" />
+          : <ProjectMark item={item} large />}
       </span>
       <span className="featured-copy">
         <span className="featured-title"><strong>{displayName(item.name)}</strong><StarBadge item={item} /></span>
@@ -130,8 +132,10 @@ function FeaturedCard({ item }) {
 
 function ProjectCard({ item }) {
   return (
-    <ExternalLink className="project-card" href={item.url} style={{ '--accent': item.accent, '--wash': item.wash }}>
-      <ProjectMark item={item} />
+    <ExternalLink className={`project-card${item.visual ? ' has-visual' : ''}`} href={item.url} style={{ '--accent': item.accent, '--wash': item.wash }}>
+      {item.visual
+        ? <span className="project-card-art"><img src={item.visual} alt="" loading="lazy" /></span>
+        : <ProjectMark item={item} />}
       <span className="project-card-copy">
         <span className="project-card-title"><strong>{displayName(item.name)}</strong><StarBadge item={item} /></span>
         <span className="project-description">{item.description}</span>
@@ -151,7 +155,6 @@ function HomePage({ navigate, work }) {
   return (
     <>
       <section className="home-lead">
-        <span className="home-avatar" aria-hidden="true">AD</span>
         <div><h1>Things I’ve made.</h1><p>Apps, games, tiny tools, and weird internet experiments.</p></div>
         <div className="intro-links"><ExternalLink href="https://github.com/apoorvdarshan">GitHub ↗</ExternalLink><ExternalLink href="https://www.linkedin.com/in/apoorvdarshan">LinkedIn ↗</ExternalLink><ExternalLink href="https://x.com/apoorvdarshan">X ↗</ExternalLink></div>
       </section>

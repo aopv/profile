@@ -1,5 +1,5 @@
 export const SITE_URL = 'https://apoorvdarshan.com'
-export const SOCIAL_IMAGE = `${SITE_URL}/apoorv-darshan-social-v3.png`
+export const SOCIAL_IMAGE = `${SITE_URL}/apoorv-darshan-social.png`
 
 export const SEO_BY_PATH = {
   '/': {
@@ -15,8 +15,8 @@ export const SEO_BY_PATH = {
     description: 'Apoorv Darshan’s education in computer science, engineering, mathematics, and competitive examination preparation.',
   },
   '/projects': {
-    title: 'All Work — Apoorv Darshan',
-    description: 'Explore every app, game, AI experiment, developer tool, browser extension, and independent project built by Apoorv Darshan.',
+    title: 'Projects — Apoorv Darshan',
+    description: 'Apps, AI experiments, developer tools, browser extensions, and independent software projects built by Apoorv Darshan.',
   },
   '/open-source': {
     title: 'Open Source — Apoorv Darshan',

@@ -1,21 +1,29 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import profile from './profileData.generated.json'
 import { linkedinExperience } from './linkedinExperience'
 import { linkedinEducation } from './linkedinEducation'
-import { FEATURED_WORK, WORK_FILTERS, buildWorkCatalog } from './workCatalog'
 import { SEO_BY_PATH, SOCIAL_IMAGE, canonicalUrl, structuredData } from './seo'
 
 const ROUTES = new Set(['/', '/experience', '/education', '/projects', '/open-source'])
 
 const NAME_OVERRIDES = {
-  'fud-ai': 'Fud AI', freeCodeCamp: 'freeCodeCamp', tensorflow: 'TensorFlow',
-  jquery: 'jQuery', jupyterlab: 'JupyterLab', springboot: 'Spring Boot',
-  'spring-boot': 'Spring Boot', 'opengraph-studio': 'OpenGraph Studio',
-  'github-readme-contribution-merger': 'GitHub Contribution Merger',
+  'fud-ai': 'Fud AI',
+  'freeCodeCamp': 'freeCodeCamp',
+  tensorflow: 'TensorFlow',
+  jquery: 'jQuery',
+  jupyterlab: 'JupyterLab',
+  springboot: 'Spring Boot',
+  'spring-boot': 'Spring Boot',
+  'opengraph-studio': 'OpenGraph Studio',
+  'github-readme-contribution-merger': 'GitHub README Contribution Merger',
   'macbook-24x7-agents': 'MacBook 24×7 Agents',
   'linkedin-connection-sender': 'LinkedIn Connection Sender',
-  'axentra-os-affiliate': 'Axentra OS Affiliate', iitjee: 'IIT JEE',
-  Xscore: 'XScore', WeasyPrint: 'WeasyPrint', TEAMMATES: 'TEAMMATES', CodexBar: 'CodexBar',
+  'axentra-os-affiliate': 'Axentra OS Affiliate',
+  iitjee: 'IIT JEE',
+  Xscore: 'XScore',
+  WeasyPrint: 'WeasyPrint',
+  TEAMMATES: 'TEAMMATES',
+  CodexBar: 'CodexBar',
 }
 
 const WORD_FORMS = {
@@ -24,32 +32,55 @@ const WORD_FORMS = {
   os: 'OS', pr: 'PR', readme: 'README', sql: 'SQL', ui: 'UI', url: 'URL',
 }
 
-const EXPERIENCE_MARKS = {
-  'Extensions for Chrome': '/identity-marks-real/chrome.png',
-  'Google Play': '/identity-marks-real/google-play.png',
-  'App Store': '/identity-marks-real/apple.png',
-  XIRCLS: '/identity-marks-real/xircls.png',
-  Outlier: '/identity-marks-real/outlier.png',
-  YouTube: '/identity-marks-real/youtube.png',
+const ACTIVITY_COLORS = '9b7548,718a69'
+let activitySvgPromise
+
+function activityUrl(background) {
+  const url = new URL(profile.activityImage)
+  url.searchParams.set('colors', ACTIVITY_COLORS)
+  url.searchParams.set('bg', background)
+  return url.toString()
 }
 
-const EDUCATION_MARKS = {
-  'University of the People': '/identity-marks-real/uopeople.png',
-  'Delhi Technological University (Formerly DCE)': '/identity-marks-real/dtu.png',
-  'ALLEN Career Institute': '/identity-marks-real/allen.png',
-  FIITJEE: '/identity-marks-real/fiitjee.png',
+function prepareActivitySvg(svg, theme) {
+  const colors = theme === 'dark'
+    ? { text: '#f0eee6', empty: '#302e2b', originalText: '#c9d1d9', originalEmpty: '#161b22' }
+    : { text: '#1f1e1d', empty: '#dedbd2', originalText: '#24292f', originalEmpty: '#ebedf0' }
+
+  const camouflaged = svg
+    .replace(/<rect width="[^"]+" height="[^"]+" fill="#[0-9a-fA-F]{6}" rx="6" ry="6"\s*\/>/, '')
+    .replaceAll(colors.originalText, colors.text)
+    .replaceAll(colors.originalEmpty, colors.empty)
+
+  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(camouflaged)}`
 }
 
-const CONTRIBUTION_LOGOS = {
-  freeCodeCamp: 'freeCodeCamp', tensorflow: 'tensorflow', flutter: 'flutter', dify: 'langgenius',
-  kubernetes: 'kubernetes', svelte: 'sveltejs', laravel: 'laravel', 'spring-boot': 'spring-projects',
-  springboot: 'spring-projects', ansible: 'ansible', jquery: 'jquery', julia: 'JuliaLang',
-  zx: 'google', core: 'dotnet', runtime: 'dotnet', luigi: 'spotify',
+function loadActivitySvgs() {
+  if (!activitySvgPromise) {
+    activitySvgPromise = Promise.all([
+      fetch(activityUrl('light')).then((response) => {
+        if (!response.ok) throw new Error(`Activity graph returned ${response.status}`)
+        return response.text()
+      }),
+      fetch(activityUrl('dark')).then((response) => {
+        if (!response.ok) throw new Error(`Activity graph returned ${response.status}`)
+        return response.text()
+      }),
+    ]).then(([light, dark]) => ({
+      light: prepareActivitySvg(light, 'light'),
+      dark: prepareActivitySvg(dark, 'dark'),
+    }))
+  }
+
+  return activitySvgPromise
 }
 
 function displayName(name) {
   if (NAME_OVERRIDES[name]) return NAME_OVERRIDES[name]
-  return name.split(/[-_]/).map((word) => WORD_FORMS[word.toLowerCase()] || `${word.charAt(0).toUpperCase()}${word.slice(1)}`).join(' ')
+  return name
+    .split(/[-_]/)
+    .map((word) => WORD_FORMS[word.toLowerCase()] || `${word.charAt(0).toUpperCase()}${word.slice(1)}`)
+    .join(' ')
 }
 
 function currentPath() {
@@ -59,227 +90,288 @@ function currentPath() {
   return '/'
 }
 
-function ExternalLink({ href, children, className = '', ariaLabel, style }) {
+function ExternalLink({ href, children, className = '' }) {
   const isWeb = href.startsWith('http')
-  return <a className={className} href={href} target={isWeb ? '_blank' : undefined} rel={isWeb ? 'noreferrer' : undefined} aria-label={ariaLabel} style={style}>{children}</a>
+  return <a className={className} href={href} target={isWeb ? '_blank' : undefined} rel={isWeb ? 'noreferrer' : undefined}>{children}</a>
 }
 
-function InternalLink({ to, onNavigate, children, className = '', ariaLabel }) {
+function InternalLink({ to, onNavigate, children, className = '' }) {
   const handleClick = (event) => {
     if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return
     event.preventDefault()
     onNavigate(to)
   }
-  return <a className={className} href={to} onClick={handleClick} aria-label={ariaLabel}>{children}</a>
-}
 
-function ArrowIcon() {
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" /></svg>
+  return <a className={className} href={to} onClick={handleClick}>{children}</a>
 }
 
 function StarBadge({ item }) {
-  if (!item.starCount || Number.parseFloat(item.starCount.replaceAll(',', '')) <= 0) return null
-  return <span className="star-count" aria-label={`${displayName(item.name)} has ${item.starCount} GitHub stars`}>★ {item.starCount}</span>
-}
-
-function Brand({ navigate }) {
+  if (!item.starBadgeUrl) return null
   return (
-    <InternalLink className="brand" to="/" onNavigate={navigate} ariaLabel="Apoorv Darshan home">
-      <span className="brand-mark" aria-hidden="true">AD</span>
-      <span><strong>Apoorv Darshan</strong><small>makes things on the internet</small></span>
-    </InternalLink>
+    <span className="star-count" aria-label={`${displayName(item.name)} has ${item.starCount || 'an unavailable number of'} GitHub stars`}>
+      <span aria-hidden="true">★ {item.starCount}</span>
+    </span>
   )
 }
 
-function SiteHeader({ path, navigate }) {
-  const nav = [['/projects', 'All work'], ['/open-source', 'Open source'], ['/experience', 'About']]
+function EntryList({ items, limit }) {
+  const visible = typeof limit === 'number' ? items.slice(0, limit) : items
   return (
-    <header className="site-header">
-      <div className="header-inner">
-        <Brand navigate={navigate} />
-        <nav className="top-nav" aria-label="Main navigation">
-          {nav.map(([to, label]) => (
-            <InternalLink className={path === to || (to === '/experience' && path === '/education') ? 'active' : ''} key={to} to={to} onNavigate={navigate}>{label}</InternalLink>
-          ))}
-        </nav>
-        <ExternalLink className="header-contact" href="mailto:ad13dtu@gmail.com">Say hello ↗</ExternalLink>
-      </div>
-    </header>
+    <ul className="bullet-list entry-list">
+      {visible.map((item) => (
+        <li key={`${item.name}-${item.url}`}>
+          <ExternalLink href={item.url}>{displayName(item.name)}</ExternalLink>
+          <StarBadge item={item} />
+          {item.status && <span className="item-status">({item.status})</span>}
+          {item.description && <span className="entry-summary"> — {item.description}</span>}
+        </li>
+      ))}
+    </ul>
   )
 }
 
-function ProjectMark({ item, large = false }) {
-  if (item.icon) return <img className={`project-icon${large ? ' large' : ''}`} src={item.icon} alt="" loading={large ? 'eager' : 'lazy'} />
-  return <span className={`project-symbol text-mark${large ? ' large' : ''}`} aria-hidden="true" style={{ background: item.wash, color: item.accent }}>{displayName(item.name).replaceAll(' ', '').slice(0, 2).toUpperCase()}</span>
+function DetailList({ items }) {
+  return (
+    <ul className="bullet-list detail-list">
+      {items.map((item) => (
+        <li key={`${item.name}-${item.url}`}>
+          <ExternalLink href={item.url}>{displayName(item.name)}</ExternalLink>
+          <StarBadge item={item} />
+          {item.status && <span className="item-status">({item.status})</span>}
+          {item.description && <span className="entry-summary"> — {item.description}</span>}
+        </li>
+      ))}
+    </ul>
+  )
 }
 
-function FeaturedCard({ item }) {
+function PageHeading({ title, children }) {
   return (
-    <ExternalLink className="featured-card" href={item.url} style={{ '--accent': item.accent, '--wash': item.wash }}>
-      <span className="featured-scene">
-        {item.visual
-          ? <img className="featured-art" src={item.visual} alt="" loading="eager" />
-          : <ProjectMark item={item} large />}
-      </span>
-      <span className="featured-copy">
-        <span className="featured-title"><strong>{displayName(item.name)}</strong><StarBadge item={item} /></span>
-        <span className="featured-description">{item.description}</span>
-        <span className="featured-meta"><span>{item.source}</span><span aria-hidden="true">Open ↗</span></span>
-      </span>
+    <section className="page-heading">
+      <h1>{title}</h1>
+      <p>{children}</p>
+    </section>
+  )
+}
+
+function GitHubActivity() {
+  const [graphs, setGraphs] = useState(null)
+
+  useEffect(() => {
+    let active = true
+    loadActivitySvgs()
+      .then((result) => { if (active) setGraphs(result) })
+      .catch(() => { if (active) setGraphs({ light: activityUrl('light'), dark: activityUrl('dark') }) })
+    return () => { active = false }
+  }, [])
+
+  return (
+    <ExternalLink className="activity-link" href={activityUrl('light')}>
+      {graphs ? (
+        <>
+          <img className="activity-graph activity-graph-light" src={graphs.light} alt="Apoorv Darshan's merged GitHub contribution graph" />
+          <img className="activity-graph activity-graph-dark" src={graphs.dark} alt="Apoorv Darshan's merged GitHub contribution graph" />
+        </>
+      ) : <span className="activity-placeholder" aria-label="Loading Apoorv Darshan's GitHub contribution graph" role="img" />}
     </ExternalLink>
   )
 }
 
-function ProjectCard({ item }) {
-  return (
-    <ExternalLink className={`project-card${item.visual ? ' has-visual' : ''}`} href={item.url} style={{ '--accent': item.accent, '--wash': item.wash }}>
-      {item.visual
-        ? <span className="project-card-art"><img src={item.visual} alt="" loading="lazy" /></span>
-        : <ProjectMark item={item} />}
-      <span className="project-card-copy">
-        <span className="project-card-title"><strong>{displayName(item.name)}</strong><StarBadge item={item} /></span>
-        <span className="project-description">{item.description}</span>
-        <span className="project-kind">{item.source === 'Projects' ? item.category : item.source}</span>
-      </span>
-      <span className="card-arrow" aria-hidden="true">↗</span>
-    </ExternalLink>
-  )
-}
-
-function SectionTitle({ children, count, action }) {
-  return <div className="section-title"><h2>{children}</h2>{count != null && <span>{count}</span>}{action}</div>
-}
-
-function HomePage({ navigate, work }) {
-  const featured = FEATURED_WORK.map((name) => work.find((item) => item.name === name)).filter(Boolean)
+function ReadmeDetails() {
   return (
     <>
-      <section className="home-lead">
-        <div><h1>Things I’ve made.</h1><p>Apps, games, tiny tools, and weird internet experiments.</p></div>
-        <div className="intro-links"><ExternalLink href="https://github.com/apoorvdarshan">GitHub ↗</ExternalLink><ExternalLink href="https://www.linkedin.com/in/apoorvdarshan">LinkedIn ↗</ExternalLink><ExternalLink href="https://x.com/apoorvdarshan">X ↗</ExternalLink></div>
+      <section>
+        <h2>What I’m doing</h2>
+        <ul className="bullet-list">
+          {profile.currentWork.map((item) => <li key={item.name}><strong>{item.name}</strong><span className="entry-summary"> — {item.description}</span></li>)}
+        </ul>
       </section>
 
-      <section className="home-section first-projects">
-        <SectionTitle count={featured.length} action={<InternalLink className="section-action" to="/projects" onNavigate={navigate}>See all {work.length} →</InternalLink>}>Start here</SectionTitle>
-        <div className="featured-grid">{featured.map((item) => <FeaturedCard key={item.name} item={item} />)}</div>
+      <section>
+        <h2>Writing</h2>
+        <ul className="bullet-list"><li><ExternalLink href={profile.writing.url}>{profile.writing.name}</ExternalLink><span className="entry-summary"> — {profile.writing.description}</span></li></ul>
       </section>
 
-      <section className="home-shortcuts">
-        <InternalLink to="/projects" onNavigate={navigate}><strong>{work.length}</strong><span>all projects</span><b>→</b></InternalLink>
-        <InternalLink to="/open-source" onNavigate={navigate}><strong>{profile.openSource.length}</strong><span>open-source contributions</span><b>→</b></InternalLink>
-        <InternalLink to="/experience" onNavigate={navigate}><strong>6,376</strong><span>Fud AI downloads</span><b>→</b></InternalLink>
+      <section>
+        <h2>Connect</h2>
+        <ul className="bullet-list link-columns">{profile.connect.map((item) => <li key={item.name}><ExternalLink href={item.url}>{item.name}</ExternalLink></li>)}</ul>
+      </section>
+
+      <section>
+        <h2>Recognition</h2>
+        <ul className="bullet-list">{profile.recognition.map((item) => <li key={item}>{item}</li>)}</ul>
+      </section>
+
+      <section>
+        <h2>Philosophy</h2>
+        <blockquote>{profile.philosophy}</blockquote>
+      </section>
+
+      <section className="random-facts">
+        <details>
+          <summary>Random facts</summary>
+          <ul className="bullet-list">{profile.randomFacts.map((item) => <li key={item}>{item}</li>)}</ul>
+        </details>
       </section>
     </>
   )
 }
 
-function ProjectsPage({ work }) {
-  const [filter, setFilter] = useState('All')
-  const visible = filter === 'All' ? work : work.filter((item) => item.filters.includes(filter))
+function ExperienceList({ limit }) {
+  const visible = typeof limit === 'number' ? linkedinExperience.slice(0, limit) : linkedinExperience
+  return (
+    <ul className="bullet-list experience-list">
+      {visible.map((item) => (
+        <li key={`${item.role}-${item.company}-${item.dates}`}>
+          <strong>{item.role}</strong> · {item.company}
+          <span className="item-status">({item.dates})</span>
+          <span className="entry-summary"> — {item.summary}</span>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+function ExperienceSection({ navigate }) {
+  return (
+    <section>
+      <h2>Experience</h2>
+      <ExperienceList limit={4} />
+      <p className="after-list"><InternalLink to="/experience" onNavigate={navigate}>View all {linkedinExperience.length} experiences →</InternalLink></p>
+    </section>
+  )
+}
+
+function EducationList({ limit }) {
+  const visible = typeof limit === 'number' ? linkedinEducation.slice(0, limit) : linkedinEducation
+  return (
+    <ul className="bullet-list education-list">
+      {visible.map((item) => (
+        <li key={`${item.institution}-${item.program}-${item.dates}`}>
+          <strong>{item.institution}</strong>
+          <span className="item-status">({item.dates})</span>
+          <span className="entry-summary"> — {item.program}{item.grade && `; ${item.grade}`}{item.note && `; ${item.note}`}</span>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+function EducationSection({ navigate }) {
+  return (
+    <section>
+      <h2>Education</h2>
+      <EducationList limit={3} />
+      <p className="after-list"><InternalLink to="/education" onNavigate={navigate}>View all {linkedinEducation.length} education entries →</InternalLink></p>
+    </section>
+  )
+}
+
+function HomePage({ navigate }) {
   return (
     <>
-      <section className="page-intro"><h1>Everything I’ve built.</h1><p>{work.length} apps, games, extensions, tools, experiments, and strange ideas.</p></section>
-      <div className="filter-row" aria-label="Filter projects">
-        {WORK_FILTERS.map((item) => <button className={filter === item ? 'active' : ''} type="button" key={item} onClick={() => setFilter(item)}>{item}</button>)}
-      </div>
-      <section className="project-grid all-projects" aria-live="polite">{visible.map((item) => <ProjectCard key={`${item.source}-${item.name}`} item={item} />)}</section>
+      <section className="intro">
+        <p>Apoorv Darshan is an AI-powered builder in Delhi, building web apps, mobile apps, bots, APIs, and everything in between.</p>
+        <p className="intro-deck">{profile.intro.statement}</p>
+      </section>
+
+      <ExperienceSection navigate={navigate} />
+
+      <EducationSection navigate={navigate} />
+
+      <section>
+        <h2>Apps</h2>
+        <EntryList items={profile.apps} />
+      </section>
+
+      <section>
+        <h2>Games</h2>
+        <EntryList items={profile.games} />
+      </section>
+
+      <section>
+        <h2>Chrome extensions</h2>
+        <EntryList items={profile.extensions} />
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <EntryList items={profile.projects} limit={8} />
+        <p className="after-list"><InternalLink to="/projects" onNavigate={navigate}>View all {profile.projects.length} projects →</InternalLink></p>
+      </section>
+
+      <section>
+        <h2>Open source</h2>
+        <EntryList items={profile.openSource} limit={8} />
+        <p className="after-list"><InternalLink to="/open-source" onNavigate={navigate}>View all {profile.openSource.length} contributions →</InternalLink></p>
+      </section>
+
+      <section>
+        <h2>GitHub activity</h2>
+        <GitHubActivity />
+      </section>
+
+      <ReadmeDetails />
     </>
   )
 }
 
-function contributionOwner(item) {
-  const owner = CONTRIBUTION_LOGOS[item.name]
-  if (owner) return owner
-  try {
-    const parts = new URL(item.url).pathname.split('/').filter(Boolean)
-    return parts[0] || 'github'
-  } catch { return 'github' }
+function ProjectsPage() {
+  return (
+    <>
+      <PageHeading title="Projects">Every project listed in Apoorv’s GitHub profile README. Each title opens the project or its live site.</PageHeading>
+      <section className="detail-section">
+        <DetailList items={profile.projects} />
+      </section>
+    </>
+  )
 }
 
-function ContributionLogo({ item }) {
-  const owner = contributionOwner(item)
-  return <ExternalLink className="contribution-logo" href={item.url} ariaLabel={`${displayName(item.name)} contribution`}><img src={`https://github.com/${owner}.png?size=96`} alt="" loading="lazy" /><span>{displayName(item.name)}</span></ExternalLink>
+function ExperiencePage() {
+  return (
+    <>
+      <PageHeading title="Experience">All {linkedinExperience.length} roles from Apoorv’s LinkedIn experience profile.</PageHeading>
+      <section className="detail-section">
+        <ExperienceList />
+      </section>
+    </>
+  )
+}
+
+function EducationPage() {
+  return (
+    <>
+      <PageHeading title="Education">All {linkedinEducation.length} education entries from Apoorv’s LinkedIn profile.</PageHeading>
+      <section className="detail-section">
+        <EducationList />
+      </section>
+    </>
+  )
 }
 
 function OpenSourcePage() {
-  const [query, setQuery] = useState('')
-  const visible = profile.openSource.filter((item) => `${item.name} ${item.description}`.toLowerCase().includes(query.toLowerCase()))
   return (
     <>
-      <section className="page-intro"><h1>Open source.</h1><p>{profile.openSource.length} contributions, each linked to the original pull request or contribution history.</p></section>
-      <label className="search-field"><span>Search contributions</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="TensorFlow, docs, Python…" /></label>
-      <section className="contribution-list" aria-live="polite">
-        {visible.map((item) => {
-          const owner = contributionOwner(item)
-          return <ExternalLink className="contribution-row" href={item.url} key={`${item.name}-${item.url}`}><img src={`https://github.com/${owner}.png?size=96`} alt="" loading="lazy" /><span><strong>{displayName(item.name)}</strong><small>{item.description}</small></span><StarBadge item={item} /><span aria-hidden="true">↗</span></ExternalLink>
-        })}
+      <PageHeading title="Open source">All {profile.openSource.length} contributions from Apoorv’s GitHub profile README. Select any project to open the pull request or contribution history.</PageHeading>
+      <section className="detail-section">
+        <DetailList items={profile.openSource} />
       </section>
     </>
-  )
-}
-
-function Timeline({ items, marks, education = false }) {
-  return <div className="timeline">{items.map((item) => {
-    const title = education ? item.institution : item.role
-    const subtitle = education ? item.program : item.company
-    const mark = education ? marks[item.institution] : marks[item.company]
-    return <article className="timeline-card" key={`${title}-${subtitle}-${item.dates}`}>{mark ? <img src={mark} alt="" loading="lazy" /> : <span className="timeline-initial" aria-hidden="true">{title.split(/\s+/).map((word) => word[0]).slice(0, 2).join('')}</span>}<div><p className="timeline-date">{item.dates}</p><h2>{title}</h2><p className="timeline-subtitle">{subtitle}</p>{education ? <p>{[item.grade, item.note].filter(Boolean).join(' · ')}</p> : <p>{item.summary}</p>}</div></article>
-  })}</div>
-}
-
-function AboutPage({ navigate }) {
-  return (
-    <>
-      <section className="page-intro about-intro"><h1>A builder who follows curiosity.</h1><p>I make software across iOS, Android, the web, browsers, AI, and 3D—then share the useful parts in public.</p></section>
-      <section className="number-strip" aria-label="Profile figures">
-        <span><strong>6,376</strong><small>Fud AI downloads</small></span>
-        <span><strong>53</strong><small>things shipped</small></span>
-        <span><strong>{profile.openSource.length}</strong><small>open-source entries</small></span>
-        <span><strong>13K+</strong><small>LinkedIn community</small></span>
-      </section>
-      <div className="about-nav"><span>Experience</span><InternalLink to="/education" onNavigate={navigate}>Education →</InternalLink></div>
-      <Timeline items={linkedinExperience} marks={EXPERIENCE_MARKS} />
-      <section className="simple-split">
-        <div><p className="eyebrow">Right now</p><h2>Still making.</h2></div>
-        <ul>{profile.currentWork.map((item) => <li key={item.name}><strong>{item.name}</strong><span>{item.description}</span></li>)}</ul>
-      </section>
-      <section className="recognition"><h2>Recognition</h2><ul>{profile.recognition.map((item) => <li key={item}>{item}</li>)}</ul></section>
-      <section className="around">
-        <div><p className="eyebrow">Elsewhere</p><h2>Find me around the internet.</h2><p>Writing, building, learning, and occasionally posting the strange parts.</p></div>
-        <div className="around-links">{profile.connect.map((item) => <ExternalLink href={item.url} key={item.name}>{item.name} ↗</ExternalLink>)}</div>
-      </section>
-      <section className="small-notes">
-        <ExternalLink href={profile.writing.url}><span>Writing</span><strong>{profile.writing.name} ↗</strong><small>{profile.writing.description}</small></ExternalLink>
-        <blockquote>{profile.philosophy}</blockquote>
-        <details><summary>Five random facts</summary><ul>{profile.randomFacts.map((item) => <li key={item}>{item}</li>)}</ul></details>
-      </section>
-    </>
-  )
-}
-
-function EducationPage({ navigate }) {
-  return (
-    <>
-      <section className="page-intro"><h1>Education.</h1><p>Computer science, engineering, mathematics, and years of figuring things out.</p></section>
-      <div className="about-nav"><InternalLink to="/experience" onNavigate={navigate}>← Experience</InternalLink><span>Education</span></div>
-      <Timeline items={linkedinEducation} marks={EDUCATION_MARKS} education />
-    </>
-  )
-}
-
-function SiteFooter({ navigate }) {
-  return (
-    <footer className="site-footer">
-      <Brand navigate={navigate} />
-      <p>Useful software and strange internet things.</p>
-      <div><ExternalLink href="mailto:ad13dtu@gmail.com">Email</ExternalLink><ExternalLink href="https://github.com/apoorvdarshan">GitHub</ExternalLink><ExternalLink href="https://www.linkedin.com/in/apoorvdarshan">LinkedIn</ExternalLink><ExternalLink href="https://x.com/apoorvdarshan">X</ExternalLink></div>
-    </footer>
   )
 }
 
 function App() {
+  const [dark, setDark] = useState(() => {
+    const saved = localStorage.getItem('apoorv-theme-v2')
+    return saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches
+  })
   const [path, setPath] = useState(currentPath)
-  const work = useMemo(() => buildWorkCatalog(profile), [])
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+    localStorage.setItem('apoorv-theme-v2', dark ? 'dark' : 'light')
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#1f1e1d' : '#f0eee6')
+  }, [dark])
 
   useEffect(() => {
     const handlePopState = () => setPath(currentPath())
@@ -291,7 +383,12 @@ function App() {
     const seo = SEO_BY_PATH[path] || SEO_BY_PATH['/']
     const canonical = canonicalUrl(path)
     document.title = seo.title
-    const setMeta = (selector, attribute, value) => document.head.querySelector(selector)?.setAttribute(attribute, value)
+
+    const setMeta = (selector, attribute, value) => {
+      const element = document.head.querySelector(selector)
+      if (element) element.setAttribute(attribute, value)
+    }
+
     setMeta('meta[name="description"]', 'content', seo.description)
     setMeta('meta[property="og:title"]', 'content', seo.title)
     setMeta('meta[property="og:description"]', 'content', seo.description)
@@ -300,6 +397,7 @@ function App() {
     setMeta('meta[name="twitter:title"]', 'content', seo.title)
     setMeta('meta[name="twitter:description"]', 'content', seo.description)
     setMeta('meta[name="twitter:image"]', 'content', SOCIAL_IMAGE)
+
     document.querySelector('link[rel="canonical"]')?.setAttribute('href', canonical)
     const schema = document.querySelector('script[type="application/ld+json"]')
     if (schema) schema.textContent = JSON.stringify(structuredData(path))
@@ -309,17 +407,40 @@ function App() {
     if (to === path) return
     window.history.pushState({}, '', to)
     setPath(to)
-    window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' })
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' })
   }
 
   let page
-  if (path === '/projects') page = <ProjectsPage work={work} />
+  if (path === '/experience') page = <ExperiencePage />
+  else if (path === '/education') page = <EducationPage />
+  else if (path === '/projects') page = <ProjectsPage />
   else if (path === '/open-source') page = <OpenSourcePage />
-  else if (path === '/education') page = <EducationPage navigate={navigate} />
-  else if (path === '/experience') page = <AboutPage navigate={navigate} />
-  else page = <HomePage navigate={navigate} work={work} />
+  else page = <HomePage navigate={navigate} />
 
-  return <><a className="skip-link" href="#content">Skip to content</a><SiteHeader path={path} navigate={navigate} /><main id="content" className="page-shell"><div className="page-enter" key={path}>{page}</div></main><SiteFooter navigate={navigate} /></>
+  return (
+    <div className="page-wrapper">
+      <a className="skip-link" href="#content">Skip to content</a>
+
+      <header className="header">
+        <div className="container header-container">
+          <InternalLink className="header-name" to="/" onNavigate={navigate}>Apoorv Darshan</InternalLink>
+          <div className="header-actions">
+            {path !== '/' && <InternalLink className="home-link" to="/" onNavigate={navigate}>Home</InternalLink>}
+            <button className="toggle-switch" type="button" onClick={() => setDark(!dark)} aria-label={`Use ${dark ? 'light' : 'dark'} color mode`} aria-pressed={dark}>
+              <span className="toggle-knob"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main className="page-main" id="content">
+        <article className="container page-enter" key={path}>
+          {page}
+        </article>
+      </main>
+    </div>
+  )
 }
 
 export default App

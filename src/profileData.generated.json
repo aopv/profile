@@ -57,7 +57,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "335"
+      "starCount": "343"
     },
     {
       "name": "verceltics",
@@ -66,7 +66,7 @@
       "status": "",
       "marker": "📈",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/verceltics&v=3",
-      "starCount": "26"
+      "starCount": "27"
     },
     {
       "name": "scowld",
@@ -155,7 +155,7 @@
       "status": "",
       "marker": "🍪",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/browser-cookie-bridge&v=3",
-      "starCount": "4"
+      "starCount": "5"
     },
     {
       "name": "machina-cordis",
@@ -197,7 +197,7 @@
       "status": "",
       "marker": "📣",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/crossposter&v=3",
-      "starCount": "31"
+      "starCount": "32"
     },
     {
       "name": "TetherShot",
@@ -547,7 +547,7 @@
       "status": "",
       "marker": "🧠",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=langgenius/dify&v=3",
-      "starCount": "152k"
+      "starCount": "153k"
     },
     {
       "name": "kubernetes",
@@ -556,7 +556,7 @@
       "status": "",
       "marker": "☸️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=kubernetes/kubernetes&v=3",
-      "starCount": "124k"
+      "starCount": "125k"
     },
     {
       "name": "svelte",
@@ -640,15 +640,6 @@
       "starCount": "22k"
     },
     {
-      "name": "luigi",
-      "url": "https://github.com/spotify/luigi/pull/3410",
-      "description": "fix: replace deprecated datetime.utcfromtimestamp() calls (by Spotify)",
-      "status": "",
-      "marker": "🎵",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=spotify/luigi&v=3",
-      "starCount": "19k"
-    },
-    {
       "name": "CodexBar",
       "url": "https://github.com/steipete/CodexBar/pull/344/commits",
       "description": "fix: region-specific API endpoint for MiniMax (by @steipete, 🦞 OpenClaw)",
@@ -656,6 +647,15 @@
       "marker": "🛠️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=steipete/CodexBar&v=3",
       "starCount": "20k"
+    },
+    {
+      "name": "luigi",
+      "url": "https://github.com/spotify/luigi/pull/3410",
+      "description": "fix: replace deprecated datetime.utcfromtimestamp() calls (by Spotify)",
+      "status": "",
+      "marker": "🎵",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=spotify/luigi&v=3",
+      "starCount": "19k"
     },
     {
       "name": "runtime",
@@ -703,6 +703,15 @@
       "starCount": "13k"
     },
     {
+      "name": "gunicorn",
+      "url": "https://github.com/benoitc/gunicorn/pull/3686",
+      "description": "fix: decrement nr_conns on server-initiated close in the ASGI worker (authored commit)",
+      "status": "",
+      "marker": "🦄",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=benoitc/gunicorn&v=3",
+      "starCount": "11k"
+    },
+    {
       "name": "sqlfluff",
       "url": "https://github.com/sqlfluff/sqlfluff/pulls?q=author%3Aapoorvdarshan",
       "description": "7 merged PRs: SQL dialect parsing, grammar, and Jinja encoding fixes",
@@ -736,7 +745,7 @@
       "status": "",
       "marker": "🔁",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=jd/tenacity&v=3",
-      "starCount": "8.7k"
+      "starCount": "8.8k"
     },
     {
       "name": "gitextensions",
@@ -835,7 +844,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=alvinreal/awesome-opensource-ai&v=3",
-      "starCount": "4.5k"
+      "starCount": "4.6k"
     },
     {
       "name": "returns",
@@ -847,21 +856,21 @@
       "starCount": "4.3k"
     },
     {
-      "name": "fsharp",
-      "url": "https://github.com/dotnet/fsharp/pull/19317",
-      "description": "fix: Seq.empty serializer rendering (by .NET)",
-      "status": "",
-      "marker": "🔷",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dotnet/fsharp&v=3",
-      "starCount": "4.3k"
-    },
-    {
       "name": "dynaconf",
       "url": "https://github.com/dynaconf/dynaconf/pull/1421",
       "description": "feat: support list values for environment configuration",
       "status": "",
       "marker": "🧰",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dynaconf/dynaconf&v=3",
+      "starCount": "4.3k"
+    },
+    {
+      "name": "fsharp",
+      "url": "https://github.com/dotnet/fsharp/pull/19317",
+      "description": "fix: Seq.empty serializer rendering (by .NET)",
+      "status": "",
+      "marker": "🔷",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dotnet/fsharp&v=3",
       "starCount": "4.3k"
     },
     {
@@ -979,7 +988,7 @@
       "status": "",
       "marker": "☸️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=Flux159/mcp-server-kubernetes&v=3",
-      "starCount": "1.5k"
+      "starCount": "1.6k"
     },
     {
       "name": "jsonpickle",
@@ -1006,7 +1015,7 @@
       "status": "",
       "marker": "🧹",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=djlint/djLint&v=3",
-      "starCount": "943"
+      "starCount": "945"
     },
     {
       "name": "decorator",
@@ -1024,7 +1033,7 @@
       "status": "",
       "marker": "📺",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=CCExtractor/ccextractor&v=3",
-      "starCount": "897"
+      "starCount": "898"
     },
     {
       "name": "pyserde",
@@ -1042,7 +1051,7 @@
       "status": "",
       "marker": "🕸️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=pygraphviz/pygraphviz&v=3",
-      "starCount": "844"
+      "starCount": "845"
     },
     {
       "name": "flynt",
@@ -1051,7 +1060,7 @@
       "status": "",
       "marker": "🪶",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=ikamensh/flynt&v=3",
-      "starCount": "732"
+      "starCount": "733"
     },
     {
       "name": "kart",
@@ -1096,7 +1105,7 @@
       "status": "",
       "marker": "📧",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=resend/resend-mcp&v=3",
-      "starCount": "559"
+      "starCount": "561"
     },
     {
       "name": "giselle",
@@ -1114,7 +1123,7 @@
       "status": "",
       "marker": "🏦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=guibranco/BancosBrasileiros&v=3",
-      "starCount": "537"
+      "starCount": "539"
     },
     {
       "name": "fork-commit-merge",
@@ -1123,7 +1132,7 @@
       "status": "",
       "marker": "🍴",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=fork-commit-merge/fork-commit-merge&v=3",
-      "starCount": "507"
+      "starCount": "508"
     },
     {
       "name": "poetry-core",
@@ -1141,7 +1150,7 @@
       "status": "",
       "marker": "✉️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=SpamScope/mail-parser&v=3",
-      "starCount": "454"
+      "starCount": "455"
     },
     {
       "name": "xsdata",
@@ -1151,6 +1160,15 @@
       "marker": "🧬",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=tefra/xsdata&v=3",
       "starCount": "446"
+    },
+    {
+      "name": "awesome-ai-companion",
+      "url": "https://github.com/DasterProkio/awesome-ai-companion/pull/10",
+      "description": "docs: add Scowld companion client",
+      "status": "",
+      "marker": "🤖",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=DasterProkio/awesome-ai-companion&v=3",
+      "starCount": "445"
     },
     {
       "name": "WebOb",
@@ -1213,7 +1231,7 @@
       "status": "",
       "marker": "🕰️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=adbar/htmldate&v=3",
-      "starCount": "154"
+      "starCount": "155"
     },
     {
       "name": "elemo",
@@ -1241,15 +1259,6 @@
       "marker": "🍎",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=abordage/awesome-mac&v=3",
       "starCount": "20"
-    },
-    {
-      "name": "awesome-ai-companion",
-      "url": "https://github.com/DasterProkio/awesome-ai-companion/pull/10",
-      "description": "docs: add Scowld companion client",
-      "status": "",
-      "marker": "🤖",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=DasterProkio/awesome-ai-companion&v=3",
-      "starCount": "409"
     }
   ],
   "activityImage": "https://github-contribution-merger.apoorvdarshan.com/api/merge?users=apoorvdarshan%2Capoorvxircls&mode=overlay&colors=39d353%2C58a6ff",

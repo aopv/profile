@@ -1299,16 +1299,16 @@
       "url": "https://apoorvdarshan.com"
     },
     {
-      "name": "Email",
+      "name": "Email 1",
+      "url": "mailto:apoorvdarshan@gmail.com"
+    },
+    {
+      "name": "Email 2",
       "url": "mailto:ad13dtu@gmail.com"
     },
     {
-      "name": "Fud AI",
+      "name": "Email 3",
       "url": "mailto:apoorv@fud-ai.app"
-    },
-    {
-      "name": "Gmail",
-      "url": "mailto:apoorvdarshan@gmail.com"
     },
     {
       "name": "Twitter",

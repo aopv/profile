@@ -1299,18 +1299,6 @@
       "url": "https://apoorvdarshan.com"
     },
     {
-      "name": "Email 1",
-      "url": "mailto:apoorvdarshan@gmail.com"
-    },
-    {
-      "name": "Email 2",
-      "url": "mailto:ad13dtu@gmail.com"
-    },
-    {
-      "name": "Email 3",
-      "url": "mailto:apoorv@fud-ai.app"
-    },
-    {
       "name": "Twitter",
       "url": "https://x.com/apoorvdarshan"
     },
@@ -1357,6 +1345,18 @@
     {
       "name": "Support me on Ko-Fi",
       "url": "https://ko-fi.com/apoorvdarshan"
+    },
+    {
+      "name": "Email 1",
+      "url": "mailto:apoorvdarshan@gmail.com"
+    },
+    {
+      "name": "Email 2",
+      "url": "mailto:ad13dtu@gmail.com"
+    },
+    {
+      "name": "Email 3",
+      "url": "mailto:apoorv@fud-ai.app"
     },
     {
       "name": "Schedule",

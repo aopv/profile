@@ -29,8 +29,6 @@ export const SOCIAL_PROFILES = [
   'https://www.linkedin.com/in/apoorvdarshan',
   'https://x.com/apoorvdarshan',
   'https://youtube.com/@apoorvdarshan',
-  'https://peerlist.io/apoorvdarshan',
-  'https://bsky.app/profile/apoorvdarshan.com',
 ]
 
 export function canonicalUrl(path) {

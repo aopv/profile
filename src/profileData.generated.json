@@ -57,7 +57,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "343"
+      "starCount": "349"
     },
     {
       "name": "verceltics",
@@ -120,7 +120,7 @@
       "status": "",
       "marker": "🆕",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/newest-youtube-search&v=3",
-      "starCount": "3"
+      "starCount": "4"
     },
     {
       "name": "streaming-autopause",
@@ -155,7 +155,7 @@
       "status": "",
       "marker": "🍪",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/browser-cookie-bridge&v=3",
-      "starCount": "5"
+      "starCount": "6"
     },
     {
       "name": "machina-cordis",
@@ -1024,7 +1024,7 @@
       "status": "",
       "marker": "🎀",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=micheles/decorator&v=3",
-      "starCount": "905"
+      "starCount": "904"
     },
     {
       "name": "ccextractor",
@@ -1087,7 +1087,7 @@
       "status": "",
       "marker": "💅",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=styled-components/styled-components-website&v=3",
-      "starCount": "621"
+      "starCount": "620"
     },
     {
       "name": "docformatter",
@@ -1105,7 +1105,7 @@
       "status": "",
       "marker": "📧",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=resend/resend-mcp&v=3",
-      "starCount": "561"
+      "starCount": "562"
     },
     {
       "name": "giselle",
@@ -1114,7 +1114,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=giselles-ai/giselle&v=3",
-      "starCount": "553"
+      "starCount": "554"
     },
     {
       "name": "BancosBrasileiros",
@@ -1141,7 +1141,7 @@
       "status": "",
       "marker": "📝",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=python-poetry/poetry-core&v=3",
-      "starCount": "478"
+      "starCount": "479"
     },
     {
       "name": "mail-parser",
@@ -1159,7 +1159,7 @@
       "status": "",
       "marker": "🧬",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=tefra/xsdata&v=3",
-      "starCount": "446"
+      "starCount": "448"
     },
     {
       "name": "awesome-ai-companion",
@@ -1168,7 +1168,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=DasterProkio/awesome-ai-companion&v=3",
-      "starCount": "445"
+      "starCount": "463"
     },
     {
       "name": "WebOb",
@@ -1335,22 +1335,6 @@
       "url": "https://trustmrr.com/founder/apoorvdarshan"
     },
     {
-      "name": "Bluesky",
-      "url": "https://bsky.app/profile/apoorvdarshan.com"
-    },
-    {
-      "name": "Mastodon",
-      "url": "https://mastodon.social/@apoorvdarshan"
-    },
-    {
-      "name": "Peerlist",
-      "url": "https://peerlist.io/apoorvdarshan"
-    },
-    {
-      "name": "Dev.to",
-      "url": "https://dev.to/apoorvdarshan"
-    },
-    {
       "name": "Credly",
       "url": "https://www.credly.com/users/apoorvdarshan"
     },
@@ -1365,10 +1349,6 @@
     {
       "name": "Schedule",
       "url": "https://cal.com/apoorvdarshan"
-    },
-    {
-      "name": "Dribbble",
-      "url": "https://dribbble.com/apoorvdarshan"
     },
     {
       "name": "Pinterest",

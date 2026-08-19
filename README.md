@@ -14,7 +14,7 @@
 
 This repository powers [apoorvdarshan.com](https://apoorvdarshan.com), a minimal editorial profile inspired by the clarity of a personal essay rather than a conventional portfolio dashboard.
 
-It brings together shipped apps, games, Chrome extensions, projects, open-source contributions, live repository star counts, GitHub activity, experience, education, writing, recognition, and links from around the web.
+It brings together shipped apps, games, Chrome extensions, projects, open-source contributions, live repository star counts, GitHub activity, experience, education, recognition, and links from around the web.
 
 ## Highlights
 
@@ -41,7 +41,7 @@ It brings together shipped apps, games, Chrome extensions, projects, open-source
 
 The website deliberately keeps its data sources separate:
 
-- **GitHub profile README:** apps, games, extensions, projects, open-source work, activity, writing, links, recognition, philosophy, and facts. The build synchronizes this content through [`scripts/sync-profile-readme.mjs`](scripts/sync-profile-readme.mjs).
+- **GitHub profile README:** apps, games, extensions, projects, open-source work, activity, links, recognition, philosophy, and facts. The build synchronizes this content through [`scripts/sync-profile-readme.mjs`](scripts/sync-profile-readme.mjs).
 - **LinkedIn profile:** experience and education. These verified snapshots live in [`src/linkedinExperience.js`](src/linkedinExperience.js) and [`src/linkedinEducation.js`](src/linkedinEducation.js).
 
 Running the development server or creating a production build refreshes the generated GitHub snapshot automatically. If GitHub is temporarily unavailable, the committed snapshot remains usable.

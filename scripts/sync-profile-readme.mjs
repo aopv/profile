@@ -110,10 +110,6 @@ function parseReadme(readme) {
   const statement = beforeApps.split('\n').find((line) => line.startsWith('> '))?.slice(2) ?? ''
   const activitySection = section(readme, '## GitHub Activity', '## What I\'m Doing')
   const activityImage = activitySection.match(/<img src="([^"]+)"/)?.[1] ?? ''
-  const writingSection = section(readme, '## Writing', '## Connect')
-  const writingUrl = [...writingSection.matchAll(/\]\((https?:\/\/[^)]+)\)/g)].at(-1)?.[1] ?? ''
-  const writingLine = writingSection.split('\n').find((line) => line.startsWith('- [![')) ?? ''
-  const writingDescription = writingLine.includes(') - ') ? writingLine.slice(writingLine.lastIndexOf(') - ') + 4) : ''
   const philosophySection = section(readme, '### Philosophy')
   const philosophy = philosophySection.split('\n').find((line) => line.startsWith('> '))?.slice(2) ?? ''
   const randomFactsPart = philosophySection.split('<summary>Random Facts</summary>')[1]?.split('</details>')[0] ?? ''
@@ -137,8 +133,7 @@ function parseReadme(readme) {
     projects: htmlEntries(readme, '## Projects', '### Open Source Contributions'),
     openSource: htmlEntries(readme, '### Open Source Contributions', '## GitHub Activity'),
     activityImage,
-    currentWork: namedBullets(section(readme, "## What I'm Doing", '## Writing')),
-    writing: { name: 'Medium', url: writingUrl, description: plainText(writingDescription) },
+    currentWork: namedBullets(section(readme, "## What I'm Doing", '## Connect')),
     connect: badgeLinks(section(readme, '## Connect', '### Recognition')),
     recognition: markdownBullets(section(readme, '### Recognition', '### Philosophy')),
     philosophy: plainText(philosophy),

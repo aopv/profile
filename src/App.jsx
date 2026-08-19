@@ -188,11 +188,6 @@ function ReadmeDetails() {
       </section>
 
       <section>
-        <h2>Writing</h2>
-        <ul className="bullet-list"><li><ExternalLink href={profile.writing.url}>{profile.writing.name}</ExternalLink><span className="entry-summary"> — {profile.writing.description}</span></li></ul>
-      </section>
-
-      <section>
         <h2>Connect</h2>
         <ul className="bullet-list link-columns">{profile.connect.map((item) => <li key={item.name}><ExternalLink href={item.url}>{item.name}</ExternalLink></li>)}</ul>
       </section>

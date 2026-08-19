@@ -57,7 +57,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "349"
+      "starCount": "350"
     },
     {
       "name": "verceltics",
@@ -538,7 +538,7 @@
       "status": "",
       "marker": "🦋",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=flutter/flutter&v=3",
-      "starCount": "178k"
+      "starCount": "179k"
     },
     {
       "name": "dify",
@@ -1132,7 +1132,7 @@
       "status": "",
       "marker": "🍴",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=fork-commit-merge/fork-commit-merge&v=3",
-      "starCount": "508"
+      "starCount": "509"
     },
     {
       "name": "poetry-core",
@@ -1168,7 +1168,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=DasterProkio/awesome-ai-companion&v=3",
-      "starCount": "463"
+      "starCount": "465"
     },
     {
       "name": "WebOb",
@@ -1249,7 +1249,7 @@
       "status": "",
       "marker": "📖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=petertzy/markdown-reader&v=3",
-      "starCount": "26"
+      "starCount": "28"
     },
     {
       "name": "awesome-mac",
@@ -1288,11 +1288,6 @@
       "description": "Giving back to the community"
     }
   ],
-  "writing": {
-    "name": "Medium",
-    "url": "https://apoorvdarshan.medium.com",
-    "description": "My hot takes on the latest in tech and AI, fresh off the press"
-  },
   "connect": [
     {
       "name": "Profile",

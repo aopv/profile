@@ -149,6 +149,14 @@
       "starBadgeUrl": ""
     },
     {
+      "name": "DesktopWorm",
+      "url": "https://github.com/apoorvdarshan/DesktopWorm",
+      "description": "Native macOS desktop C. elegans driven by the OpenWorm c302 connectome",
+      "status": "",
+      "marker": "🪱",
+      "starBadgeUrl": ""
+    },
+    {
       "name": "browser-cookie-bridge",
       "url": "https://github.com/apoorvdarshan/browser-cookie-bridge",
       "description": "Local cookie and session transfer between Chromium browsers and Codex on macOS",

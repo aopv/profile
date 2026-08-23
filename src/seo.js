@@ -26,7 +26,7 @@ export const SEO_BY_PATH = {
 
 export const SOCIAL_PROFILES = [
   'https://github.com/apoorvdarshan',
-  'https://www.linkedin.com/in/apoorvdarshan',
+  'https://www.linkedin.com/in/aporv/',
   'https://x.com/apoorvdarshan',
   'https://www.youtube.com/@apoorvv',
 ]

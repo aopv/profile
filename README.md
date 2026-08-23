@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://apoorvdarshan.com">
+  <a href="https://aopv.dev">
     <img src="public/android-chrome-192x192.png" width="104" height="104" alt="Apoorv Darshan profile icon" />
   </a>
 
@@ -7,12 +7,12 @@
 
   **Apoorv Darshan’s corner of the internet — apps, experiments, open source, experience, and ideas.**
 
-  [Visit the website](https://apoorvdarshan.com) · [GitHub profile](https://github.com/aopv) · [LinkedIn](https://www.linkedin.com/in/aopv/)
+  [Visit the website](https://aopv.dev) · [GitHub profile](https://github.com/aopv) · [LinkedIn](https://www.linkedin.com/in/aopv/)
 </div>
 
 ## About
 
-This repository powers [apoorvdarshan.com](https://apoorvdarshan.com), a minimal editorial profile inspired by the clarity of a personal essay rather than a conventional portfolio dashboard.
+This repository powers [aopv.dev](https://aopv.dev), a minimal editorial profile inspired by the clarity of a personal essay rather than a conventional portfolio dashboard.
 
 It brings together shipped apps, games, Chrome extensions, projects, open-source contributions, live repository star counts, GitHub activity, experience, education, recognition, and links from around the web.
 
@@ -31,11 +31,11 @@ It brings together shipped apps, games, Chrome extensions, projects, open-source
 
 | Route | Content |
 | --- | --- |
-| [`/`](https://apoorvdarshan.com) | Complete profile overview |
-| [`/experience`](https://apoorvdarshan.com/experience) | All professional experience |
-| [`/education`](https://apoorvdarshan.com/education) | Complete education history |
-| [`/projects`](https://apoorvdarshan.com/projects) | All listed projects |
-| [`/open-source`](https://apoorvdarshan.com/open-source) | All open-source contributions |
+| [`/`](https://aopv.dev) | Complete profile overview |
+| [`/experience`](https://aopv.dev/experience) | All professional experience |
+| [`/education`](https://aopv.dev/education) | Complete education history |
+| [`/projects`](https://aopv.dev/projects) | All listed projects |
+| [`/open-source`](https://aopv.dev/open-source) | All open-source contributions |
 
 ## Content model
 
@@ -91,7 +91,7 @@ wrangler.jsonc                 Cloudflare Workers configuration
 
 ## Deployment
 
-The production site is hosted on Cloudflare Workers at [apoorvdarshan.com](https://apoorvdarshan.com). The repository is connected to Cloudflare Workers Builds, so every push to `main` runs:
+The production site is hosted on Cloudflare Workers at [aopv.dev](https://aopv.dev). The repository is connected to Cloudflare Workers Builds, so every push to `main` runs:
 
 ```bash
 npm run build

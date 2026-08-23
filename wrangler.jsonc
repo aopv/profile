@@ -6,7 +6,7 @@
   "preview_urls": false,
   "routes": [
     {
-      "pattern": "apoorvdarshan.com",
+      "pattern": "aopv.dev",
       "custom_domain": true
     }
   ],

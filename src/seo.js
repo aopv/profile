@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://apoorvdarshan.com'
+export const SITE_URL = 'https://aopv.dev'
 export const SOCIAL_IMAGE = `${SITE_URL}/apoorv-darshan-social.png`
 
 export const SEO_BY_PATH = {

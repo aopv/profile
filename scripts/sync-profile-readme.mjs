@@ -2,8 +2,8 @@ import { access, readFile, writeFile } from 'node:fs/promises'
 import { constants } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 
-const README_URL = 'https://raw.githubusercontent.com/apoorvdarshan/apoorvdarshan/main/README.md'
-const README_API_URL = 'https://api.github.com/repos/apoorvdarshan/apoorvdarshan/contents/README.md?ref=main'
+const README_URL = 'https://raw.githubusercontent.com/aopv/aopv/main/README.md'
+const README_API_URL = 'https://api.github.com/repos/aopv/aopv/contents/README.md?ref=main'
 const OUTPUT_URL = new URL('../src/profileData.generated.json', import.meta.url)
 
 const decode = (value = '') => value

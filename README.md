@@ -57,7 +57,7 @@ Running the development server or creating a production build refreshes the gene
 ## Local development
 
 ```bash
-git clone https://github.com/apoorvdarshan/profile.git
+git clone https://github.com/aopv/profile.git
 cd profile
 npm install
 npm run dev

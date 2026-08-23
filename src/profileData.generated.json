@@ -57,7 +57,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "353"
+      "starCount": "356"
     },
     {
       "name": "verceltics",
@@ -66,7 +66,7 @@
       "status": "",
       "marker": "📈",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/verceltics&v=3",
-      "starCount": "27"
+      "starCount": "28"
     },
     {
       "name": "scowld",
@@ -75,7 +75,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/scowld&v=3",
-      "starCount": "13"
+      "starCount": "14"
     },
     {
       "name": "quit-all",
@@ -154,7 +154,8 @@
       "description": "Native macOS desktop C. elegans driven by the OpenWorm c302 connectome",
       "status": "",
       "marker": "🪱",
-      "starBadgeUrl": ""
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/DesktopWorm&v=3",
+      "starCount": "1"
     },
     {
       "name": "browser-cookie-bridge",
@@ -214,7 +215,7 @@
       "status": "",
       "marker": "📸",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=apoorvdarshan/TetherShot&v=3",
-      "starCount": "4"
+      "starCount": "6"
     },
     {
       "name": "macbook-24x7-agents",
@@ -843,7 +844,7 @@
       "status": "",
       "marker": "📍",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=geopy/geopy&v=3",
-      "starCount": "4.8k"
+      "starCount": "4.9k"
     },
     {
       "name": "awesome-opensource-ai",
@@ -1104,7 +1105,7 @@
       "status": "",
       "marker": "📏",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=PyCQA/docformatter&v=3",
-      "starCount": "597"
+      "starCount": "598"
     },
     {
       "name": "resend-mcp",
@@ -1176,7 +1177,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=DasterProkio/awesome-ai-companion&v=3",
-      "starCount": "488"
+      "starCount": "505"
     },
     {
       "name": "WebOb",
@@ -1266,7 +1267,7 @@
       "status": "",
       "marker": "🍎",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=abordage/awesome-mac&v=3",
-      "starCount": "19"
+      "starCount": "20"
     }
   ],
   "activityImage": "https://github-contribution-merger.apoorvdarshan.com/api/merge?users=apoorvdarshan%2Capoorvxircls&mode=overlay&colors=39d353%2C58a6ff",
@@ -1319,7 +1320,7 @@
     },
     {
       "name": "YouTube",
-      "url": "https://youtube.com/@apoorvdarshan"
+      "url": "https://www.youtube.com/@apoorvv"
     },
     {
       "name": "Twitch",

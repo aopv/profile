@@ -28,7 +28,7 @@ export const SOCIAL_PROFILES = [
   'https://github.com/aopv',
   'https://www.linkedin.com/in/aopv/',
   'https://x.com/apoorvdarshan',
-  'https://www.youtube.com/@apoorvv',
+  'https://www.youtube.com/@aopv',
 ]
 
 export function canonicalUrl(path) {

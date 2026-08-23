@@ -117,7 +117,7 @@ function parseReadme(readme) {
   return {
     source: {
       label: 'GitHub profile README',
-      url: 'https://github.com/apoorvdarshan',
+      url: 'https://github.com/aopv',
       rawUrl: README_URL,
     },
     intro: {

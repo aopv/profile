@@ -7,7 +7,7 @@
 
   **Apoorv Darshan’s corner of the internet — apps, experiments, open source, experience, and ideas.**
 
-  [Visit the website](https://apoorvdarshan.com) · [GitHub profile](https://github.com/apoorvdarshan) · [LinkedIn](https://www.linkedin.com/in/aopv/)
+  [Visit the website](https://apoorvdarshan.com) · [GitHub profile](https://github.com/apoorvdarshan) · [LinkedIn](https://www.linkedin.com/in/apoorvdarshan/)
 </div>
 
 ## About

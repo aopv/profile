@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://aopv.dev'
+export const SITE_URL = 'https://apoorvdarshan.com'
 export const SOCIAL_IMAGE = `${SITE_URL}/apoorv-darshan-social.png`
 
 export const SEO_BY_PATH = {
@@ -25,7 +25,7 @@ export const SEO_BY_PATH = {
 }
 
 export const SOCIAL_PROFILES = [
-  'https://github.com/aopv',
+  'https://github.com/apoorvdarshan',
   'https://www.linkedin.com/in/aopv/',
   'https://x.com/aporvv',
   'https://www.youtube.com/@aopv',

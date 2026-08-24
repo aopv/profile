@@ -56,7 +56,7 @@
       "description": "AI-powered calorie and nutrition tracker app (6K+ downloads)",
       "status": "",
       "marker": "🥦",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/fud-ai&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/fud-ai&v=3",
       "starCount": "358"
     },
     {
@@ -65,7 +65,7 @@
       "description": "Open-source iOS hub for hosting, domains, analytics, and uptime (1K+ downloads)",
       "status": "",
       "marker": "📈",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/verceltics&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/verceltics&v=3",
       "starCount": "28"
     },
     {
@@ -74,7 +74,7 @@
       "description": "iOS AI companion with a live VRM avatar that sees you",
       "status": "",
       "marker": "🤖",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/scowld&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/scowld&v=3",
       "starCount": "14"
     },
     {
@@ -119,7 +119,7 @@
       "description": "Chrome extension for true newest-first YouTube video search using the YouTube Data API",
       "status": "",
       "marker": "🆕",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/newest-youtube-search&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/newest-youtube-search&v=3",
       "starCount": "4"
     },
     {
@@ -154,7 +154,7 @@
       "description": "Native macOS desktop C. elegans driven by the OpenWorm c302 connectome",
       "status": "",
       "marker": "🪱",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/DesktopWorm&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/DesktopWorm&v=3",
       "starCount": "1"
     },
     {
@@ -163,7 +163,7 @@
       "description": "Local cookie and session transfer between Chromium browsers and Codex on macOS",
       "status": "",
       "marker": "🍪",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/browser-cookie-bridge&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/browser-cookie-bridge&v=3",
       "starCount": "6"
     },
     {
@@ -196,7 +196,7 @@
       "description": "Editable Blender pocket orrery with an animated mechanical solar system",
       "status": "",
       "marker": "🪐",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/helios-01&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/helios-01&v=3",
       "starCount": "1"
     },
     {
@@ -205,7 +205,7 @@
       "description": "Open-source crossposter for X, LinkedIn, Bluesky, Mastodon, Instagram, YouTube, and more",
       "status": "",
       "marker": "📣",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/crossposter&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/crossposter&v=3",
       "starCount": "33"
     },
     {
@@ -214,8 +214,8 @@
       "description": "macOS menu-bar app that screenshots your USB-connected iPhone straight into a folder you choose",
       "status": "",
       "marker": "📸",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/TetherShot&v=3",
-      "starCount": "8"
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/TetherShot&v=3",
+      "starCount": "9"
     },
     {
       "name": "macbook-24x7-agents",
@@ -279,7 +279,7 @@
       "description": "Merge multiple GitHub contribution graphs into one SVG heatmap",
       "status": "",
       "marker": "📊",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/github-readme-contribution-merger&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/github-readme-contribution-merger&v=3",
       "starCount": "13"
     },
     {
@@ -296,7 +296,7 @@
       "description": "Doodle-style web music player",
       "status": "",
       "marker": "🎵",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/doodle-beats&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/doodle-beats&v=3",
       "starCount": "1"
     },
     {
@@ -305,7 +305,7 @@
       "description": "Intentionally bad UI date picker; viral on Reddit (130K+ views)",
       "status": "",
       "marker": "🌍",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/dob-selector&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/dob-selector&v=3",
       "starCount": "8"
     },
     {
@@ -314,7 +314,7 @@
       "description": "Slot machine date picker; intentionally bad UI",
       "status": "",
       "marker": "🎰",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/slot-machine-date-picker&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/slot-machine-date-picker&v=3",
       "starCount": "2"
     },
     {
@@ -331,7 +331,7 @@
       "description": "Automated job hunt via Claude Code/Codex with Gmail MCP outreach",
       "status": "",
       "marker": "🐦‍⬛",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/karasufumi&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/karasufumi&v=3",
       "starCount": "1"
     },
     {
@@ -348,7 +348,7 @@
       "description": "AI news website (GNews.io API, 100 req/day limit)",
       "status": "",
       "marker": "📰",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/zyro&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/zyro&v=3",
       "starCount": "1"
     },
     {
@@ -365,7 +365,7 @@
       "description": "Claude Code reimplemented in pure C, the lowest level it's ever been done",
       "status": "",
       "marker": "🦀",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/claw-c&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/claw-c&v=3",
       "starCount": "5"
     },
     {
@@ -382,7 +382,7 @@
       "description": "3D zombie survival FPS with Three.js",
       "status": "",
       "marker": "🎮",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/zombie-game&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/zombie-game&v=3",
       "starCount": "3"
     },
     {
@@ -391,7 +391,7 @@
       "description": "MediaPipe-powered hands-free virtual keyboard",
       "status": "",
       "marker": "🖐️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/gesture-keyboard&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/gesture-keyboard&v=3",
       "starCount": "1"
     },
     {
@@ -400,7 +400,7 @@
       "description": "Hand-gesture drawing app",
       "status": "",
       "marker": "🎨",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/drawtica&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/drawtica&v=3",
       "starCount": "1"
     },
     {
@@ -409,7 +409,7 @@
       "description": "Horror-themed interactive eye with gesture control",
       "status": "",
       "marker": "👁️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/peek-a-pupil&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/peek-a-pupil&v=3",
       "starCount": "1"
     },
     {
@@ -418,7 +418,7 @@
       "description": "Real-time face tracking with sci-fi HUD",
       "status": "",
       "marker": "🎯",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/headshot-tracker&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/headshot-tracker&v=3",
       "starCount": "4"
     },
     {
@@ -427,7 +427,7 @@
       "description": "Client-side image compression (browser-only, nothing uploaded)",
       "status": "",
       "marker": "🖼️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/compress-image&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/compress-image&v=3",
       "starCount": "1"
     },
     {
@@ -436,7 +436,7 @@
       "description": "DTU website with cyberpunk UI",
       "status": "",
       "marker": "🏫",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/dtu-clone&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/dtu-clone&v=3",
       "starCount": "2"
     },
     {
@@ -445,7 +445,7 @@
       "description": "Red Bull landing page reimagined",
       "status": "",
       "marker": "🐂",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/redbull&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/redbull&v=3",
       "starCount": "1"
     },
     {
@@ -454,7 +454,7 @@
       "description": "Fantasy-themed Simon Says memory game",
       "status": "",
       "marker": "🐉",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/simon-says&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/simon-says&v=3",
       "starCount": "2"
     },
     {
@@ -463,7 +463,7 @@
       "description": "Star Wars themed dark/light mode toggle",
       "status": "",
       "marker": "🌓",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/toggle-button&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/toggle-button&v=3",
       "starCount": "1"
     },
     {
@@ -472,7 +472,7 @@
       "description": "BMW landing page clone",
       "status": "",
       "marker": "🚗",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/bmw&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/bmw&v=3",
       "starCount": "1"
     },
     {
@@ -481,7 +481,7 @@
       "description": "Monster Energy landing page",
       "status": "",
       "marker": "🐉",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/monster-energy&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/monster-energy&v=3",
       "starCount": "1"
     },
     {
@@ -490,7 +490,7 @@
       "description": "Random dog images powered by Dog CEO API",
       "status": "",
       "marker": "🐕",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/random-dog-images&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/random-dog-images&v=3",
       "starCount": "1"
     },
     {
@@ -499,7 +499,7 @@
       "description": "Cat facts powered by catfact.ninja API",
       "status": "",
       "marker": "🐱",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/random-cat-facts&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/random-cat-facts&v=3",
       "starCount": "1"
     },
     {
@@ -508,7 +508,7 @@
       "description": "Harry Potter-themed To-Do app",
       "status": "",
       "marker": "🧙",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/todo-app&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/todo-app&v=3",
       "starCount": "1"
     },
     {
@@ -517,7 +517,7 @@
       "description": "Spotify UI clone",
       "status": "",
       "marker": "🎧",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=aopv/spotify-clone&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=aopv/spotify-clone&v=3",
       "starCount": "3"
     }
   ],
@@ -528,8 +528,8 @@
       "description": "fix(curriculum): correct example for ochenta y uno gender rule",
       "status": "",
       "marker": "🏕️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=freeCodeCamp/freeCodeCamp&v=3",
-      "starCount": "454k"
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=freeCodeCamp/freeCodeCamp&v=3",
+      "starCount": "455k"
     },
     {
       "name": "tensorflow",
@@ -537,7 +537,7 @@
       "description": "fix: resource misclassification for unsorted read-only inputs (by TensorFlow)",
       "status": "",
       "marker": "🔶",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=tensorflow/tensorflow&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=tensorflow/tensorflow&v=3",
       "starCount": "197k"
     },
     {
@@ -546,7 +546,7 @@
       "description": "remove material imports from navigator and overlay tests (by Flutter)",
       "status": "",
       "marker": "🦋",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=flutter/flutter&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=flutter/flutter&v=3",
       "starCount": "179k"
     },
     {
@@ -555,7 +555,7 @@
       "description": "refactor(web): replace String.match() with RegExp.exec() for non-global regex",
       "status": "",
       "marker": "🧠",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=langgenius/dify&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=langgenius/dify&v=3",
       "starCount": "153k"
     },
     {
@@ -564,7 +564,7 @@
       "description": "migrate SignerName to declarative validation (by Kubernetes)",
       "status": "",
       "marker": "☸️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=kubernetes/kubernetes&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=kubernetes/kubernetes&v=3",
       "starCount": "125k"
     },
     {
@@ -573,7 +573,7 @@
       "description": "fix: keep select.__value current when effect is deferred (by Svelte)",
       "status": "",
       "marker": "🔥",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=sveltejs/svelte&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=sveltejs/svelte&v=3",
       "starCount": "88k"
     },
     {
@@ -582,7 +582,7 @@
       "description": "add APP_NAME fallback in mail config (merged by @taylorotwell, creator of Laravel)",
       "status": "",
       "marker": "🔴",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=laravel/laravel&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=laravel/laravel&v=3",
       "starCount": "85k"
     },
     {
@@ -591,7 +591,7 @@
       "description": "fix: align TestRestTemplate cookie handling with RestTemplate (by Spring)",
       "status": "",
       "marker": "🍃",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=spring-projects/spring-boot&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=spring-projects/spring-boot&v=3",
       "starCount": "81k"
     },
     {
@@ -600,7 +600,7 @@
       "description": "ansible-config: default to checking all plugin configs",
       "status": "",
       "marker": "⚙️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=ansible/ansible&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=ansible/ansible&v=3",
       "starCount": "70k"
     },
     {
@@ -609,7 +609,7 @@
       "description": "fix: use createElementNS for XSLT documents (by jQuery)",
       "status": "",
       "marker": "💲",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=jquery/jquery&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=jquery/jquery&v=3",
       "starCount": "60k"
     },
     {
@@ -618,7 +618,7 @@
       "description": "add Scowld to the open-source iOS app catalog",
       "status": "",
       "marker": "📱",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dkhamsing/open-source-ios-apps&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=dkhamsing/open-source-ios-apps&v=3",
       "starCount": "52k"
     },
     {
@@ -627,7 +627,7 @@
       "description": "fix: quote Symbol values in @test failure output (by Julia)",
       "status": "",
       "marker": "🟣",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=JuliaLang/julia&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=JuliaLang/julia&v=3",
       "starCount": "49k"
     },
     {
@@ -636,7 +636,7 @@
       "description": "2 merged PRs: cwd validation + remote script error handling (by Google)",
       "status": "",
       "marker": "🐚",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=google/zx&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=google/zx&v=3",
       "starCount": "46k"
     },
     {
@@ -645,7 +645,7 @@
       "description": "add F# release notes for .NET 11 Preview 3 (by .NET)",
       "status": "",
       "marker": "🔷",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dotnet/core&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=dotnet/core&v=3",
       "starCount": "22k"
     },
     {
@@ -654,8 +654,8 @@
       "description": "fix: region-specific API endpoint for MiniMax (by @steipete, 🦞 OpenClaw)",
       "status": "",
       "marker": "🛠️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=steipete/CodexBar&v=3",
-      "starCount": "20k"
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=steipete/CodexBar&v=3",
+      "starCount": "21k"
     },
     {
       "name": "luigi",
@@ -663,7 +663,7 @@
       "description": "fix: replace deprecated datetime.utcfromtimestamp() calls (by Spotify)",
       "status": "",
       "marker": "🎵",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=spotify/luigi&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=spotify/luigi&v=3",
       "starCount": "19k"
     },
     {
@@ -672,7 +672,7 @@
       "description": "fix: fractional-token AttemptAcquire(0) behavior (by .NET)",
       "status": "",
       "marker": "🔷",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dotnet/runtime&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=dotnet/runtime&v=3",
       "starCount": "18k"
     },
     {
@@ -681,7 +681,7 @@
       "description": "fix: incorrect timezone conversion when setLocalTimeZone is used (by Adobe)",
       "status": "",
       "marker": "🎨",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=adobe/react-spectrum&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=adobe/react-spectrum&v=3",
       "starCount": "16k"
     },
     {
@@ -690,7 +690,7 @@
       "description": "fix: theme settings in non-English locales (by Jupyter)",
       "status": "",
       "marker": "📓",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=jupyterlab/jupyterlab&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=jupyterlab/jupyterlab&v=3",
       "starCount": "15k"
     },
     {
@@ -699,7 +699,7 @@
       "description": "fix: remove return statements from finally blocks",
       "status": "",
       "marker": "🛡️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=prowler-cloud/prowler&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=prowler-cloud/prowler&v=3",
       "starCount": "15k"
     },
     {
@@ -708,7 +708,7 @@
       "description": "fix(backend): notify users about BYOK LLM key failures",
       "status": "",
       "marker": "🎙️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=BasedHardware/omi&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=BasedHardware/omi&v=3",
       "starCount": "13k"
     },
     {
@@ -717,7 +717,7 @@
       "description": "fix: decrement nr_conns on server-initiated close in the ASGI worker (authored commit)",
       "status": "",
       "marker": "🦄",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=benoitc/gunicorn&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=benoitc/gunicorn&v=3",
       "starCount": "11k"
     },
     {
@@ -726,7 +726,7 @@
       "description": "7 merged PRs: SQL dialect parsing, grammar, and Jinja encoding fixes",
       "status": "",
       "marker": "❄️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=sqlfluff/sqlfluff&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=sqlfluff/sqlfluff&v=3",
       "starCount": "9.9k"
     },
     {
@@ -735,7 +735,7 @@
       "description": "fix: line_height() crash on calc() values",
       "status": "",
       "marker": "📄",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=Kozea/WeasyPrint&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=Kozea/WeasyPrint&v=3",
       "starCount": "9.5k"
     },
     {
@@ -744,7 +744,7 @@
       "description": "fix: use relative delay for Retry-After header on 429 (by @steipete, 🦞 OpenClaw)",
       "status": "",
       "marker": "🦞",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=openclaw/clawhub&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=openclaw/clawhub&v=3",
       "starCount": "9.3k"
     },
     {
@@ -753,7 +753,7 @@
       "description": "fix: keep statistics visible when @retry is further wrapped",
       "status": "",
       "marker": "🔁",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=jd/tenacity&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=jd/tenacity&v=3",
       "starCount": "8.8k"
     },
     {
@@ -762,7 +762,7 @@
       "description": "fix: console launch fails when Windows username contains spaces",
       "status": "",
       "marker": "🔧",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=gitextensions/gitextensions&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=gitextensions/gitextensions&v=3",
       "starCount": "8.5k"
     },
     {
@@ -771,7 +771,7 @@
       "description": "feat: implement BOM stripping and ignoreBOM option in TextDecoder",
       "status": "",
       "marker": "🐍",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=boa-dev/boa&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=boa-dev/boa&v=3",
       "starCount": "7.5k"
     },
     {
@@ -780,7 +780,7 @@
       "description": "fix: honor # isort: skip when a __future__ import is present",
       "status": "",
       "marker": "🔤",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=PyCQA/isort&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=PyCQA/isort&v=3",
       "starCount": "6.9k"
     },
     {
@@ -789,7 +789,7 @@
       "description": "8 merged PRs: add projects + fix forks badge cursor",
       "status": "",
       "marker": "🆙",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=up-for-grabs/up-for-grabs.net&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=up-for-grabs/up-for-grabs.net&v=3",
       "starCount": "6k"
     },
     {
@@ -798,7 +798,7 @@
       "description": "fix: preserve lexer callbacks for keyword terminals",
       "status": "",
       "marker": "🐦",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=lark-parser/lark&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=lark-parser/lark&v=3",
       "starCount": "6k"
     },
     {
@@ -807,7 +807,7 @@
       "description": "fix: handle rejected handshakes cleanly in the threading server",
       "status": "",
       "marker": "🔌",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=python-websockets/websockets&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=python-websockets/websockets&v=3",
       "starCount": "5.7k"
     },
     {
@@ -816,7 +816,7 @@
       "description": "fix: include git submodule files in code archive",
       "status": "",
       "marker": "🔮",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=zenml-io/zenml&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=zenml-io/zenml&v=3",
       "starCount": "5.6k"
     },
     {
@@ -825,7 +825,7 @@
       "description": "fix: drop argument-less __init__ from frozendict constructor",
       "status": "",
       "marker": "🏷️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=python/typeshed&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=python/typeshed&v=3",
       "starCount": "5.1k"
     },
     {
@@ -834,7 +834,7 @@
       "description": "fix: downgrade RemoveChild log from Warning to Debug",
       "status": "",
       "marker": "⚡",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=akkadotnet/akka.net&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=akkadotnet/akka.net&v=3",
       "starCount": "5.1k"
     },
     {
@@ -843,7 +843,7 @@
       "description": "fix: guard Point.from_string against ReDoS on very long inputs",
       "status": "",
       "marker": "📍",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=geopy/geopy&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=geopy/geopy&v=3",
       "starCount": "4.9k"
     },
     {
@@ -852,7 +852,7 @@
       "description": "docs: add Scowld mobile AI companion",
       "status": "",
       "marker": "🤖",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=alvinreal/awesome-opensource-ai&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=alvinreal/awesome-opensource-ai&v=3",
       "starCount": "4.6k"
     },
     {
@@ -861,7 +861,7 @@
       "description": "fix: make partial plugin positionals keyword-only after keyword binding",
       "status": "",
       "marker": "↩️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dry-python/returns&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=dry-python/returns&v=3",
       "starCount": "4.4k"
     },
     {
@@ -870,7 +870,7 @@
       "description": "feat: support list values for environment configuration",
       "status": "",
       "marker": "🧰",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dynaconf/dynaconf&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=dynaconf/dynaconf&v=3",
       "starCount": "4.3k"
     },
     {
@@ -879,7 +879,7 @@
       "description": "fix: Seq.empty serializer rendering (by .NET)",
       "status": "",
       "marker": "🔷",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dotnet/fsharp&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=dotnet/fsharp&v=3",
       "starCount": "4.3k"
     },
     {
@@ -888,7 +888,7 @@
       "description": "feat: add configurable API key support for Rule34Ripper",
       "status": "",
       "marker": "📥",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=RipMeApp/ripme&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=RipMeApp/ripme&v=3",
       "starCount": "4.1k"
     },
     {
@@ -897,7 +897,7 @@
       "description": "fix: recognize ROW_FORMAT as a keyword",
       "status": "",
       "marker": "🗃️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=andialbrecht/sqlparse&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=andialbrecht/sqlparse&v=3",
       "starCount": "4k"
     },
     {
@@ -906,7 +906,7 @@
       "description": "fix: don't double-close the child pty fd (parallel Bad file descriptor)",
       "status": "",
       "marker": "🧪",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=tox-dev/tox&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=tox-dev/tox&v=3",
       "starCount": "3.9k"
     },
     {
@@ -915,7 +915,7 @@
       "description": "fix: validate Netlify double-dash wildcard redirect URIs",
       "status": "",
       "marker": "🔐",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=django-oauth/django-oauth-toolkit&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=django-oauth/django-oauth-toolkit&v=3",
       "starCount": "3.3k"
     },
     {
@@ -924,7 +924,7 @@
       "description": "fix: prevent duplicate IDs from the header-ids extra",
       "status": "",
       "marker": "📝",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=trentm/python-markdown2&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=trentm/python-markdown2&v=3",
       "starCount": "2.8k"
     },
     {
@@ -933,7 +933,7 @@
       "description": "feat: support superscript decimal point and fraction slash in exponents",
       "status": "",
       "marker": "📐",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=hgrecco/pint&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=hgrecco/pint&v=3",
       "starCount": "2.8k"
     },
     {
@@ -942,7 +942,7 @@
       "description": "2 merged PRs: add 'yml' alias for YAML lexer + Mathematica \\[Name] named-character escapes",
       "status": "",
       "marker": "🖍️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=pygments/pygments&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=pygments/pygments&v=3",
       "starCount": "2.2k"
     },
     {
@@ -951,7 +951,7 @@
       "description": "add __repr__ to Invalid so it surfaces the path and error type",
       "status": "",
       "marker": "✅",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=alecthomas/voluptuous&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=alecthomas/voluptuous&v=3",
       "starCount": "1.9k"
     },
     {
@@ -960,7 +960,7 @@
       "description": "replace file-saver with native browser APIs",
       "status": "",
       "marker": "👥",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=TEAMMATES/teammates&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=TEAMMATES/teammates&v=3",
       "starCount": "1.8k"
     },
     {
@@ -969,7 +969,7 @@
       "description": "fix: handle non-finite Decimal values like floats in the encoder",
       "status": "",
       "marker": "🔢",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=simplejson/simplejson&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=simplejson/simplejson&v=3",
       "starCount": "1.7k"
     },
     {
@@ -978,7 +978,7 @@
       "description": "fix: return False from isValidFont for missing fonts",
       "status": "",
       "marker": "🔤",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=pwaller/pyfiglet&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=pwaller/pyfiglet&v=3",
       "starCount": "1.6k"
     },
     {
@@ -987,7 +987,7 @@
       "description": "fix: expand ~ in DirectoriesCompleter",
       "status": "",
       "marker": "⌨️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=kislyuk/argcomplete&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=kislyuk/argcomplete&v=3",
       "starCount": "1.6k"
     },
     {
@@ -996,7 +996,7 @@
       "description": "fix: sync server metadata version with published package",
       "status": "",
       "marker": "☸️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=Flux159/mcp-server-kubernetes&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=Flux159/mcp-server-kubernetes&v=3",
       "starCount": "1.6k"
     },
     {
@@ -1005,7 +1005,7 @@
       "description": "fix: NumPy view py/id desync when base is shared",
       "status": "",
       "marker": "🥒",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=jsonpickle/jsonpickle&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=jsonpickle/jsonpickle&v=3",
       "starCount": "1.3k"
     },
     {
@@ -1014,7 +1014,7 @@
       "description": "fix: close leftover figure in plot/cplot/splot on error",
       "status": "",
       "marker": "🧮",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=mpmath/mpmath&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=mpmath/mpmath&v=3",
       "starCount": "1.2k"
     },
     {
@@ -1023,7 +1023,7 @@
       "description": "fix: keep template variable in HTML attribute name on one line",
       "status": "",
       "marker": "🧹",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=djlint/djLint&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=djlint/djLint&v=3",
       "starCount": "946"
     },
     {
@@ -1032,7 +1032,7 @@
       "description": "fix: FunctionMaker.create() with return type annotation",
       "status": "",
       "marker": "🎀",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=micheles/decorator&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=micheles/decorator&v=3",
       "starCount": "904"
     },
     {
@@ -1041,8 +1041,8 @@
       "description": "2 merged PRs: fix null pointer dereference in Matroska parser + config file parsing bugs",
       "status": "",
       "marker": "📺",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=CCExtractor/ccextractor&v=3",
-      "starCount": "899"
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=CCExtractor/ccextractor&v=3",
+      "starCount": "900"
     },
     {
       "name": "pyserde",
@@ -1050,7 +1050,7 @@
       "description": "fix: nested generic dataclass deserialization",
       "status": "",
       "marker": "🧬",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=yukinarit/pyserde&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=yukinarit/pyserde&v=3",
       "starCount": "851"
     },
     {
@@ -1059,7 +1059,7 @@
       "description": "fix: graph-level attribute masking node/edge default",
       "status": "",
       "marker": "🕸️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=pygraphviz/pygraphviz&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=pygraphviz/pygraphviz&v=3",
       "starCount": "845"
     },
     {
@@ -1068,7 +1068,7 @@
       "description": "fix: don't convert %c percent formatting to f-strings",
       "status": "",
       "marker": "🪶",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=ikamensh/flynt&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=ikamensh/flynt&v=3",
       "starCount": "732"
     },
     {
@@ -1077,7 +1077,7 @@
       "description": "fix: export crash for generic GEOMETRY Z/M/ZM geometry types",
       "status": "",
       "marker": "🗺️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=koordinates/kart&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=koordinates/kart&v=3",
       "starCount": "678"
     },
     {
@@ -1086,7 +1086,7 @@
       "description": "fix: make Code128 build() deterministic across repeated calls",
       "status": "",
       "marker": "🏷️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=WhyNotHugo/python-barcode&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=WhyNotHugo/python-barcode&v=3",
       "starCount": "656"
     },
     {
@@ -1095,7 +1095,7 @@
       "description": "fix: improve accessibility across site to meet WCAG 2.1 guidelines",
       "status": "",
       "marker": "💅",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=styled-components/styled-components-website&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=styled-components/styled-components-website&v=3",
       "starCount": "620"
     },
     {
@@ -1104,7 +1104,7 @@
       "description": "fix: prevent ValueError crash on blank lines with trailing whitespace",
       "status": "",
       "marker": "📏",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=PyCQA/docformatter&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=PyCQA/docformatter&v=3",
       "starCount": "598"
     },
     {
@@ -1113,7 +1113,7 @@
       "description": "feat: better order of validation for command running",
       "status": "",
       "marker": "📧",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=resend/resend-mcp&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=resend/resend-mcp&v=3",
       "starCount": "565"
     },
     {
@@ -1122,7 +1122,7 @@
       "description": "fix: use continue instead of return in handleEdgesChange",
       "status": "",
       "marker": "🤖",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=giselles-ai/giselle&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=giselles-ai/giselle&v=3",
       "starCount": "554"
     },
     {
@@ -1131,7 +1131,7 @@
       "description": "fix: redirected bank URLs reported by link checker",
       "status": "",
       "marker": "🏦",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=guibranco/BancosBrasileiros&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=guibranco/BancosBrasileiros&v=3",
       "starCount": "541"
     },
     {
@@ -1140,7 +1140,7 @@
       "description": "solve: filter even numbers from array",
       "status": "",
       "marker": "🍴",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=fork-commit-merge/fork-commit-merge&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=fork-commit-merge/fork-commit-merge&v=3",
       "starCount": "509"
     },
     {
@@ -1149,7 +1149,7 @@
       "description": "fix: Version.difference with local variants of the same version",
       "status": "",
       "marker": "📝",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=python-poetry/poetry-core&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=python-poetry/poetry-core&v=3",
       "starCount": "479"
     },
     {
@@ -1158,7 +1158,7 @@
       "description": "fix: address parsing on Python versions before 3.13",
       "status": "",
       "marker": "✉️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=SpamScope/mail-parser&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=SpamScope/mail-parser&v=3",
       "starCount": "455"
     },
     {
@@ -1167,7 +1167,7 @@
       "description": "fix: wrapper binding when collection item element name is reused",
       "status": "",
       "marker": "🧬",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=tefra/xsdata&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=tefra/xsdata&v=3",
       "starCount": "448"
     },
     {
@@ -1176,8 +1176,8 @@
       "description": "docs: add Scowld companion client",
       "status": "",
       "marker": "🤖",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=DasterProkio/awesome-ai-companion&v=3",
-      "starCount": "505"
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=DasterProkio/awesome-ai-companion&v=3",
+      "starCount": "521"
     },
     {
       "name": "WebOb",
@@ -1185,7 +1185,7 @@
       "description": "fix: make timedelta date headers UTC-based (authored commit)",
       "status": "",
       "marker": "🌐",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=Pylons/webob&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=Pylons/webob&v=3",
       "starCount": "443"
     },
     {
@@ -1194,7 +1194,7 @@
       "description": "fix: markdown parser crash on emphasized text inside HTML tags",
       "status": "",
       "marker": "📝",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=moinwiki/moin&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=moinwiki/moin&v=3",
       "starCount": "372"
     },
     {
@@ -1203,7 +1203,7 @@
       "description": "fix: inconsistent spectral_points reporting",
       "status": "",
       "marker": "🔬",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=radis/radis&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=radis/radis&v=3",
       "starCount": "278"
     },
     {
@@ -1212,7 +1212,7 @@
       "description": "fix: stop boolean flags from offering value completions",
       "status": "",
       "marker": "🖱️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=click-contrib/click-repl&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=click-contrib/click-repl&v=3",
       "starCount": "242"
     },
     {
@@ -1221,7 +1221,7 @@
       "description": "fix: MD001 heading violations in WinForms docs (by .NET)",
       "status": "",
       "marker": "🔷",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=dotnet/docs-desktop&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=dotnet/docs-desktop&v=3",
       "starCount": "233"
     },
     {
@@ -1230,7 +1230,7 @@
       "description": "fix: IndexError when source mixes lone CR with LF line endings",
       "status": "",
       "marker": "🌳",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=gristlabs/asttokens&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=gristlabs/asttokens&v=3",
       "starCount": "194"
     },
     {
@@ -1239,7 +1239,7 @@
       "description": "fix: preserve time and timezone for regex-extracted dates",
       "status": "",
       "marker": "🕰️",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=adbar/htmldate&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=adbar/htmldate&v=3",
       "starCount": "155"
     },
     {
@@ -1248,7 +1248,7 @@
       "description": "feat: add project endpoints to the OpenAPI spec",
       "status": "",
       "marker": "📋",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=opcotech/elemo&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=opcotech/elemo&v=3",
       "starCount": "35"
     },
     {
@@ -1257,8 +1257,8 @@
       "description": "fix: NameError in choose_bg_color when color picker is cancelled",
       "status": "",
       "marker": "📖",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=petertzy/markdown-reader&v=3",
-      "starCount": "28"
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=petertzy/markdown-reader&v=3",
+      "starCount": "30"
     },
     {
       "name": "awesome-mac",
@@ -1266,7 +1266,7 @@
       "description": "3 merged PRs: add Hash Harbor, MacBook 24x7 Agents, and Browser Cookie Bridge",
       "status": "",
       "marker": "🍎",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.workers.dev/api/stars?repo=abordage/awesome-mac&v=3",
+      "starBadgeUrl": "https://github-star-badge.aopv.dev/api/stars?repo=abordage/awesome-mac&v=3",
       "starCount": "20"
     }
   ],

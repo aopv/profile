@@ -98,7 +98,8 @@ h2 { margin: 0 0 .7em; font-size: 1.2em; font-weight: 600; line-height: 1.2; }
 .bullet-list li { padding-left: 1em; }
 .bullet-list li::before { content: '•'; display: inline-block; margin-left: -.7em; margin-right: .3em; font-size: 1em; }
 .bullet-list a { margin-right: .25em; }
-.star-count { display: inline-block; margin-right: .3em; color: var(--secondary); font-size: .72em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.star-count { display: inline-block; margin-right: .3em; color: var(--secondary); font-size: .72em; font-variant-numeric: tabular-nums; line-height: 1; white-space: nowrap; vertical-align: middle; }
+.star-badge-image { display: inline-block; width: auto; height: 1.35em; vertical-align: -.25em; }
 .item-status { margin-left: .25em; font-size: .85em; }
 .entry-summary { color: var(--secondary); }
 .after-list { margin: .8em 0 0 1em; }

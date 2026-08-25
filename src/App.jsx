@@ -106,10 +106,25 @@ function InternalLink({ to, onNavigate, children, className = '' }) {
 }
 
 function StarBadge({ item }) {
+  const [liveUnavailable, setLiveUnavailable] = useState(false)
   if (!item.starBadgeUrl) return null
+
   return (
-    <span className="star-count" aria-label={`${displayName(item.name)} has ${item.starCount || 'an unavailable number of'} GitHub stars`}>
-      <span aria-hidden="true">★ {item.starCount}</span>
+    <span className="star-count">
+      {liveUnavailable ? (
+        <span aria-label={`${displayName(item.name)} has ${item.starCount || 'an unavailable number of'} GitHub stars`}>
+          ★ {item.starCount || '—'}
+        </span>
+      ) : (
+        <img
+          className="star-badge-image"
+          src={item.starBadgeUrl}
+          alt={`${displayName(item.name)} live GitHub star count`}
+          loading="lazy"
+          decoding="async"
+          onError={() => setLiveUnavailable(true)}
+        />
+      )}
     </span>
   )
 }

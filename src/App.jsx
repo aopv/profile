@@ -106,25 +106,40 @@ function InternalLink({ to, onNavigate, children, className = '' }) {
 }
 
 function StarBadge({ item }) {
+  const [liveCount, setLiveCount] = useState(null)
   const [liveUnavailable, setLiveUnavailable] = useState(false)
+
+  useEffect(() => {
+    if (!item.starBadgeUrl) return undefined
+
+    const controller = new AbortController()
+    const liveCountUrl = new URL(item.starBadgeUrl)
+    liveCountUrl.searchParams.set('format', 'json')
+
+    fetch(liveCountUrl, { signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) throw new Error(`Star count request failed with ${response.status}`)
+        return response.json()
+      })
+      .then((data) => {
+        if (typeof data.formatted !== 'string') throw new Error('Star count response was invalid')
+        setLiveCount(data.formatted)
+        setLiveUnavailable(false)
+      })
+      .catch((error) => {
+        if (error.name !== 'AbortError') setLiveUnavailable(true)
+      })
+
+    return () => controller.abort()
+  }, [item.starBadgeUrl])
+
   if (!item.starBadgeUrl) return null
 
+  const displayCount = liveUnavailable ? (item.starCount || '—') : (liveCount ?? item.starCount ?? '—')
+
   return (
-    <span className="star-count">
-      {liveUnavailable ? (
-        <span aria-label={`${displayName(item.name)} has ${item.starCount || 'an unavailable number of'} GitHub stars`}>
-          ★ {item.starCount || '—'}
-        </span>
-      ) : (
-        <img
-          className="star-badge-image"
-          src={item.starBadgeUrl}
-          alt={`${displayName(item.name)} live GitHub star count`}
-          loading="lazy"
-          decoding="async"
-          onError={() => setLiveUnavailable(true)}
-        />
-      )}
+    <span className="star-count" aria-label={`${displayName(item.name)} has ${displayCount} GitHub stars`}>
+      <span aria-hidden="true">★ {displayCount}</span>
     </span>
   )
 }

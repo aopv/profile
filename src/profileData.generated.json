@@ -982,6 +982,15 @@
       "starCount": "1.6k"
     },
     {
+      "name": "awesome-swift-macos-apps",
+      "url": "https://github.com/jaywcjlove/awesome-swift-macos-apps/pull/101",
+      "description": "add TetherShot to the curated Swift macOS apps list",
+      "status": "",
+      "marker": "🍎",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=jaywcjlove/awesome-swift-macos-apps&v=3",
+      "starCount": "1.6k"
+    },
+    {
       "name": "argcomplete",
       "url": "https://github.com/kislyuk/argcomplete/pull/553",
       "description": "fix: expand ~ in DirectoriesCompleter",
@@ -1135,6 +1144,24 @@
       "starCount": "541"
     },
     {
+      "name": "awesome-ai-companion",
+      "url": "https://github.com/DasterProkio/awesome-ai-companion/pull/10",
+      "description": "docs: add Scowld companion client",
+      "status": "",
+      "marker": "🤖",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=DasterProkio/awesome-ai-companion&v=3",
+      "starCount": "539"
+    },
+    {
+      "name": "vermin",
+      "url": "https://github.com/netromdk/vermin/pull/344",
+      "description": "fix: detect keyword arguments correctly for chained receivers",
+      "status": "",
+      "marker": "🐍",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=netromdk/vermin&v=3",
+      "starCount": "527"
+    },
+    {
       "name": "fork-commit-merge",
       "url": "https://github.com/fork-commit-merge/fork-commit-merge/pull/6370",
       "description": "solve: filter even numbers from array",
@@ -1171,15 +1198,6 @@
       "starCount": "449"
     },
     {
-      "name": "awesome-ai-companion",
-      "url": "https://github.com/DasterProkio/awesome-ai-companion/pull/10",
-      "description": "docs: add Scowld companion client",
-      "status": "",
-      "marker": "🤖",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=DasterProkio/awesome-ai-companion&v=3",
-      "starCount": "539"
-    },
-    {
       "name": "WebOb",
       "url": "https://github.com/Pylons/webob/pull/496",
       "description": "fix: make timedelta date headers UTC-based (authored commit)",
@@ -1189,6 +1207,15 @@
       "starCount": "443"
     },
     {
+      "name": "awesome-openrouter",
+      "url": "https://github.com/OpenRouterTeam/awesome-openrouter/pull/103",
+      "description": "add Fud AI to the OpenRouter app directory",
+      "status": "",
+      "marker": "🔀",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=OpenRouterTeam/awesome-openrouter&v=3",
+      "starCount": "442"
+    },
+    {
       "name": "moin",
       "url": "https://github.com/moinwiki/moin/pull/2166",
       "description": "fix: markdown parser crash on emphasized text inside HTML tags",
@@ -1196,6 +1223,15 @@
       "marker": "📝",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=moinwiki/moin&v=3",
       "starCount": "372"
+    },
+    {
+      "name": "areg-sdk",
+      "url": "https://github.com/aregtech/areg-sdk/pull/675",
+      "description": "add comprehensive unit tests for the String class",
+      "status": "",
+      "marker": "🧪",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=aregtech/areg-sdk&v=3",
+      "starCount": "362"
     },
     {
       "name": "radis",

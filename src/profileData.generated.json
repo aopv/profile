@@ -57,7 +57,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "362"
+      "starCount": "378"
     },
     {
       "name": "verceltics",
@@ -75,7 +75,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=apoorvdarshan/scowld&v=3",
-      "starCount": "14"
+      "starCount": "17"
     },
     {
       "name": "quit-all",
@@ -164,7 +164,7 @@
       "status": "",
       "marker": "🍪",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=apoorvdarshan/browser-cookie-bridge&v=3",
-      "starCount": "6"
+      "starCount": "7"
     },
     {
       "name": "machina-cordis",
@@ -206,7 +206,7 @@
       "status": "",
       "marker": "📣",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=apoorvdarshan/crossposter&v=3",
-      "starCount": "34"
+      "starCount": "33"
     },
     {
       "name": "TetherShot",
@@ -215,7 +215,7 @@
       "status": "",
       "marker": "📸",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=apoorvdarshan/TetherShot&v=3",
-      "starCount": "9"
+      "starCount": "12"
     },
     {
       "name": "macbook-24x7-agents",
@@ -306,7 +306,7 @@
       "status": "",
       "marker": "🌍",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=apoorvdarshan/dob-selector&v=3",
-      "starCount": "8"
+      "starCount": "9"
     },
     {
       "name": "slot-machine-date-picker",
@@ -419,7 +419,7 @@
       "status": "",
       "marker": "🎯",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=apoorvdarshan/headshot-tracker&v=3",
-      "starCount": "4"
+      "starCount": "5"
     },
     {
       "name": "compress-image",
@@ -565,7 +565,7 @@
       "status": "",
       "marker": "☸️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=kubernetes/kubernetes&v=3",
-      "starCount": "125k"
+      "starCount": "126k"
     },
     {
       "name": "svelte",
@@ -601,7 +601,7 @@
       "status": "",
       "marker": "⚙️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=ansible/ansible&v=3",
-      "starCount": "70k"
+      "starCount": "71k"
     },
     {
       "name": "jquery",
@@ -638,6 +638,15 @@
       "marker": "🐚",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=google/zx&v=3",
       "starCount": "46k"
+    },
+    {
+      "name": "maigret",
+      "url": "https://github.com/soxoj/maigret/pull/3046",
+      "description": "fix graph reports for non-string identity values",
+      "status": "",
+      "marker": "🔍",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=soxoj/maigret&v=3",
+      "starCount": "37k"
     },
     {
       "name": "core",
@@ -709,6 +718,15 @@
       "status": "",
       "marker": "🎙️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=BasedHardware/omi&v=3",
+      "starCount": "13k"
+    },
+    {
+      "name": "pr-agent",
+      "url": "https://github.com/The-PR-Agent/pr-agent/pull/2895",
+      "description": "fix: share language matcher with plain diff provider",
+      "status": "",
+      "marker": "🤖",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=The-PR-Agent/pr-agent&v=3",
       "starCount": "13k"
     },
     {
@@ -1033,7 +1051,7 @@
       "status": "",
       "marker": "🧹",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=djlint/djLint&v=3",
-      "starCount": "946"
+      "starCount": "948"
     },
     {
       "name": "decorator",
@@ -1051,7 +1069,7 @@
       "status": "",
       "marker": "📺",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=CCExtractor/ccextractor&v=3",
-      "starCount": "899"
+      "starCount": "900"
     },
     {
       "name": "pyserde",
@@ -1096,7 +1114,7 @@
       "status": "",
       "marker": "🏷️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=WhyNotHugo/python-barcode&v=3",
-      "starCount": "656"
+      "starCount": "655"
     },
     {
       "name": "styled-components-website",
@@ -1123,7 +1141,7 @@
       "status": "",
       "marker": "📧",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=resend/resend-mcp&v=3",
-      "starCount": "565"
+      "starCount": "566"
     },
     {
       "name": "giselle",
@@ -1132,7 +1150,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=giselles-ai/giselle&v=3",
-      "starCount": "553"
+      "starCount": "554"
     },
     {
       "name": "BancosBrasileiros",
@@ -1141,7 +1159,7 @@
       "status": "",
       "marker": "🏦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=guibranco/BancosBrasileiros&v=3",
-      "starCount": "543"
+      "starCount": "544"
     },
     {
       "name": "awesome-ai-companion",
@@ -1150,7 +1168,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=DasterProkio/awesome-ai-companion&v=3",
-      "starCount": "544"
+      "starCount": "590"
     },
     {
       "name": "vermin",
@@ -1213,7 +1231,7 @@
       "status": "",
       "marker": "🔀",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=OpenRouterTeam/awesome-openrouter&v=3",
-      "starCount": "445"
+      "starCount": "457"
     },
     {
       "name": "moin",
@@ -1258,7 +1276,7 @@
       "status": "",
       "marker": "🔷",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=dotnet/docs-desktop&v=3",
-      "starCount": "233"
+      "starCount": "235"
     },
     {
       "name": "asttokens",
@@ -1267,7 +1285,7 @@
       "status": "",
       "marker": "🌳",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=gristlabs/asttokens&v=3",
-      "starCount": "194"
+      "starCount": "195"
     },
     {
       "name": "htmldate",
@@ -1276,7 +1294,7 @@
       "status": "",
       "marker": "🕰️",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=adbar/htmldate&v=3",
-      "starCount": "155"
+      "starCount": "156"
     },
     {
       "name": "elemo",
@@ -1294,7 +1312,7 @@
       "status": "",
       "marker": "📖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=petertzy/markdown-reader&v=3",
-      "starCount": "30"
+      "starCount": "31"
     },
     {
       "name": "awesome-mac",

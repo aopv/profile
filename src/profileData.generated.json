@@ -57,7 +57,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "378"
+      "starCount": "380"
     },
     {
       "name": "verceltics",
@@ -215,7 +215,7 @@
       "status": "",
       "marker": "📸",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=apoorvdarshan/TetherShot&v=3",
-      "starCount": "12"
+      "starCount": "14"
     },
     {
       "name": "macbook-24x7-agents",
@@ -694,6 +694,15 @@
       "starCount": "16k"
     },
     {
+      "name": "burn",
+      "url": "https://github.com/tracel-ai/burn/pull/5536",
+      "description": "fix(store): exclude adapter-matched tensors from unused",
+      "status": "",
+      "marker": "🦀",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=tracel-ai/burn&v=3",
+      "starCount": "16k"
+    },
+    {
       "name": "jupyterlab",
       "url": "https://github.com/jupyterlab/jupyterlab/pull/18530",
       "description": "fix: theme settings in non-English locales (by Jupyter)",
@@ -728,6 +737,15 @@
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=The-PR-Agent/pr-agent&v=3",
       "starCount": "13k"
+    },
+    {
+      "name": "kornia",
+      "url": "https://github.com/kornia/kornia/pull/4121",
+      "description": "fix(geometry): validate NMS box shape",
+      "status": "",
+      "marker": "👁️",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=kornia/kornia&v=3",
+      "starCount": "11k"
     },
     {
       "name": "gunicorn",
@@ -871,7 +889,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=alvinreal/awesome-opensource-ai&v=3",
-      "starCount": "4.6k"
+      "starCount": "4.7k"
     },
     {
       "name": "returns",
@@ -1051,7 +1069,7 @@
       "status": "",
       "marker": "🧹",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=djlint/djLint&v=3",
-      "starCount": "948"
+      "starCount": "949"
     },
     {
       "name": "decorator",
@@ -1153,6 +1171,15 @@
       "starCount": "554"
     },
     {
+      "name": "awesome-ai-companion",
+      "url": "https://github.com/DasterProkio/awesome-ai-companion/pull/10",
+      "description": "docs: add Scowld companion client",
+      "status": "",
+      "marker": "🤖",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=DasterProkio/awesome-ai-companion&v=3",
+      "starCount": "593"
+    },
+    {
       "name": "BancosBrasileiros",
       "url": "https://github.com/guibranco/BancosBrasileiros/pull/895",
       "description": "fix: redirected bank URLs reported by link checker",
@@ -1162,22 +1189,13 @@
       "starCount": "544"
     },
     {
-      "name": "awesome-ai-companion",
-      "url": "https://github.com/DasterProkio/awesome-ai-companion/pull/10",
-      "description": "docs: add Scowld companion client",
-      "status": "",
-      "marker": "🤖",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=DasterProkio/awesome-ai-companion&v=3",
-      "starCount": "590"
-    },
-    {
       "name": "vermin",
       "url": "https://github.com/netromdk/vermin/pull/344",
       "description": "fix: detect keyword arguments correctly for chained receivers",
       "status": "",
       "marker": "🐍",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=netromdk/vermin&v=3",
-      "starCount": "528"
+      "starCount": "529"
     },
     {
       "name": "fork-commit-merge",
@@ -1216,15 +1234,6 @@
       "starCount": "449"
     },
     {
-      "name": "WebOb",
-      "url": "https://github.com/Pylons/webob/pull/496",
-      "description": "fix: make timedelta date headers UTC-based (authored commit)",
-      "status": "",
-      "marker": "🌐",
-      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=Pylons/webob&v=3",
-      "starCount": "443"
-    },
-    {
       "name": "awesome-openrouter",
       "url": "https://github.com/OpenRouterTeam/awesome-openrouter/pull/103",
       "description": "add Fud AI to the OpenRouter app directory",
@@ -1234,13 +1243,22 @@
       "starCount": "457"
     },
     {
+      "name": "WebOb",
+      "url": "https://github.com/Pylons/webob/pull/496",
+      "description": "fix: make timedelta date headers UTC-based (authored commit)",
+      "status": "",
+      "marker": "🌐",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=Pylons/webob&v=3",
+      "starCount": "443"
+    },
+    {
       "name": "moin",
       "url": "https://github.com/moinwiki/moin/pull/2166",
       "description": "fix: markdown parser crash on emphasized text inside HTML tags",
       "status": "",
       "marker": "📝",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=moinwiki/moin&v=3",
-      "starCount": "372"
+      "starCount": "373"
     },
     {
       "name": "areg-sdk",
@@ -1249,7 +1267,7 @@
       "status": "",
       "marker": "🧪",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=aregtech/areg-sdk&v=3",
-      "starCount": "362"
+      "starCount": "363"
     },
     {
       "name": "radis",

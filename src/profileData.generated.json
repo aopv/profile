@@ -1388,10 +1388,6 @@
       "url": "https://x.com/apoorvdarshan"
     },
     {
-      "name": "Mastodon",
-      "url": "https://mastodon.social/@aporv"
-    },
-    {
       "name": "GitHub",
       "url": "https://github.com/apoorvdarshan"
     },
@@ -1418,6 +1414,10 @@
     {
       "name": "Support me on Ko-Fi",
       "url": "https://ko-fi.com/apoorvdarshan"
+    },
+    {
+      "name": "Mastodon",
+      "url": "https://mastodon.social/@aporv"
     },
     {
       "name": "Grokipedia",

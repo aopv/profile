@@ -57,7 +57,7 @@
       "status": "",
       "marker": "🥦",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=apoorvdarshan/fud-ai&v=3",
-      "starCount": "380"
+      "starCount": "384"
     },
     {
       "name": "verceltics",
@@ -75,7 +75,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=apoorvdarshan/scowld&v=3",
-      "starCount": "17"
+      "starCount": "18"
     },
     {
       "name": "quit-all",
@@ -419,7 +419,7 @@
       "status": "",
       "marker": "🎯",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=apoorvdarshan/headshot-tracker&v=3",
-      "starCount": "5"
+      "starCount": "6"
     },
     {
       "name": "compress-image",
@@ -1045,6 +1045,15 @@
       "starCount": "1.6k"
     },
     {
+      "name": "fpdf2",
+      "url": "https://github.com/py-pdf/fpdf2/pull/1883",
+      "description": "Handle escaped markdown markers inside markdown links",
+      "status": "",
+      "marker": "📄",
+      "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=py-pdf/fpdf2&v=3",
+      "starCount": "1.5k"
+    },
+    {
       "name": "jsonpickle",
       "url": "https://github.com/jsonpickle/jsonpickle/pull/612",
       "description": "fix: NumPy view py/id desync when base is shared",
@@ -1069,7 +1078,7 @@
       "status": "",
       "marker": "🧹",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=djlint/djLint&v=3",
-      "starCount": "949"
+      "starCount": "950"
     },
     {
       "name": "decorator",
@@ -1087,7 +1096,7 @@
       "status": "",
       "marker": "📺",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=CCExtractor/ccextractor&v=3",
-      "starCount": "900"
+      "starCount": "901"
     },
     {
       "name": "pyserde",
@@ -1177,7 +1186,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=DasterProkio/awesome-ai-companion&v=3",
-      "starCount": "595"
+      "starCount": "602"
     },
     {
       "name": "BancosBrasileiros",
@@ -1204,7 +1213,7 @@
       "status": "",
       "marker": "🍴",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=fork-commit-merge/fork-commit-merge&v=3",
-      "starCount": "509"
+      "starCount": "511"
     },
     {
       "name": "poetry-core",
@@ -1231,7 +1240,7 @@
       "status": "",
       "marker": "🧬",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=tefra/xsdata&v=3",
-      "starCount": "449"
+      "starCount": "450"
     },
     {
       "name": "awesome-openrouter",
@@ -1240,7 +1249,7 @@
       "status": "",
       "marker": "🔀",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=OpenRouterTeam/awesome-openrouter&v=3",
-      "starCount": "457"
+      "starCount": "459"
     },
     {
       "name": "WebOb",
@@ -1267,7 +1276,7 @@
       "status": "",
       "marker": "🧪",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=aregtech/areg-sdk&v=3",
-      "starCount": "363"
+      "starCount": "364"
     },
     {
       "name": "radis",

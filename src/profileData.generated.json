@@ -66,7 +66,7 @@
       "status": "",
       "marker": "📈",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=apoorvdarshan/verceltics&v=3",
-      "starCount": "28"
+      "starCount": "29"
     },
     {
       "name": "scowld",
@@ -772,7 +772,7 @@
       "status": "",
       "marker": "📄",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=Kozea/WeasyPrint&v=3",
-      "starCount": "9.5k"
+      "starCount": "9.6k"
     },
     {
       "name": "clawhub",
@@ -1186,7 +1186,7 @@
       "status": "",
       "marker": "🤖",
       "starBadgeUrl": "https://github-star-badge.apoorvdarshan.com/api/stars?repo=DasterProkio/awesome-ai-companion&v=3",
-      "starCount": "602"
+      "starCount": "604"
     },
     {
       "name": "BancosBrasileiros",
@@ -1386,6 +1386,10 @@
     {
       "name": "X",
       "url": "https://x.com/apoorvdarshan"
+    },
+    {
+      "name": "Mastodon",
+      "url": "https://mastodon.social/@aporv"
     },
     {
       "name": "GitHub",
